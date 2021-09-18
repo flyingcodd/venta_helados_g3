@@ -9,6 +9,6 @@
 
 </head>
 <body>
-    <div class="container-fluid" style="background-color: cyan;">
+    <div class="container">
 
     
