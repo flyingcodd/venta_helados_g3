@@ -1,3 +1,8 @@
+<?php echo $cabecera ?>
+
+
+
+<?php echo $pie ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

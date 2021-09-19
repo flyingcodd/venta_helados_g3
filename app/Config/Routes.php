@@ -51,3 +51,12 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
 $routes->get('admin/inventario', 'HeladoController::index');
+
+$routes->get('ayuda', 'Home::ayuda');
+$routes->get('carrito', 'Home::carrito');
+$routes->get('perfil', 'Home::perfil');
+$routes->get('tienda', 'Home::tienda');
+$routes->get('tienda/producto', 'Home::producto');
+
+
+$routes->get('admin', 'AdminController::index');
