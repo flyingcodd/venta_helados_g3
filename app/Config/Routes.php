@@ -50,8 +50,18 @@ $routes->get('/', 'Home::index');
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
-$routes->get('admin/inventario', 'HeladoController::index');
+//admin
+$routes->get('admin', 'AdminController::index');
 
+$routes->get('admin/helado', 'HeladoController::listar');
+$routes->get('admin/usuario', 'UsuarioController::listar');
+$routes->get('admin/venta', 'VentaController::listar');
+
+
+
+
+
+//cliente
 $routes->get('ayuda', 'Home::ayuda');
 $routes->get('carrito', 'Home::carrito');
 $routes->get('perfil', 'Home::perfil');
@@ -59,4 +69,3 @@ $routes->get('tienda', 'Home::tienda');
 $routes->get('tienda/producto', 'Home::producto');
 
 
-$routes->get('admin', 'AdminController::index');

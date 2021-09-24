@@ -13,9 +13,9 @@ holaaa
         <?php foreach ($helados as $helado) : ?>
             <tr>
                 <th scope="row">1</th>
-                <td><?php echo $helado['id'] ?></td>
-                <td><?php echo $helado['nombre'] ?></td>
-                <td><?php echo $helado['imagen'] ?></td>
+                <td><?php echo $helado['id_helado'] ?></td>
+                <td><?php echo $helado['nombre_helado'] ?></td>
+                <td><?php echo $helado['precio_helado'] ?></td>
             </tr>
         <?php endforeach; ?>
         <tr>

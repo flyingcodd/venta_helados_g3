@@ -4,9 +4,9 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class Helado extends Model{
-    protected $table = "tabla_aux";
+    protected $table = "Helado";
 
-    protected $primaryKey = 'id';
-    protected $allowedFields = ['nombre','imagens'];
+    protected $primaryKey = 'id_helado';
+    protected $allowedFields = ['nombre_helado','precio_helado','stock_helado','imagen1_helado','imagen2_helado','descripcion'];
 
 }
