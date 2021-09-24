@@ -1,3 +1,3 @@
 <?php echo $cabecera ?>
-gaaaaaaaaa
+gaaaaaaaaadddddd
 <?php echo $pie ?>
