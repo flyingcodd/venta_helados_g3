@@ -10,11 +10,11 @@ class Home extends BaseController
         $datos['pie']= view('template/webCliente/pie');
         return view('webCliente/index',$datos);
     }
-    public function ayuda()
+    public function contacto()
     {
         $datos['cabecera']= view('template/webCliente/cabecera');
         $datos['pie']= view('template/webCliente/pie');
-        return view('webCliente/ayuda',$datos);
+        return view('webCliente/contacto',$datos);
     }
     public function carrito()
     {
@@ -39,5 +39,11 @@ class Home extends BaseController
         $datos['cabecera']= view('template/webCliente/cabecera');
         $datos['pie']= view('template/webCliente/pie');
         return view('webCliente/shop/producto',$datos);
+    }
+    public function nosotros()
+    {
+        $datos['cabecera']= view('template/webCliente/cabecera');
+        $datos['pie']= view('template/webCliente/pie');
+        return view('webCliente/nosotros',$datos);
     }
 }

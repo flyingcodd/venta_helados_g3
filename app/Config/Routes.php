@@ -62,10 +62,11 @@ $routes->get('admin/venta', 'VentaController::listar');
 
 
 //cliente
-$routes->get('ayuda', 'Home::ayuda');
+$routes->get('contacto', 'Home::contacto');
 $routes->get('carrito', 'Home::carrito');
 $routes->get('perfil', 'Home::perfil');
 $routes->get('tienda', 'Home::tienda');
-$routes->get('tienda/producto', 'Home::producto');
+$routes->get('nosotros', 'Home::nosotros');
+$routes->get('producto', 'Home::producto');
 
 
