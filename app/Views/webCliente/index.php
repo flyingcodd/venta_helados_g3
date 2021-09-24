@@ -1,3 +1,3 @@
 <?php echo $cabecera ?>
-    al fast 
+    QUE FUE, CHAMO
 <?php echo $pie ?>
