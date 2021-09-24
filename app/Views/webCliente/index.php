@@ -1,3 +1,3 @@
 <?php echo $cabecera ?>
-gaaaaaaaaa
+    al fast 
 <?php echo $pie ?>
