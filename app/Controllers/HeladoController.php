@@ -3,15 +3,15 @@
 namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\Helado;
-class HeladoController extends Controller
+class HeladoController extends BaseController
 {
-    public function index()
+    public function listar()
     {
         $aux= new Helado();
-        $datos['helados']=$aux->OrderBy('id','ASC')->findAll();
+        $datos['helados']=$aux->OrderBy('id_helado','ASC')->findAll();
         $datos['cabecera']= view('template/webAdmin/cabecera');
         $datos['pie']= view('template/webAdmin/piepagina');
 
-        return view('webAdmin/inventario/listar',$datos);
+        return view('webAdmin/helado/listar',$datos);
     }
 }

@@ -8,7 +8,7 @@ class AdminController extends Controller
     public function index()
     {
         $aux= new Helado();
-        $datos['helados']=$aux->OrderBy('id','ASC')->findAll();
+        $datos['helados']=$aux->OrderBy('id_helado','ASC')->findAll();
         $datos['cabecera']= view('template/webAdmin/cabecera');
         $datos['pie']= view('template/webAdmin/piepagina');
 

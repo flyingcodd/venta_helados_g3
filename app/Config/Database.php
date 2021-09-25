@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'venta_helados_g3_db',
+        'database' => 'VENTA_HELADO_G1',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
