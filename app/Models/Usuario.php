@@ -7,6 +7,6 @@ class Usuario extends Model{
     protected $table = "Usuario";
 
     protected $primaryKey = 'id_usuario';
-    protected $allowedFields = ['nombre_helado','precio_helado','stock_helado','imagen1_helado','imagen2_helado','descripcion'];
+    protected $allowedFields = ['id_rol','correo_usuario','password_usuario','nombre_usuario','apellido_usuario','direccion_usuario'];
 
 }
