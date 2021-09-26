@@ -30,38 +30,22 @@
                             <!-- Images slider -->
                             <div class="flexslider-thumbnails">
 
-                                <div class="flex-viewport" style="overflow: hidden; position: relative;">
-                                    <ul class="slides" style="width: 1200%; transition-duration: 0s; transform: translate3d(-539.6px, 0px, 0px);">
-                                        <li data-thumb="http://wpthemesgrid.com/themes/eshop/images/bx-slider4.jpg" class="clone" style="width: 539.6px; float: left; display: block;">
-                                            <img src="http://wpthemesgrid.com/themes/eshop/images/bx-slider4.jpg" alt="#">
-                                        </li>
-                                        <li data-thumb="http://wpthemesgrid.com/themes/eshop/images/bx-slider1.jpg" rel="adjustX:10, adjustY:" class="flex-active-slide" style="width: 539.6px; float: left; display: block;">
+                                <div class="flex-viewport">
+                                    <ul class="slides">
+                                        <li data-thumb="http://wpthemesgrid.com/themes/eshop/images/bx-slider1.jpg" rel="adjustX:10, adjustY:" class="clone">
                                             <img src="http://wpthemesgrid.com/themes/eshop/images/bx-slider1.jpg" alt="#">
                                         </li>
-                                        <li data-thumb="http://wpthemesgrid.com/themes/eshop/images/bx-slider2.jpg" style="width: 539.6px; float: left; display: block;" class="">
+                                        <li data-thumb="http://wpthemesgrid.com/themes/eshop/images/bx-slider4.jpg" class="clone">
+                                            <img src="http://wpthemesgrid.com/themes/eshop/images/bx-slider4.jpg" alt="#">
+                                        </li>
+                                        <li data-thumb="http://wpthemesgrid.com/themes/eshop/images/bx-slider1.jpg" rel="adjustX:10, adjustY:">
+                                            <img src="http://wpthemesgrid.com/themes/eshop/images/bx-slider1.jpg" alt="#">
+                                        </li>
+                                        <li data-thumb="http://wpthemesgrid.com/themes/eshop/images/bx-slider2.jpg" class="">
                                             <img src="http://wpthemesgrid.com/themes/eshop/images/bx-slider2.jpg" alt="#">
-                                        </li>
-                                        <li data-thumb="http://wpthemesgrid.com/themes/eshop/images/bx-slider3.jpg" style="width: 539.6px; float: left; display: block;" class="">
-                                            <img src="http://wpthemesgrid.com/themes/eshop/images/bx-slider3.jpg" alt="#">
-                                        </li>
-                                        <li data-thumb="http://wpthemesgrid.com/themes/eshop/images/bx-slider4.jpg" style="width: 539.6px; float: left; display: block;" class="">
-                                            <img src="http://wpthemesgrid.com/themes/eshop/images/bx-slider4.jpg" alt="#">
-                                        </li>
-                                        <li data-thumb="http://wpthemesgrid.com/themes/eshop/images/bx-slider1.jpg" rel="adjustX:10, adjustY:" class="clone" style="width: 539.6px; float: left; display: block;">
-                                            <img src="http://wpthemesgrid.com/themes/eshop/images/bx-slider1.jpg" alt="#">
                                         </li>
                                     </ul>
                                 </div>
-                                <ol class="flex-control-nav flex-control-thumbs">
-                                    <li><img src="http://wpthemesgrid.com/themes/eshop/images/bx-slider1.jpg" class="flex-active"></li>
-                                    <li><img src="http://wpthemesgrid.com/themes/eshop/images/bx-slider2.jpg" class=""></li>
-                                    <li><img src="http://wpthemesgrid.com/themes/eshop/images/bx-slider3.jpg" class=""></li>
-                                    <li><img src="http://wpthemesgrid.com/themes/eshop/images/bx-slider4.jpg" class=""></li>
-                                </ol>
-                                <ul class="flex-direction-nav">
-                                    <li><a class="flex-prev" href="#"></a></li>
-                                    <li><a class="flex-next" href="#"></a></li>
-                                </ul>
                             </div>
                             <!-- End Images slider -->
                         </div>
@@ -309,297 +293,114 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="owl-carousel popular-slider owl-theme owl-loaded">
+                <div class="owl-carousel popular-slider">
                     <!-- Start Single Product -->
-
-                    <!-- End Single Product -->
-                    <!-- Start Single Product -->
-
-                    <!-- End Single Product -->
-                    <!-- Start Single Product -->
-
-                    <!-- End Single Product -->
-                    <!-- Start Single Product -->
-
-                    <!-- End Single Product -->
-                    <div class="owl-stage-outer">
-                        <div class="owl-stage" style="transform: translate3d(-2218.4px, 0px, 0px); transition: all 0.4s ease 0s; width: 3697.33px;">
-                            <div class="owl-item cloned" style="width: 369.733px; margin-right: 0px;">
-                                <div class="single-product">
-                                    <div class="product-img">
-                                        <a href="product-details.html">
-                                            <img class="default-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p1.jpg" alt="#">
-                                            <img class="hover-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p2.jpg" alt="#">
-                                        </a>
-                                        <div class="button-head">
-                                            <div class="product-action">
-                                                <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-                                            </div>
-                                            <div class="product-action-2">
-                                                <a title="Add to cart" href="#">Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3><a href="product-details.html">Women Hot Collection</a></h3>
-                                        <div class="product-price">
-                                            <span>$50.00</span>
-                                        </div>
-                                    </div>
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="product-details.html">
+                                <img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
+                                <img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
+                                <span class="out-of-stock">Hot</span>
+                            </a>
+                            <div class="button-head">
+                                <div class="product-action">
+                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                    <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
-                            </div>
-                            <div class="owl-item cloned" style="width: 369.733px; margin-right: 0px;">
-                                <div class="single-product">
-                                    <div class="product-img">
-                                        <a href="product-details.html">
-                                            <img class="default-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p3.jpg" alt="#">
-                                            <img class="hover-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p4.jpg" alt="#">
-                                            <span class="new">New</span>
-                                        </a>
-                                        <div class="button-head">
-                                            <div class="product-action">
-                                                <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-                                            </div>
-                                            <div class="product-action-2">
-                                                <a title="Add to cart" href="#">Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3><a href="product-details.html">Awesome Pink Show</a></h3>
-                                        <div class="product-price">
-                                            <span>$50.00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned" style="width: 369.733px; margin-right: 0px;">
-                                <div class="single-product">
-                                    <div class="product-img">
-                                        <a href="product-details.html">
-                                            <img class="default-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p5.jpg" alt="#">
-                                            <img class="hover-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p6.jpg" alt="#">
-                                        </a>
-                                        <div class="button-head">
-                                            <div class="product-action">
-                                                <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-                                            </div>
-                                            <div class="product-action-2">
-                                                <a title="Add to cart" href="#">Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
-                                        <div class="product-price">
-                                            <span>$50.00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 369.733px; margin-right: 0px;">
-                                <div class="single-product">
-                                    <div class="product-img">
-                                        <a href="product-details.html">
-                                            <img class="default-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p15.jpg" alt="#">
-                                            <img class="hover-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p16.jpg" alt="#">
-                                            <span class="out-of-stock">Hot</span>
-                                        </a>
-                                        <div class="button-head">
-                                            <div class="product-action">
-                                                <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-                                            </div>
-                                            <div class="product-action-2">
-                                                <a title="Add to cart" href="#">Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3><a href="product-details.html">Black Sunglass For Women</a></h3>
-                                        <div class="product-price">
-                                            <span class="old">$60.00</span>
-                                            <span>$50.00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 369.733px; margin-right: 0px;">
-                                <div class="single-product">
-                                    <div class="product-img">
-                                        <a href="product-details.html">
-                                            <img class="default-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p1.jpg" alt="#">
-                                            <img class="hover-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p2.jpg" alt="#">
-                                        </a>
-                                        <div class="button-head">
-                                            <div class="product-action">
-                                                <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-                                            </div>
-                                            <div class="product-action-2">
-                                                <a title="Add to cart" href="#">Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3><a href="product-details.html">Women Hot Collection</a></h3>
-                                        <div class="product-price">
-                                            <span>$50.00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 369.733px; margin-right: 0px;">
-                                <div class="single-product">
-                                    <div class="product-img">
-                                        <a href="product-details.html">
-                                            <img class="default-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p3.jpg" alt="#">
-                                            <img class="hover-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p4.jpg" alt="#">
-                                            <span class="new">New</span>
-                                        </a>
-                                        <div class="button-head">
-                                            <div class="product-action">
-                                                <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-                                            </div>
-                                            <div class="product-action-2">
-                                                <a title="Add to cart" href="#">Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3><a href="product-details.html">Awesome Pink Show</a></h3>
-                                        <div class="product-price">
-                                            <span>$50.00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item active" style="width: 369.733px; margin-right: 0px;">
-                                <div class="single-product">
-                                    <div class="product-img">
-                                        <a href="product-details.html">
-                                            <img class="default-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p5.jpg" alt="#">
-                                            <img class="hover-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p6.jpg" alt="#">
-                                        </a>
-                                        <div class="button-head">
-                                            <div class="product-action">
-                                                <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-                                            </div>
-                                            <div class="product-action-2">
-                                                <a title="Add to cart" href="#">Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
-                                        <div class="product-price">
-                                            <span>$50.00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned active" style="width: 369.733px; margin-right: 0px;">
-                                <div class="single-product">
-                                    <div class="product-img">
-                                        <a href="product-details.html">
-                                            <img class="default-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p15.jpg" alt="#">
-                                            <img class="hover-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p16.jpg" alt="#">
-                                            <span class="out-of-stock">Hot</span>
-                                        </a>
-                                        <div class="button-head">
-                                            <div class="product-action">
-                                                <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-                                            </div>
-                                            <div class="product-action-2">
-                                                <a title="Add to cart" href="#">Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3><a href="product-details.html">Black Sunglass For Women</a></h3>
-                                        <div class="product-price">
-                                            <span class="old">$60.00</span>
-                                            <span>$50.00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned active" style="width: 369.733px; margin-right: 0px;">
-                                <div class="single-product">
-                                    <div class="product-img">
-                                        <a href="product-details.html">
-                                            <img class="default-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p1.jpg" alt="#">
-                                            <img class="hover-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p2.jpg" alt="#">
-                                        </a>
-                                        <div class="button-head">
-                                            <div class="product-action">
-                                                <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-                                            </div>
-                                            <div class="product-action-2">
-                                                <a title="Add to cart" href="#">Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3><a href="product-details.html">Women Hot Collection</a></h3>
-                                        <div class="product-price">
-                                            <span>$50.00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned active" style="width: 369.733px; margin-right: 0px;">
-                                <div class="single-product">
-                                    <div class="product-img">
-                                        <a href="product-details.html">
-                                            <img class="default-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p3.jpg" alt="#">
-                                            <img class="hover-img" src="http://wpthemesgrid.com/themes/eshop/images/products/p4.jpg" alt="#">
-                                            <span class="new">New</span>
-                                        </a>
-                                        <div class="button-head">
-                                            <div class="product-action">
-                                                <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                                <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-                                            </div>
-                                            <div class="product-action-2">
-                                                <a title="Add to cart" href="#">Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3><a href="product-details.html">Awesome Pink Show</a></h3>
-                                        <div class="product-price">
-                                            <span>$50.00</span>
-                                        </div>
-                                    </div>
+                                <div class="product-action-2">
+                                    <a title="Add to cart" href="#">Add to cart</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="owl-controls">
-                        <div class="owl-nav">
-                            <div class="owl-prev" style=""><i class="ti-angle-left"></i></div>
-                            <div class="owl-next" style=""><i class="ti-angle-right"></i></div>
+                        <div class="product-content">
+                            <h3><a href="product-details.html">Black Sunglass For Women</a></h3>
+                            <div class="product-price">
+                                <span class="old">$60.00</span>
+                                <span>$50.00</span>
+                            </div>
                         </div>
-                        <div class="owl-dots" style="display: none;"></div>
                     </div>
+                    <!-- End Single Product -->
+                    <!-- Start Single Product -->
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="product-details.html">
+                                <img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
+                                <img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
+                            </a>
+                            <div class="button-head">
+                                <div class="product-action">
+                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                    <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+                                </div>
+                                <div class="product-action-2">
+                                    <a title="Add to cart" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="product-details.html">Women Hot Collection</a></h3>
+                            <div class="product-price">
+                                <span>$50.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Product -->
+                    <!-- Start Single Product -->
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="product-details.html">
+                                <img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
+                                <img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
+                                <span class="new">New</span>
+                            </a>
+                            <div class="button-head">
+                                <div class="product-action">
+                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                    <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+                                </div>
+                                <div class="product-action-2">
+                                    <a title="Add to cart" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="product-details.html">Awesome Pink Show</a></h3>
+                            <div class="product-price">
+                                <span>$50.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Product -->
+                    <!-- Start Single Product -->
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="product-details.html">
+                                <img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
+                                <img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
+                            </a>
+                            <div class="button-head">
+                                <div class="product-action">
+                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                    <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+                                </div>
+                                <div class="product-action-2">
+                                    <a title="Add to cart" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
+                            <div class="product-price">
+                                <span>$50.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Product -->
                 </div>
             </div>
         </div>
@@ -680,8 +481,6 @@
                                 </div>
                                 <div class="owl-controls">
                                     <div class="owl-nav">
-                                        <div class="owl-prev" style=""><i class=" ti-arrow-left"></i></div>
-                                        <div class="owl-next" style=""><i class=" ti-arrow-right"></i></div>
                                     </div>
                                     <div class="owl-dots" style="display: none;"></div>
                                 </div>

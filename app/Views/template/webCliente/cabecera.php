@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Title Tag  -->
-    <title>Eshop - eCommerce HTML5 Template.</title>
+    <title>Helados G3</title>
     <!-- Favicon -->
     <link rel="icon" type="<?php echo base_url("") ?>/image/png" href="<?php echo base_url("") ?>/images/favicon.png">
     <!-- Web Font -->
@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="<?php echo base_url("") ?>/css/jquery.fancybox.min.css">
     <!-- Themify Icons -->
     <link rel="stylesheet" href="css/themify-icons.css">
+    <!--jquery-ui-->
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <!-- Nice Select CSS -->
     <link rel="stylesheet" href="<?php echo base_url("") ?>/css/niceselect.css">
     <!-- Animate CSS -->
@@ -43,8 +45,11 @@
     <link rel="stylesheet" href="<?php echo base_url("") ?>/style.css">
     <link rel="stylesheet" href="<?php echo base_url("") ?>/css/responsive.css">
 
+    <!--COLOR CSS--->
+    <link rel="stylesheet" href="css/color/color1.css">
 
 
+    <link rel="stylesheet" href="css/color/color3.css" id="colors">
 </head>
 
 <body class="js">
@@ -60,6 +65,24 @@
     </div>
     <!-- End Preloader -->
 
+    <div class="color-plate">
+		<a class="color-plate-icon"><i class="ti-paint-bucket"></i></a>
+		<h4>Eshop Colors</h4>
+		<p>Here is some awesome color's available on Eshop Template.</p>
+		<span class="color1"></span>
+		<span class="color2"></span>
+		<span class="color3"></span>
+		<span class="color4"></span>
+		<span class="color5"></span>
+		<span class="color6"></span>
+		<span class="color7"></span>
+		<span class="color8"></span>
+		<span class="color9"></span>
+		<span class="color10"></span>
+		<span class="color11"></span>
+		<span class="color12"></span>
+	</div>
+
     <!-- Header -->
     <header class="header shop">
         <!-- Topbar -->
@@ -70,7 +93,7 @@
                         <!-- Top Left -->
                         <div class="top-left">
                             <ul class="list-main">
-                                <li><i class="ti-headphone-alt"></i> +060 (800) 801-582zzz</li>
+                                <li><i class="ti-headphone-alt"></i> +060 (800) 801</li>
                                 <li><i class="ti-email"></i> support@shophub.com</li>
                             </ul>
                         </div>
@@ -190,14 +213,13 @@
                                     <div class="navbar-collapse">
                                         <div class="nav-inner">
                                             <ul class="nav main-menu menu navbar-nav">
-                                                <li class="active"><a href="#">Home</a></li>
-                                                <li><a href="#">Product</a></li>
+                                                <li class="active"><a href="<?php echo base_url("/")?>">Home</a></li>
+                                                <li><a href="<?php echo base_url("/tienda")?>">Product</a></li>
                                                 <li><a href="#">Service</a></li>
                                                 <li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
                                                     <ul class="dropdown">
-                                                        <li><a href="shop-grid.html">Shop Grid</a></li>
-                                                        <li><a href="cart.html">Cart</a></li>
-                                                        <li><a href="checkout.html">Checkout</a></li>
+                                                        <li><a href="<?php echo base_url("/tienda")?>">Shop Grid</a></li>
+                                                        <li><a href="<?php echo base_url("/ofertas")?>">ofert</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Pages</a></li>
@@ -206,7 +228,8 @@
                                                         <li><a href="blog-single-sidebar.html">Blog Single Sidebar</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="contact.html">Contact Us</a></li>
+                                                <li><a href="<?php echo base_url("/nosotros")?>">About us</a></li>
+                                                <li><a href="<?php echo base_url("/contacto")?>">Contact Us</a></li>
                                             </ul>
                                         </div>
                                     </div>

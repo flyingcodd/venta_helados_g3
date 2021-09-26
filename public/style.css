@@ -1141,6 +1141,9 @@ Version:1.0
 	width:100%;
 	z-index:999;
 }
+.header.sticky.off-sticky{
+	display:none;
+}
 .header.sticky .all-category{}
 .header.sticky .all-category h3{
 	cursor:pointer;
@@ -1214,7 +1217,7 @@ Version:1.0
 }
 .hero-slider .single-slider {
 	height: auto;
-	background-image: url('https://via.placeholder.com/1900x700');
+	background-image: url('images/slider-image2.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1372,7 +1375,7 @@ Version:1.0
 /* Hero Area 3 */
 .hero-area3{}
 .hero-area3 .big-content{
-	background-image: url('https://via.placeholder.com/850x530');
+	background-image: url('images/slider/big-content.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1415,10 +1418,10 @@ Version:1.0
 	position:relative;
 }
 .hero-area3 .small-content.first{
-	background-image: url('https://via.placeholder.com/450x300');
+	background-image: url('images/slider/small-content1.jpg');
 }
 .hero-area3 .small-content.secound{
-	background-image: url('https://via.placeholder.com/450x300');
+	background-image: url('images/slider/small-content2.jpg');
 }
 .hero-area3 .small-content .inner {
 	padding: 30px;
