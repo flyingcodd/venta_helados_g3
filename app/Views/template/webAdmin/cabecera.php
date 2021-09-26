@@ -6,10 +6,10 @@
       <title>Datum | CRM Admin Dashboard Template</title>
       
       <!-- Favicon -->
-      <link rel="shortcut icon" href="assets/images/favicon.ico" />
+      <link rel="shortcut icon" href="<?php echo base_url("") ?>/assets/images/favicon.ico" />
       
-      <link rel="stylesheet" href="assets/css/backend-plugin.min.css">
-      <link rel="stylesheet" href="assets/css/backend.css?v=1.0.0">  
+      <link rel="stylesheet" href="<?php echo base_url("") ?>/assets/css/backend-plugin.min.css">
+      <link rel="stylesheet" href="<?php echo base_url("") ?>/assets/css/backend.css?v=1.0.0">  
 </head>
 
 <body class=" color-light ">
@@ -24,8 +24,8 @@
       <div class="iq-sidebar  sidebar-default  ">
           <div class="iq-sidebar-logo d-flex align-items-end justify-content-between">
                <a href="../backend/index.html" class="header-logo">
-                  <img src="assets/images/logo.png" class="img-fluid rounded-normal light-logo" alt="logo">
-                  <img src="assets/images/logo-dark.png" class="img-fluid rounded-normal d-none sidebar-light-img" alt="logo">
+                  <img src="<?php echo base_url("") ?>/assets/images/logo.png" class="img-fluid rounded-normal light-logo" alt="logo">
+                  <img src="<?php echo base_url("") ?>/assets/images/logo-dark.png" class="img-fluid rounded-normal d-none sidebar-light-img" alt="logo">
                   <span>Datum</span>            
               </a>
               <div class="side-menu-bt-sidebar-1">
@@ -713,7 +713,7 @@
                                                        <div class="list-item d-flex justify-content-start align-items-start">
                                                            <div class="avatar">
                                                               <div class="avatar-img avatar-success avatar-20">
-                                                                  <span><img class="avatar is-squared rounded-circle" src="assets/images/user/2.jpg" alt="2.jpg"></span>
+                                                                  <span><img class="avatar is-squared rounded-circle" src="<?php echo base_url("") ?>/assets/images/user/2.jpg" alt="2.jpg"></span>
                                                               </div>
                                                           </div>
                                                           <div class="list-style-detail ml-2 mr-2">
@@ -810,18 +810,18 @@
                               </li>                        
                               <li class="nav-item nav-icon dropdown">
                                   <a href="#" class="search-toggle dropdown-toggle" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  <img src="assets/images/Flag/flag001.png" class="img-fluid rounded-circle" alt="user" style="height: 30px; min-width: 30px; width: 30px;">
+                                  <img src="<?php echo base_url("") ?>/assets/images/Flag/flag001.png" class="img-fluid rounded-circle" alt="user" style="height: 30px; min-width: 30px; width: 30px;">
                                   <span class="bg-primary"></span>
                                   </a>
                                   <div class="iq-sub-dropdown dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                       <div class="card shadow-none m-0 border-0">
                                           <div class=" p-0 ">
                                               <ul class="dropdown-menu-1 list-group list-group-flush">
-                                                  <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="assets/images/Flag/flag-03.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;"/>Spanish</a></li>
-                                                  <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="assets/images/Flag/flag-04.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;"/>Italian</a></li>
-                                                  <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="assets/images/Flag/flag-02.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;"/>French</a></li>
-                                                  <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="assets/images/Flag/flag-05.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;"/>German</a></li>
-                                                  <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="assets/images/Flag/flag-06.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;"/>Japanese</a></li>
+                                                  <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="<?php echo base_url("") ?>/assets/images/Flag/flag-03.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;"/>Spanish</a></li>
+                                                  <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="<?php echo base_url("") ?>/assets/images/Flag/flag-04.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;"/>Italian</a></li>
+                                                  <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="<?php echo base_url("") ?>/assets/images/Flag/flag-02.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;"/>French</a></li>
+                                                  <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="<?php echo base_url("") ?>/assets/images/Flag/flag-05.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;"/>German</a></li>
+                                                  <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="<?php echo base_url("") ?>/assets/images/Flag/flag-06.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;"/>Japanese</a></li>
                                               </ul>
                                           </div>
                                       </div>
@@ -848,7 +848,7 @@
                               </li>
                               <li class="nav-item nav-icon dropdown">
                                   <a href="#" class="nav-item nav-icon dropdown-toggle pr-0 search-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-                                      <img src="assets/images/user/1.jpg" class="img-fluid avatar-rounded" alt="user">
+                                      <img src="<?php echo base_url("") ?>/assets/images/user/1.jpg" class="img-fluid avatar-rounded" alt="user">
                                       <span class="mb-0 ml-2 user-name">John Doe</span>
                                   </a>
                                   <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
@@ -921,37 +921,37 @@
             </div>
         </div>
     </footer>    <!-- Backend Bundle JavaScript -->
-    <script src="assets/js/backend-bundle.min.js"></script>
+    <script src="<?php echo base_url("") ?>/assets/js/backend-bundle.min.js"></script>
     <!-- Chart Custom JavaScript -->
-    <script src="assets/js/customizer.js"></script>
+    <script src="<?php echo base_url("") ?>/assets/js/customizer.js"></script>
     
-    <script src="assets/js/sidebar.js"></script>
+    <script src="<?php echo base_url("") ?>/assets/js/sidebar.js"></script>
     
     <!-- Flextree Javascript-->
-    <script src="assets/js/flex-tree.min.js"></script>
-    <script src="assets/js/tree.js"></script>
+    <script src="<?php echo base_url("") ?>/assets/js/flex-tree.min.js"></script>
+    <script src="<?php echo base_url("") ?>/assets/js/tree.js"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="assets/js/table-treeview.js"></script>
+    <script src="<?php echo base_url("") ?>/assets/js/table-treeview.js"></script>
     
     <!-- SweetAlert JavaScript -->
-    <script src="assets/js/sweetalert.js"></script>
+    <script src="<?php echo base_url("") ?>/assets/js/sweetalert.js"></script>
     
     <!-- Vectoe Map JavaScript -->
-    <script src="assets/js/vector-map-custom.js"></script>
+    <script src="<?php echo base_url("") ?>/assets/js/vector-map-custom.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="assets/js/chart-custom.js"></script>
-    <script src="assets/js/charts/01.js"></script>
-    <script src="assets/js/charts/02.js"></script>
+    <script src="<?php echo base_url("") ?>/assets/js/chart-custom.js"></script>
+    <script src="<?php echo base_url("") ?>/assets/js/charts/01.js"></script>
+    <script src="<?php echo base_url("") ?>/assets/js/charts/02.js"></script>
     
     <!-- slider JavaScript -->
-    <script src="assets/js/slider.js"></script>
+    <script src="<?php echo base_url("") ?>/assets/js/slider.js"></script>
     
     <!-- Emoji picker -->
-    <script src="assets/vendor/emoji-picker-element/index.js" type="module"></script>
+    <script src="<?php echo base_url("") ?>/assets/vendor/emoji-picker-element/index.js" type="module"></script>
     
     
     <!-- app JavaScript -->
-    <script src="assets/js/app.js"></script>  </body>
+    <script src="<?php echo base_url("") ?>/assets/js/app.js"></script>  </body>
 </html>

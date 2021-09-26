@@ -53,9 +53,9 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 //admin
 $routes->get('admin', 'AdminController::index');
 
-$routes->get('admin/helado', 'HeladoController::listar');
-$routes->get('admin/usuario', 'UsuarioController::listar');
-$routes->get('admin/venta', 'VentaController::listar');
+$routes->get('admin/helados', 'HeladoController::listar');
+$routes->get('admin/usuarios', 'UsuarioController::listar');
+$routes->get('admin/ventas', 'VentaController::listar');
 
 
 
