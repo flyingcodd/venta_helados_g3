@@ -26,8 +26,7 @@
                <a href="<?php echo base_url("") ?>/admin" class="header-logo">
                   <img src="<?php echo base_url("") ?>/assets/images/logo.png" class="img-fluid rounded-normal light-logo" alt="logo">
                   <img src="<?php echo base_url("") ?>/assets/images/logo-dark.png" class="img-fluid rounded-normal d-none sidebar-light-img" alt="logo">
-                  <span>Delicius Cream</span>            
-              </a>
+                  <span>Heladitos</span>            
               <div class="side-menu-bt-sidebar-1">
                       <svg xmlns="http://www.w3.org/2000/svg" class="text-light wrapper-menu" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -94,7 +93,7 @@
                                   </a>
                               </li>
                               <li class=" sidebar-layout">
-                                  <a href="<?php echo base_url("") ?>/admin/helado" class="svg-icon">
+                                  <a href="<?php echo base_url("") ?>/admin/helados" class="svg-icon">
                                       <i class="">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
@@ -461,7 +460,7 @@
                               <li class="nav-item nav-icon dropdown">
                                   <a href="#" class="nav-item nav-icon dropdown-toggle pr-0 search-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                                       <img src="<?php echo base_url("") ?>/assets/images/user/1.jpg" class="img-fluid avatar-rounded" alt="user">
-                                      <span class="mb-0 ml-2 user-name">Soy Admin</span>
+                                      <span class="mb-0 ml-2 user-name">John Doe</span>
                                   </a>
                                   <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                       <li class="dropdown-item d-flex svg-icon">
@@ -510,4 +509,4 @@
             <div class="col-lg-12">
 
             <!--Empieza el contenido-->
-
+ 
