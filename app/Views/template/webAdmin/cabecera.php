@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Delicius Cream | Admi Inicio</title>
+      <title>Helader | Admi Inicio</title>
       
       <!-- Favicon -->
       <link rel="shortcut icon" href="<?php echo base_url("") ?>/assets/images/favicon.ico" />
@@ -26,7 +26,8 @@
                <a href="<?php echo base_url("") ?>/admin" class="header-logo">
                   <img src="<?php echo base_url("") ?>/assets/images/logo.png" class="img-fluid rounded-normal light-logo" alt="logo">
                   <img src="<?php echo base_url("") ?>/assets/images/logo-dark.png" class="img-fluid rounded-normal d-none sidebar-light-img" alt="logo">
-                  <span>Heladitos</span>            
+                  <span>Helader</span>
+                </a>          
               <div class="side-menu-bt-sidebar-1">
                       <svg xmlns="http://www.w3.org/2000/svg" class="text-light wrapper-menu" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -75,7 +76,7 @@
                           </a>
                           <ul id="app1" class="submenu collapse" data-parent="#iq-sidebar-toggle">                        
                               <li class=" sidebar-layout">
-                                  <a href="../backend/auth-login.html" class="svg-icon">
+                                  <a href="<?php echo base_url("") ?>/admin/usuarios" class="svg-icon">
                                       <i class=""><svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                           d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -84,7 +85,7 @@
                                   </a>
                               </li>
                               <li class=" sidebar-layout">
-                                  <a href="../backend/auth-sign-up.html" class="svg-icon">
+                                  <a href="#" class="svg-icon">
                                       <i class="">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
@@ -103,7 +104,7 @@
                                   </a>
                               </li>
                               <li class=" sidebar-layout">
-                                  <a href="../backend/auth-confirm-mail.html" class="svg-icon">
+                                  <a href="<?php echo base_url("") ?>/admin/ventas" class="svg-icon">
                                       <i class="">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
