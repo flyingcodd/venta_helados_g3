@@ -22,161 +22,125 @@
            </ul>
            <div class="tab-content" id="pills-tabContent-2">
                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                   <table class="table">
-                       <thead>
-                       <tr>
-                           <th scope="col">#</th>
-                           <th scope="col">First</th>
-                           <th scope="col">Last</th>
-                           <th scope="col">Handle</th>
-                       </tr>
-                       </thead>
-                       <tbody>
-                       <tr>
-                           <th scope="row">1</th>
-                           <td>Mark</td>
-                           <td>Otto</td>
-                           <td>@mdo</td>
-                       </tr>
-                       <tr>
-                           <th scope="row">2</th>
-                           <td>Jacob</td>
-                           <td>Thornton</td>
-                           <td>@fat</td>
-                       </tr>
-                       <tr>
-                           <th scope="row">3</th>
-                           <td>Larry</td>
-                           <td>the Bird</td>
-                           <td>@twitter</td>
-                       </tr>
-                       </tbody>
-                   </table>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Codigo</th>
+                                <th scope="col">Usuario</th>
+                                <th scope="col">Helado</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Precio Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($venta as $ventas) : ?>
+                                <tr>
+                                    <td><?php echo $ventas['id_venta'] ?></td>
+                                    <td><?php echo $ventas['id_usuario'] ?></td>
+                                    <td><?php echo $ventas['id_helado'] ?></td>
+                                    <td><?php echo $ventas['fecha'] ?></td>
+                                    <td><?php echo $ventas['cantidad'] ?></td>
+                                    <td><?php echo $ventas['precio_total'] ?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
                </div><!--fin de listar-->
                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                   AGREGAR NUEVA VENTA
                    <br>
-                    <div class="form-group">
-                        <label>Codigo Usuario</label>
-                        <select class="form-control mb-3">
-                            <option selected="">Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Codigo Helado</label>
-                        <select class="form-control mb-3">
-                            <option selected="">Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputdatetime">Fecha</label>
-                        <input type="datetime-local" class="form-control" id="exampleInputdatetime" value="2019-12-19T13:45:00">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputNumber3">Cantidad</label>
-                        <input type="number" class="form-control" id="exampleInputNumber3" value="123456">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputText1">Precio S/.</label>
-                        <input type="text" class="form-control" id="exampleInputText1" value="Mark Tech"
-                            placeholder="Enter Name">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    <button type="submit" class="btn bg-danger">Cancel</button>
+                   <form action="" method="">
+                        <div class="form-group">
+                            <label>Codigo Usuario: </label> <span id="ver_id_usuario" style="display: none"></span>
+                            <select id="Combo_cod_user" class="form-control mb-3">
+                                <option selected="0">Seleccionar</option>
+                                <?php foreach ($usuarios as $usuario) : ?>
+                                <option value="<?php echo $usuario['id_usuario'] ?>"><?php echo $usuario['nombre_usuario'] ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Codigo Helado</label> <span id="ver_id_helado" style="display: none"></span>
+                            <select id="Combo_cod_helado" class="form-control mb-3">
+                                <option selected="0">Seleccionar</option>
+                                <?php foreach ($helados as $helado) : ?>
+                                <option value="<?php echo $helado['id_helado'] ?>"><?php echo $helado['nombre_helado'] ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputdatetime">Fecha</label>
+                            <input type="datetime-local" class="form-control" id="exampleInputdatetime" value="2019-12-19T13:45:00">
+                        </div>
+                        <div class="form-group">
+                            <label for="venta_cantidad">Cantidad</label>
+                            <input type="number" class="form-control" id="venta_cantidad" value="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="venta_precio">Precio S/.</label>
+                            <input type="text" class="form-control" id="venta_precio" value=""
+                                placeholder="5.00">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn bg-danger">Cancel</button>
+                   </form>
                </div><!--fin de nuevo-->
                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                    <div id="table" class="table-editable">
-                        <span class="table-add float-right mb-3 mr-2">
-                        <button class="btn btn-sm bg-primary"><i
-                            class="ri-add-fill"><span class="pl-1">Nuevo</span></i>
-                        </button>
-                        </span>
-                        <table class="table table-bordered table-responsive-md table-striped text-center">
-                            <thead>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Codigo</th>
+                                <th scope="col">Usuario</th>
+                                <th scope="col">Helado</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Precio Total</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($venta as $ventas) : ?>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Age</th>
-                                    <th>Company Name</th>
-                                    <th>Country</th>
-                                    <th>City</th>
-                                    <th>Sort</th>
-                                    <th>Remove</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td contenteditable="true">Gio Metric</td>
-                                    <td contenteditable="true">25</td>
-                                    <td contenteditable="true">Deepends</td>
-                                    <td contenteditable="true">Spain</td>
-                                    <td contenteditable="true">Madrid</td>
+                                    <td><?php echo $ventas['id_venta'] ?></td>
+                                    <td><?php echo $ventas['id_usuario'] ?></td>
+                                    <td><?php echo $ventas['id_helado'] ?></td>
+                                    <td><?php echo $ventas['fecha'] ?></td>
+                                    <td><?php echo $ventas['cantidad'] ?></td>
+                                    <td><?php echo $ventas['precio_total'] ?></td>
                                     <td>
-                                    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
-                                    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a></span>
-                                    </td>
-                                    <td>
-                                    <span class="table-remove"><button type="button"
-                                        class="btn bg-danger-light btn-rounded btn-sm my-0">Remove</button></span>
+                                        <a href="#" class="btn btn-success btn-sm mr-2">Actulizar</a>
+                                        <br>
+                                        <a href="#" class="btn btn-danger btn-sm mr-2">Eliminar</a>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td contenteditable="true">Manny Petty</td>
-                                    <td contenteditable="true">45</td>
-                                    <td contenteditable="true">Insectus</td>
-                                    <td contenteditable="true">France</td>
-                                    <td contenteditable="true">San Francisco</td>
-                                    <td>
-                                    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
-                                    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a></span>
-                                    </td>
-                                    <td>
-                                    <span class="table-remove"><button type="button"
-                                        class="btn bg-danger-light btn-rounded btn-sm my-0">Remove</button></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td contenteditable="true">Lucy Tania</td>
-                                    <td contenteditable="true">26</td>
-                                    <td contenteditable="true">Isotronic</td>
-                                    <td contenteditable="true">Germany</td>
-                                    <td contenteditable="true">Frankfurt am Main</td>
-                                    <td>
-                                    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
-                                    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a></span>
-                                    </td>
-                                    <td>
-                                    <span class="table-remove"><button type="button"
-                                        class="btn bg-danger-light btn-rounded btn-sm my-0">Remove</button></span>
-                                    </td>
-                                </tr>
-                                <tr class="hide">
-                                    <td contenteditable="true">Anna Mull</td>
-                                    <td contenteditable="true">35</td>
-                                    <td contenteditable="true">Portica</td>
-                                    <td contenteditable="true">USA</td>
-                                    <td contenteditable="true">Oregon</td>
-                                    <td>
-                                    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
-                                    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a></span>
-                                    </td>
-                                    <td>
-                                    <span class="table-remove"><button type="button"
-                                        class="btn bg-danger-light btn-rounded btn-sm my-0">Remove</button></span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
                </div><!--fin de actualizar-->
            </div>
        </div>
 </div>
 
-
 <?php echo $pie ?>
+
+<!--jquery-->
+<script>
+    $('#Combo_cod_user').on('change',function(){
+		var id = this.value;
+		var texto = $(this).find('option:selected').text();
+        $('#ver_id_usuario').text(texto);
+        alert(id);
+	});
+</script>
+<!--jquery-->
+
+<!--jquery-->
+<script>
+    $('#Combo_cod_helado').on('change',function(){
+		var id = this.value;
+		var texto = $(this).find('option:selected').text();
+        $('#ver_id_helado').text(texto);
+        alert(id);
+	});
+</script>
+<!--jquery-->
