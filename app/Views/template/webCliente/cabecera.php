@@ -91,8 +91,8 @@
                         <!-- Top Left -->
                         <div class="top-left">
                             <ul class="list-main">
-                                <li><i class="ti-headphone-alt"></i> +060 (800) 801</li>
-                                <li><i class="ti-email"></i> support@shophub.com</li>
+                                <li><i class="fas fa-address-book"></i> +51 927 61 35 80 </li>
+                                <li><i class="ti-email"></i> heladeria_ice_cream@gmail.com </li>
                             </ul>
                         </div>
                         <!--/ End Top Left -->
@@ -101,10 +101,10 @@
                         <!-- Top Right -->
                         <div class="right-content">
                             <ul class="list-main">
-                                <li><i class="ti-location-pin"></i> Store location</li>
-                                <li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li>
-                                <li><i class="ti-user"></i> <a href="#">My account</a></li>
-                                <li><i class="ti-power-off"></i><a href="login.html#">Login</a></li>
+                                <li><i class="ti-location-pin"></i> Ubicacion </li>
+                                <li><i class="ti-alarm-clock"></i> <a href="#"> Horario </a></li>
+                                <li><i class="ti-user"></i> <a href="#">Mi cuenta </a></li>
+                                <li><i class="ti-power-off"></i><a href="login.html#"> Registrarse </a></li>
                             </ul>
                         </div>
                         <!-- End Top Right -->
@@ -119,7 +119,7 @@
                     <div class="col-lg-2 col-md-2 col-12">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="http://wpthemesgrid.com/themes/eshop/images/logo.png" alt="logo"></a>
+                            <a href="index.html"><img src="https://www.dafont.com/forum/attach/orig/8/7/879162.jpg" alt="logo"></a>
                         </div>
                         <!--/ End Logo -->
                         <!-- Search Form -->
@@ -141,13 +141,13 @@
                         <div class="search-bar-top">
                             <div class="search-bar">
                                 <select>
-                                    <option selected="selected">All Category</option>
-                                    <option>watch</option>
-                                    <option>mobile</option>
-                                    <option>kid’s item</option>
+                                    <option selected="selected">Todas</option>
+                                    <option>Niños</option>
+                                    <option>Familiares</option>
+                                    <option>Personales</option>
                                 </select>
                                 <form>
-                                    <input name="search" placeholder="Search Products Here....." type="search">
+                                    <input name="search" placeholder="Buscar productos aqui..." type="search">
                                     <button class="btnn"><i class="ti-search"></i></button>
                                 </form>
                             </div>
@@ -167,7 +167,7 @@
                                 <!-- Shopping Item -->
                                 <div class="shopping-item">
                                     <div class="dropdown-cart-header">
-                                        <span>2 Items</span>
+                                        <span>2 Objetos</span>
                                         <a href="#">View Cart</a>
                                     </div>
                                     <ul class="shopping-list">
@@ -211,23 +211,19 @@
                                     <div class="navbar-collapse">
                                         <div class="nav-inner">
                                             <ul class="nav main-menu menu navbar-nav">
-                                                <li class="active"><a href="<?php echo base_url("/")?>">Home</a></li>
-                                                <li><a href="<?php echo base_url("/tienda")?>">Product</a></li>
-                                                <li><a href="#">Service</a></li>
-                                                <li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
+                                                <li class="active"><a href="<?php echo base_url("/")?>">Inicio</a></li>
+                                                <li><a href="<?php echo base_url("/tienda")?>">Producto</a></li>
+                                                <li><a href="#">Servicio</a></li>
+                                                <li><a href="#">Tienda<i class="ti-angle-down"></i><span class="new">Nuevos</span></a>
                                                     <ul class="dropdown">
-                                                        <li><a href="<?php echo base_url("/tienda")?>">Shop Grid</a></li>
-                                                        <li><a href="<?php echo base_url("/ofertas")?>">ofert</a></li>
+                                                        <li><a href="<?php echo base_url("/tienda")?>">Tienda online</a></li>
+                                                        <li><a href="<?php echo base_url("/ofertas")?>">ofertas</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="#">Pages</a></li>
-                                                <li><a href="#">Blog<i class="ti-angle-down"></i></a>
-                                                    <ul class="dropdown">
-                                                        <li><a href="blog-single-sidebar.html">Blog Single Sidebar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="<?php echo base_url("/nosotros")?>">About us</a></li>
-                                                <li><a href="<?php echo base_url("/contacto")?>">Contact Us</a></li>
+                                                <li><a href="#">Paginas</a></li>
+                                             
+                                                <li><a href="<?php echo base_url("/nosotros")?>">Sobre nosotros</a></li>
+                                                <li><a href="<?php echo base_url("/contacto")?>">Contactanos</a></li>
                                             </ul>
                                         </div>
                                     </div>

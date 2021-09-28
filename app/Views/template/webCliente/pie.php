@@ -8,23 +8,23 @@
                     <!-- Single Widget -->
                     <div class="single-footer about">
                         <div class="logo">
-                            <a href="index.html"><img src="images/logo2.png" alt="#"></a>
+                            <a href="index.html"><img src="https://www.dafont.com/forum/attach/orig/8/7/879162.jpg" alt="#"></a>
                         </div>
-                        <p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
-                        <p class="call">Got Question? Call us 24/7<span><a href="tel:123456789">+0123 456 789</a></span></p>
+                        <p class="text">Somos una empresa con el compromiso de entregar helados de calidad a nuestra clientela</p>
+                        <p class="call">Tienes alguna pregunta? Te escuchamos <span><a href="tel:927613580">+51 927 613 580 </a></span></p>
                     </div>
                     <!-- End Single Widget -->
                 </div>
                 <div class="col-lg-2 col-md-6 col-12">
                     <!-- Single Widget -->
                     <div class="single-footer links">
-                        <h4>Information</h4>
+                        <h4>Informacion</h4>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Faq</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Sobre nosotros</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Terminos y condiciones</a></li>
+                            <li><a href="#">Contactanos</a></li>
+                            <li><a href="#">Ayuda</a></li>
                         </ul>
                     </div>
                     <!-- End Single Widget -->
@@ -32,13 +32,13 @@
                 <div class="col-lg-2 col-md-6 col-12">
                     <!-- Single Widget -->
                     <div class="single-footer links">
-                        <h4>Customer Service</h4>
+                        <h4>Servicio al Cliente</h4>
                         <ul>
-                            <li><a href="#">Payment Methods</a></li>
-                            <li><a href="#">Money-back</a></li>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Shipping</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Metodos de Pago</a></li>
+                            <li><a href="#">Reclamos</a></li>
+                            <li><a href="#">Devoluciones</a></li>
+                            <li><a href="#">Envios</a></li>
+                            <li><a href="#">Politica de Privacidad</a></li>
                         </ul>
                     </div>
                     <!-- End Single Widget -->
@@ -46,14 +46,14 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <!-- Single Widget -->
                     <div class="single-footer social">
-                        <h4>Get In Tuch</h4>
+                        <h4>Ponerse en contacto</h4>
                         <!-- Single Widget -->
                         <div class="contact">
                             <ul>
-                                <li>NO. 342 - London Oxford Street.</li>
-                                <li>012 United Kingdom.</li>
-                                <li>info@eshop.com</li>
-                                <li>+032 3456 7890</li>
+                                <li>NO. 512 - Av.Sinchi Roca.</li>
+                                <li>Abancay-Apurimac-Peru.</li>
+                                <li>heladeria_ice_cream@gmail.com</li>
+                                <li>+51 927 613 580</li>
                             </ul>
                         </div>
                         <!-- End Single Widget -->
@@ -75,9 +75,7 @@
             <div class="inner">
                 <div class="row">
                     <div class="col-lg-6 col-12">
-                        <div class="left">
-                            <p>Copyright © 2020 <a href="http://www.wpthemesgrid.com" target="_blank">Wpthemesgrid</a> - All Rights Reserved.</p>
-                        </div>
+
                     </div>
                     <div class="col-lg-6 col-12">
                         <div class="right">
