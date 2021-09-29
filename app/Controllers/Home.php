@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-
+use App\Models\Helado;
 class Home extends BaseController
 {
     public function index()
@@ -30,8 +30,11 @@ class Home extends BaseController
     }
     public function tienda()
     {
+        $helado=new Helado();
+        $datos['helados'] = $helado->OrderBy('id_helado', 'ASC')->findAll();
         $datos['cabecera']= view('template/webCliente/cabecera');
         $datos['pie']= view('template/webCliente/pie');
+
         return view('webCliente/shop/tienda',$datos);
     }
     public function producto()

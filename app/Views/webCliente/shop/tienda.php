@@ -169,12 +169,13 @@
                         </div>
                     </div>
                     <div class="row">
+                        <?php foreach($helados as $item): ?>
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="single-product">
                                 <div class="product-img">
                                     <a href="product-details.html">
-                                        <img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
-                                        <img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
+                                        <img class="default-img" src="<?php echo base_url('imagenesHelado/'.$item['imagen1_helado']) ?>" alt="#">
+                                        <img class="hover-img" src="<?php echo base_url('imagenesHelado/'.$item['imagen2_helado']) ?>"  alt="#">
                                     </a>
                                     <div class="button-head">
                                         <div class="product-action">
@@ -188,13 +189,14 @@
                                     </div>
                                 </div>
                                 <div class="product-content">
-                                    <h3><a href="product-details.html">Women Hot Collection</a></h3>
+                                    <h3><a href="product-details.html"><?php echo $item['nombre_helado'] ?></a></h3>
                                     <div class="product-price">
-                                        <span>$29.00</span>
+                                        <span>s/.<?php echo $item['precio_helado'] ?></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <?php endforeach ?>
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="single-product">
                                 <div class="product-img">

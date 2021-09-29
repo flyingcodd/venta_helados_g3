@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="<?php echo base_url("") ?>/assets/css/backend-plugin.min.css">
     <link rel="stylesheet" href="<?php echo base_url("") ?>/assets/css/backend.css?v=1.0.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
 </head>
 
 <body class=" color-light ">
