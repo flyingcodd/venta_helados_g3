@@ -1,27 +1,28 @@
 <?php echo $cabecera ?>
+<div class="col-sm-12 col-lg-12">
+    <div class="card">
+        <div class="card-header d-flex justify-content-between">
+            <div class="header-title">
+                <h4 class="card-title" _msthash="2343094" _msttexthash="60021">Lista de Usuarios</h4>
+            </div>
+        </div>
 
-<div class="card-header d-flex justify-content-between">
-    <div class="header-title">
-        <h4 class="card-title" _msthash="2343094" _msttexthash="60021">Lista de Usuarios</h4>
-    </div>
-</div>
 
-<div class="card">
-    <div class="card-body">
-           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-               <li class="nav-item">
-                   <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Listar</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Nuevo</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Actualizar</a>
-               </li>
-           </ul>
-           <div class="tab-content" id="pills-tabContent-2">
-               <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <table class="table">
+        <div class="card-body">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Listar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Nuevo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Actualizar</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent-2">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <table class="table table-hover">
                         <thead>
                             <tr>
                                 <th scope="col">Codigo</th>
@@ -47,10 +48,11 @@
                             <?php endforeach; ?>
                         </tbody>
                     </table>
-               </div><!--fin de listar-->
-               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                   <br>
-                   <form action="" method="">
+                </div>
+                <!--fin de listar-->
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <br>
+                    <form action="" method="">
                         <div class="form-group">
                             <label>Codigo Rol</label> <span id="ver_id_rol" style="display: none"></span>
                             <select id="id_rol" class="form-control mb-3" name="rol_id">
@@ -78,14 +80,14 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputText1">Direccion</label>
-                            <input type="text" name="usuario_direccion" class="form-control" id="exampleInputText1" value=""
-                                placeholder="Enter Name">
+                            <input type="text" name="usuario_direccion" class="form-control" id="exampleInputText1" value="" placeholder="Enter Name">
                         </div>
                         <button type="submit" value="agregar" class="btn btn-primary">Agregar</button>
                         <button type="submit" value="cancelar" class="btn bg-danger">Cancelar</button>
                     </form>
-               </div><!--fin de nuevo-->
-               <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                </div>
+                <!--fin de nuevo-->
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                     <div id="table" class="table-editable">
                         <table class="table">
                             <thead>
@@ -120,20 +122,21 @@
                             </tbody>
                         </table>
                     </div>
-               </div><!--fin de actualizar-->
-           </div>
-       </div>
+                </div>
+                <!--fin de actualizar-->
+            </div>
+        </div>
+    </div>
 </div>
 
-<?php echo $pie ?>
-
-<!--jquery-->
-<script>
-    $('#id_rol').on('change',function(){
-		var id = this.value;
-		var texto = $(this).find('option:selected').text();
-		alert(id);
-        $('#ver_id_rol').text(id);
-	});
-</script>
-<!--jquery-->
+    <!--jquery-->
+    <script>
+        $('#id_rol').on('change', function() {
+            var id = this.value;
+            var texto = $(this).find('option:selected').text();
+            alert(id);
+            $('#ver_id_rol').text(id);
+        });
+    </script>
+    <!--jquery-->
+    <?php echo $pie ?>

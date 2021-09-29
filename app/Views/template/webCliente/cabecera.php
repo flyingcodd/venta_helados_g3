@@ -91,7 +91,7 @@
                         <!-- Top Left -->
                         <div class="top-left">
                             <ul class="list-main">
-                                <li><i class="fas fa-address-book"></i> +51 927 61 35 80 </li>
+                                <li><i class="ti-headphone-alt"></i> +51 927 613 580</li>
                                 <li><i class="ti-email"></i> heladeria_ice_cream@gmail.com </li>
                             </ul>
                         </div>
