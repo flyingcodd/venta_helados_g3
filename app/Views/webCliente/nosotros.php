@@ -24,7 +24,8 @@
                 <div class="about-content">
                     <h3>Bienvenidos a <span>IceCream Abancay</span></h3>
                     <p>En IceCream buscamos acercarte más momentos felices con nuestras exquisitas cremas heladas, helados de fruta y mucho mas elaboradas con materia prima de la mejor calidad. </p>
-                    <p>Nuestra atencion y servicio son de la mas alta calidad y contamos con certificados otorgados por la NASA y ONU</p>
+                    <p>Nuestra atencion y servicio son de la mas alta calidad y contamos con certificados otorgados por la NASA y la ONU</p>
+                    <p>Ubicanos en: Av.Garcilazo con Huancavelica N.123</p>
                     <div class="button">
                         <a href="blog.html" class="btn">Nuestro Blog</a>
                         <a href="contact.html" class="btn primary">Contactanos</a>
