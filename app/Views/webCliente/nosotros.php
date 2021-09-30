@@ -60,7 +60,7 @@
                 <div class="single-team">
                     <!-- Image -->
                     <div class="image">
-                        <img src="https://i.kym-cdn.com/photos/images/facebook/000/121/516/tumblr_lhlmrdP5It1qdai2qo1_500.png" alt="#">
+                        <img src="https://scontent.faqp2-1.fna.fbcdn.net/v/t1.6435-9/82678739_1062661990750499_1452095736601640960_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFtsAQ8RDq-mYxCreIH3Iv_qA6EEJSKVrSoDoQQlIpWtMXjYNPn1PlKmMBnD6ksVPC-qyH2IbRZjsVI10yHvogW&_nc_ohc=r_4bXJ_SKqwAX8AtYWO&_nc_ht=scontent.faqp2-1.fna&oh=4f45e15884865f39cccadc11e1f9704a&oe=617BE47D" alt="#">
                     </div>
                     <!-- End Image -->
                     <div class="info-head">
@@ -87,7 +87,7 @@
                 <div class="single-team">
                     <!-- Image -->
                     <div class="image">
-                        <img src="" alt="#">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSepkFwiiIMXrDBdySyWcz2L3-n1lzCuqbgsw&usqp=CAU" alt="#">
                     </div>
                     <!-- End Image -->
                     <div class="info-head">
@@ -141,7 +141,7 @@
                 <div class="single-team">
                     <!-- Image -->
                     <div class="image">
-                        <img src="C:/Users/Usuario/OneDrive/Imagenes/pp(1).jpg" alt="#">
+                        <img src="https://wallpaperaccess.com/full/2529556.jpg" alt="#">
                     </div>
                     <!-- End Image -->
                     <div class="info-head">
@@ -168,7 +168,7 @@
                 <div class="single-team">
                     <!-- Image -->
                     <div class="image">
-                        <img src="Equipo/4p.jpg" alt="#">
+                        <img src="https://vistapointe.net/images/hackers-8.jpg" alt="#">
                     </div>
                     <!-- End Image -->
                     <div class="info-head">
