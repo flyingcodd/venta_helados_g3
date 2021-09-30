@@ -21,7 +21,7 @@
                     <script>
                         document.write(new Date().getFullYear())
                     </script>© <a href="#" class="">Helader</a>
-                    Todos los Derechos Reservados.
+                    Todos los Derechos Reservados.Cualquier intento de copia sera denunciado
                 </span>
             </div>
         </div>

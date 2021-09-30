@@ -53,17 +53,21 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 //admin
 $routes->get('admin', 'AdminController::index');
 
+//toda las rutas del helado-------------------------------------
 $routes->get('admin/helados', 'HeladoController::listar');
-$routes->post('admin/helados/insertar', 'HeladoController::insertar');//yo
-$routes->get('admin/helados/borrar/(:num)', 'HeladoController::borrar/$1');//yo
-$routes->get('admin/helados/editar/(:num)', 'HeladoController::editar/$1');//yo
-$routes->post('admin/helados/actualizar', 'HeladoController::actualizar');//yo
+$routes->post('admin/helados/insertar', 'HeladoController::insertar');
+$routes->get('admin/helados/borrar/(:num)', 'HeladoController::borrar/$1');
+$routes->get('admin/helados/editar/(:num)', 'HeladoController::editar/$1');
+$routes->post('admin/helados/actualizar', 'HeladoController::actualizar');
+
 
 $routes->get('admin/usuarios', 'UsuarioController::listar');
 $routes->get('admin/ventas', 'VentaController::listar');
+$routes->get('admin/roles', 'RolController::listar');
+$routes->get('admin/categorias', 'CategoriaController::listar');
 
-
-
+$routes->get('admin/perfil', 'PerfilController::index');
+$routes->get('admin/caja', 'CajaController::index');
 
 
 //cliente

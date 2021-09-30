@@ -3,26 +3,23 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use App\Models\Helado;
+use App\Models\Rol_Usuario;
 
-class HeladoController extends BaseController
+class RolController extends BaseController
 {
     public function listar()
     {
-        
-        $helado = new Helado();
-
-        $datos['helados'] =$helado->OrderBy('id_helado', 'ASC')->findAll();
-        
+        $rol = new Rol_Usuario();
+        $datos['helados'] = $rol->OrderBy('id_rol', 'ASC')->findAll();
         $datos['cabecera'] = view('template/webAdmin/cabecera');
         $datos['pie'] = view('template/webAdmin/piepagina');
         $datos['mensaje'] = session('mensaje');
-        return view('webAdmin/helado/listar', $datos);
+        return view('webAdmin/rol/listar', $datos);
     }
 
     public function insertar() //yo
     {
-        $helado = new Helado();
+        $helado = new Rol_Usuario();
         $nombre = $this->request->getVar('nombre');
         $precio = $this->request->getVar('precio');
         $stock = $this->request->getVar('stock');
@@ -64,7 +61,7 @@ class HeladoController extends BaseController
     }
     public function borrar($id = null)
     {
-        $helado = new Helado();
+        $helado = new Rol_Usuario();
         $datosHelado = $helado->where('id_helado', $id)->first();
 
         $ruta1 = ('../public/imagenesHelado/' . $datosHelado['imagen1_helado']);
@@ -78,7 +75,7 @@ class HeladoController extends BaseController
     }
     public function editar($id = null)
     {
-        $helado = new Helado();
+        $helado = new Rol_Usuario();
         $datos['helado'] = $helado->where('id_helado', $id)->first();
 
         $datos['cabecera'] = view('template/webAdmin/cabecera');
@@ -87,7 +84,7 @@ class HeladoController extends BaseController
     }
     public function actualizar()
     {
-        $helado = new Helado();
+        $helado = new Rol_Usuario();
         $dato = [
             'nombre_helado' => $this->request->getVar('nombre'),
             'precio_helado' => $this->request->getVar('precio'),
@@ -117,7 +114,7 @@ class HeladoController extends BaseController
 
                 $ruta1 = ('../public/imagenesHelado/' . $datosHelado['imagen1_helado']);
                 unlink($ruta1);
-
+                
 
                 $nuevoNombre1 = $imagen1->getRandomName();
                 $imagen1->move('../public/imagenesHelado/', $nuevoNombre1);
@@ -127,7 +124,7 @@ class HeladoController extends BaseController
                 ];
                 $helado->update($id, $dato);
             }
-            if (($imagen2 = $this->request->getFile('imagen2'))) {
+            if(($imagen2 = $this->request->getFile('imagen2'))){
                 $datosHelado = $helado->where('id_helado', $id)->first();
                 $ruta2 = ('../public/imagenesHelado/' . $datosHelado['imagen2_helado']);
                 unlink($ruta2);
