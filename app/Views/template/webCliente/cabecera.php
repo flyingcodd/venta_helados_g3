@@ -46,7 +46,7 @@
     <link rel="stylesheet" href="<?php echo base_url("") ?>/css/responsive.css">
 
     <!--COLOR CSS--->
-    <link rel="stylesheet" href="css/color/color3.css">
+    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/color/color3.css">
     <link rel="stylesheet" href="#" id="colors">
 </head>
 

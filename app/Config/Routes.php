@@ -53,6 +53,10 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 //admin
 $routes->get('admin', 'AdminController::index');
 
+//login
+$routes->get('login', 'LoginController::login');
+$routes->get('registrar', 'LoginController::registro');
+
 //toda las rutas del helado-------------------------------------
 $routes->get('admin/helados', 'HeladoController::listar');
 $routes->post('admin/helados/insertar', 'HeladoController::insertar');
@@ -68,6 +72,8 @@ $routes->get('admin/categorias', 'CategoriaController::listar');
 
 $routes->get('admin/perfil', 'PerfilController::index');
 $routes->get('admin/caja', 'CajaController::index');
+
+
 
 
 //cliente
