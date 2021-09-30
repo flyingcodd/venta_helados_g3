@@ -1,31 +1,7 @@
 <?php echo $cabecera ?>
 
 <!-- Slider Area -->
-<section class="hero-slider">
-    <!-- Single Slider -->
-    <div class="single-slider">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-lg-9 offset-lg-3 col-12">
-                    <div class="text-inner">
-                        <div class="row">
-                            <div class="col-lg-7 col-12">
-                                <div class="hero-text">
-                                    <h1><span>UP TO 50% OFF </span>Shirt For Man</h1>
-                                    <p>Maboriosam in a nesciung eget magnae <br> dapibus disting tloctio in the find it pereri <br> odiy maboriosm.</p>
-                                    <div class="button">
-                                        <a href="#" class="btn">Shop Now!</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/ End Single Slider -->
-</section>
+
 <!--/ End Slider Area -->
 <!-- Start Small Banner  -->
 <section class="small-banner section">
@@ -34,11 +10,11 @@
             <!-- Single Banner  -->
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="single-banner">
-                    <img src="https://via.placeholder.com/600x370" alt="#">
+                    <img src="https://p4.wallpaperbetter.com/wallpaper/432/24/32/ice-cream-4k-image-wallpaper-preview.jpg" alt="#">
                     <div class="content">
-                        <p>Man's Collectons</p>
-                        <h3>Summer travel <br> collection</h3>
-                        <a href="#">Discover Now</a>
+                        <p>SELECCION DE VERANO</p>
+                        <h3>Descubre el sabor del verano <br> Ahora </h3>
+                        <a href="#">Descubrir ahora</a>
                     </div>
                 </div>
             </div>
@@ -46,11 +22,11 @@
             <!-- Single Banner  -->
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="single-banner">
-                    <img src="https://via.placeholder.com/600x370" alt="#">
+                    <img src="https://p4.wallpaperbetter.com/wallpaper/978/835/639/sweets-ice-cream-food-colorful-simple-background-hd-wallpaper-preview.jpg" alt="#">
                     <div class="content">
-                        <p>Bag Collectons</p>
-                        <h3>Awesome Bag <br> 2020</h3>
-                        <a href="#">Shop Now</a>
+                        <p>LO MAS PEDIDO</p>
+                        <h3>SABORES DEL 2021 <br> 2021</h3>
+                        <a href="#">COMPRAR AHORA</a>
                     </div>
                 </div>
             </div>
@@ -58,11 +34,11 @@
             <!-- Single Banner  -->
             <div class="col-lg-4 col-12">
                 <div class="single-banner tab-height">
-                    <img src="https://via.placeholder.com/600x370" alt="#">
+                    <img src="https://image.freepik.com/foto-gratis/helado-suave-vaso-papel-sobre-fondo-blanco_101125-488.jpg" alt="#">
                     <div class="content">
-                        <p>Flash Sale</p>
-                        <h3>Mid Season <br> Up to <span>40%</span> Off</h3>
-                        <a href="#">Discover Now</a>
+                        <p>COMPRA INMEDIATA</p>
+                        <h3>COMPRA AHORA... <br> HASTA  <span>40%</span> DE DESCUENTO</h3>
+                        <a href="#">COMPRAR AHORA</a>
                     </div>
                 </div>
             </div>
@@ -78,7 +54,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h2>Trending Item</h2>
+                    <h2>Helados mas pedidos</h2>
                 </div>
             </div>
         </div>
@@ -88,12 +64,13 @@
                     <div class="nav-main">
                         <!-- Tab Nav -->
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#man" role="tab">Man</a></li>
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#women" role="tab">Woman</a></li>
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#kids" role="tab">Kids</a></li>
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#accessories" role="tab">Accessories</a></li>
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#essential" role="tab">Essential</a></li>
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#prices" role="tab">Prices</a></li>
+                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#man" role="tab">Crema</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#women" role="tab">Leche</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#kids" role="tab">Fruta</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#accessories" role="tab">Raspadillas</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#essential" role="tab">Conos</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#prices" role="tab">Marcianos</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#prices" role="tab">Espuma</a></li>
                         </ul>
                         <!--/ End Tab Nav -->
                     </div>
@@ -1433,11 +1410,11 @@
             <!-- Single Banner  -->
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="single-banner">
-                    <img src="https://via.placeholder.com/600x370" alt="#">
+                    <img src="https://img.freepik.com/free-photo/healthy-whole-fruit-popsicles_1205-7765.jpg?size=626&ext=jpg" alt="#">
                     <div class="content">
-                        <p>Man's Collectons</p>
-                        <h3>Man's items <br>Up to<span> 50%</span></h3>
-                        <a href="#">Shop Now</a>
+                        <p>Seleccion Paletas </p>
+                        <h3>PALETAS DE FRUTA <br> HASTA CON UN <span> 50% DE DESCUENTO </span></h3>
+                        <a href="#">COMPRAR AHORA </a>
                     </div>
                 </div>
             </div>
@@ -1445,11 +1422,11 @@
             <!-- Single Banner  -->
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="single-banner">
-                    <img src="https://via.placeholder.com/600x370" alt="#">
+                    <img src="https://www.demoslavueltaaldia.com/sites/default/files/styles/recetas_listado/public/heladofrutosavena_4.png?itok=dhu88CKC" alt="#">
                     <div class="content">
-                        <p>shoes women</p>
-                        <h3>mid season <br> up to <span>70%</span></h3>
-                        <a href="#" class="btn">Shop Now</a>
+                        <p>Seleccion Paletas </p>
+                        <h3>PALETA DE LECHE <br> HASTA CON UN <span>70% DE DESCUENTO</span></h3>
+                        <a href="#" class="btn">COMPRAR AHORA</a>
                     </div>
                 </div>
             </div>
@@ -1603,7 +1580,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="list-image overlay">
-                                <img src="https://via.placeholder.com/115x140" alt="#">
+                                <img src="https://p4.wallpaperbetter.com/wallpaper/343/451/610/ice-cream-4k-pic-hd-wallpaper-preview.jpg" alt="#">
                                 <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
                             </div>
                         </div>
@@ -1621,7 +1598,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="list-image overlay">
-                                <img src="https://via.placeholder.com/115x140" alt="#">
+                                <img src="https://p4.wallpaperbetter.com/wallpaper/343/451/610/ice-cream-4k-pic-hd-wallpaper-preview.jpg" alt="#">
                                 <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
                             </div>
                         </div>
@@ -1639,7 +1616,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="list-image overlay">
-                                <img src="https://via.placeholder.com/115x140" alt="#">
+                                <img src="https://p4.wallpaperbetter.com/wallpaper/343/451/610/ice-cream-4k-pic-hd-wallpaper-preview.jpg" alt="#">
                                 <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
                             </div>
                         </div>
@@ -1666,7 +1643,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="list-image overlay">
-                                <img src="https://via.placeholder.com/115x140" alt="#">
+                                <img src="https://p4.wallpaperbetter.com/wallpaper/343/451/610/ice-cream-4k-pic-hd-wallpaper-preview.jpg" alt="#">
                                 <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
                             </div>
                         </div>
@@ -1684,7 +1661,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="list-image overlay">
-                                <img src="https://via.placeholder.com/115x140" alt="#">
+                                <img src="https://p4.wallpaperbetter.com/wallpaper/343/451/610/ice-cream-4k-pic-hd-wallpaper-preview.jpg" alt="#">
                                 <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
                             </div>
                         </div>
@@ -1702,7 +1679,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="list-image overlay">
-                                <img src="https://via.placeholder.com/115x140" alt="#">
+                                <img src="https://p4.wallpaperbetter.com/wallpaper/343/451/610/ice-cream-4k-pic-hd-wallpaper-preview.jpg" alt="#">
                                 <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
                             </div>
                         </div>
@@ -1729,7 +1706,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="list-image overlay">
-                                <img src="https://via.placeholder.com/115x140" alt="#">
+                                <img src="https://p4.wallpaperbetter.com/wallpaper/343/451/610/ice-cream-4k-pic-hd-wallpaper-preview.jpg" alt="#">
                                 <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
                             </div>
                         </div>
@@ -1747,7 +1724,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="list-image overlay">
-                                <img src="https://via.placeholder.com/115x140" alt="#">
+                                <img src="https://p4.wallpaperbetter.com/wallpaper/343/451/610/ice-cream-4k-pic-hd-wallpaper-preview.jpg" alt="#">
                                 <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
                             </div>
                         </div>
@@ -1765,7 +1742,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="list-image overlay">
-                                <img src="https://via.placeholder.com/115x140" alt="#">
+                                <img src="https://p4.wallpaperbetter.com/wallpaper/343/451/610/ice-cream-4k-pic-hd-wallpaper-preview.jpg" alt="#">
                                 <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
                             </div>
                         </div>
@@ -1791,18 +1768,18 @@
             <div class="row">
                 <div class="col-lg-6 col-12 padding-right">
                     <div class="image">
-                        <img src="https://via.placeholder.com/750x590" alt="#">
+                        <img src="https://p4.wallpaperbetter.com/wallpaper/343/451/610/ice-cream-4k-pic-hd-wallpaper-preview.jpg" alt="#">
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 padding-left">
                     <div class="content">
                         <div class="heading-block">
-                            <p class="small-title">Deal of day</p>
-                            <h3 class="title">Beatutyful dress for women</h3>
-                            <p class="text">Suspendisse massa leo, vestibulum cursus nulla sit amet, frungilla placerat lorem. Cars fermentum, sapien. </p>
-                            <h1 class="price">$1200 <s>$1890</s></h1>
+                            <p class="small-title">OFERTA DEL DIA</p>
+                            <h3 class="title">Helado de crema, 50 litros</h3>
+                            <p class="text">En diferentes sabores, envios a todo el Peru </p>
+                            <h1 class="price"> S/.200 <s> S/.250 </s></h1>
                             <div class="coming-time">
-                                <div class="clearfix" data-countdown="2021/02/30"></div>
+                                <div class="clearfix" data-countdown="2021/10/04"></div>
                             </div>
                         </div>
                     </div>
@@ -1873,8 +1850,8 @@
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-rocket"></i>
-                    <h4>Free shiping</h4>
-                    <p>Orders over $100</p>
+                    <h4>Envio Gratis</h4>
+                    <p>Para pedidos que superen los S/.100</p>
                 </div>
                 <!-- End Single Service -->
             </div>
@@ -1882,8 +1859,8 @@
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-reload"></i>
-                    <h4>Free Return</h4>
-                    <p>Within 30 days returns</p>
+                    <h4>Devolucion Gratuita</h4>
+                    <p>Devoluciones dentro de una semana</p>
                 </div>
                 <!-- End Single Service -->
             </div>
@@ -1891,8 +1868,8 @@
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-lock"></i>
-                    <h4>Sucure Payment</h4>
-                    <p>100% secure payment</p>
+                    <h4>Pago Seguro</h4>
+                    <p>Pago 100% seguro</p>
                 </div>
                 <!-- End Single Service -->
             </div>
@@ -1900,8 +1877,8 @@
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-tag"></i>
-                    <h4>Best Peice</h4>
-                    <p>Guaranteed price</p>
+                    <h4>Mejores Precios</h4>
+                    <p>Precio garantizado</p>
                 </div>
                 <!-- End Single Service -->
             </div>
@@ -1919,10 +1896,10 @@
                     <!-- Start Newsletter Inner -->
                     <div class="inner">
                         <h4>Noticias</h4>
-                        <p> Subscribe to our newsletter and get <span>10%</span> off your first purchase</p>
+                        <p> Unete a nuestra familia y obten un <span>10%</span> de descuento en compras</p>
                         <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
                             <input name="EMAIL" placeholder="Tu correo electronico" required="" type="email">
-                            <button class="btn">Subscribete</button>
+                            <button class="btn">Unete</button>
                         </form>
                     </div>
                     <!-- End Newsletter Inner -->

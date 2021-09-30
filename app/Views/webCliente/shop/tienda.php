@@ -7,8 +7,8 @@
                 <div class="col-12">
                     <div class="bread-inner">
                         <ul class="bread-list">
-                            <li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-                            <li class="active"><a href="blog-single.html">Shop Grid</a></li>
+                            <li><a href="index1.html">Inicio<i class="ti-arrow-right"></i></a></li>
+                            <li class="active"><a href="blog-single.html">Tienda Online</a></li>
                         </ul>
                     </div>
                 </div>
@@ -25,55 +25,55 @@
                     <div class="shop-sidebar">
                         <!-- Single Widget -->
                         <div class="single-widget category">
-                            <h3 class="title">Categories</h3>
+                            <h3 class="title">Categorias</h3>
                             <ul class="categor-list">
-                                <li><a href="#">T-shirts</a></li>
-                                <li><a href="#">jacket</a></li>
-                                <li><a href="#">jeans</a></li>
-                                <li><a href="#">sweatshirts</a></li>
-                                <li><a href="#">trousers</a></li>
-                                <li><a href="#">kitwears</a></li>
-                                <li><a href="#">accessories</a></li>
+                                <li><a href="#">Helado de Crema</a></li>
+                                <li><a href="#">Helado de Leche</a></li>
+                                <li><a href="#">Helado de Fruta</a></li>
+                                <li><a href="#">Raspadillas</a></li>
+                                <li><a href="#">Helados en Cono</a></li>
+                                <li><a href="#">Marcianos</a></li>
+                                <li><a href="#">Helado de Espuma</a></li>
                             </ul>
                         </div>
                         <!--/ End Single Widget -->
                         <!-- Shop By Price -->
                         <div class="single-widget range">
-                            <h3 class="title">Shop by Price</h3>
+                            <h3 class="title">Filtrar por precio</h3>
                             <div class="price-filter">
                                 <div class="price-filter-inner">
                                     <div id="slider-range"></div>
                                     <div class="price_slider_amount">
                                         <div class="label-input">
-                                            <span>Range:</span><input type="text" id="amount" name="price" placeholder="Add Your Price" />
+                                            <span>Rango:</span><input type="text" id="amount" name="price" placeholder="Add Your Price" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <ul class="check-box-list">
                                 <li>
-                                    <label class="checkbox-inline" for="1"><input name="news" id="1" type="checkbox">$20 - $50<span class="count">(3)</span></label>
+                                    <label class="checkbox-inline" for="1"><input name="news" id="1" type="checkbox">S/.10 - S/.30<span class="count">(3)</span></label>
                                 </li>
                                 <li>
-                                    <label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">$50 - $100<span class="count">(5)</span></label>
+                                    <label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">S/.30 - S/.60<span class="count">(5)</span></label>
                                 </li>
                                 <li>
-                                    <label class="checkbox-inline" for="3"><input name="news" id="3" type="checkbox">$100 - $250<span class="count">(8)</span></label>
+                                    <label class="checkbox-inline" for="3"><input name="news" id="3" type="checkbox">S/.60 - S/100<span class="count">(8)</span></label>
                                 </li>
                             </ul>
                         </div>
                         <!--/ End Shop By Price -->
                         <!-- Single Widget -->
                         <div class="single-widget recent-post">
-                            <h3 class="title">Recent post</h3>
+                            <h3 class="title">Novedades</h3>
                             <!-- Single Post -->
                             <div class="single-post first">
                                 <div class="image">
-                                    <img src="https://via.placeholder.com/75x75" alt="#">
+                                    <img src="https://www.hola.com/imagenes/cocina/noticiaslibros/20210629192230/recetas-helados-cucurucho-cornete/0-969-441/cornetes-helados-adob-m.jpg" alt="#">
                                 </div>
                                 <div class="content">
-                                    <h5><a href="#">Girls Dress</a></h5>
-                                    <p class="price">$99.50</p>
+                                    <h5><a href="#">Conitos de Colores</a></h5>
+                                    <p class="price">S/.20</p>
                                     <ul class="reviews">
                                         <li class="yellow"><i class="ti-star"></i></li>
                                         <li class="yellow"><i class="ti-star"></i></li>
@@ -87,11 +87,11 @@
                             <!-- Single Post -->
                             <div class="single-post first">
                                 <div class="image">
-                                    <img src="https://via.placeholder.com/75x75" alt="#">
+                                    <img src="https://www.yamboly.com/productos_ok/yambito.png" alt="#">
                                 </div>
                                 <div class="content">
-                                    <h5><a href="#">Women Clothings</a></h5>
-                                    <p class="price">$99.50</p>
+                                    <h5><a href="#">Paletas de Colores</a></h5>
+                                    <p class="price">S/.50</p>
                                     <ul class="reviews">
                                         <li class="yellow"><i class="ti-star"></i></li>
                                         <li class="yellow"><i class="ti-star"></i></li>
@@ -105,11 +105,11 @@
                             <!-- Single Post -->
                             <div class="single-post first">
                                 <div class="image">
-                                    <img src="https://via.placeholder.com/75x75" alt="#">
+                                    <img src="http://cdn.shopify.com/s/files/1/0460/5558/8007/products/PECHOCOLATE_1200x630.jpg?v=1631044079" alt="#">
                                 </div>
                                 <div class="content">
-                                    <h5><a href="#">Man Tshirt</a></h5>
-                                    <p class="price">$99.50</p>
+                                    <h5><a href="#">Pezi Duri</a></h5>
+                                    <p class="price">S/.20</p>
                                     <ul class="reviews">
                                         <li class="yellow"><i class="ti-star"></i></li>
                                         <li class="yellow"><i class="ti-star"></i></li>
@@ -123,17 +123,7 @@
                         </div>
                         <!--/ End Single Widget -->
                         <!-- Single Widget -->
-                        <div class="single-widget category">
-                            <h3 class="title">Manufacturers</h3>
-                            <ul class="categor-list">
-                                <li><a href="#">Forever</a></li>
-                                <li><a href="#">giordano</a></li>
-                                <li><a href="#">abercrombie</a></li>
-                                <li><a href="#">ecko united</a></li>
-                                <li><a href="#">zara</a></li>
-                            </ul>
-                        </div>
-                        <!--/ End Single Widget -->
+                
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-8 col-12">
@@ -143,7 +133,7 @@
                             <div class="shop-top">
                                 <div class="shop-shorter">
                                     <div class="single-shorter">
-                                        <label>Show :</label>
+                                        <label>Mostrar:</label>
                                         <select>
                                             <option selected="selected">09</option>
                                             <option>15</option>
@@ -152,11 +142,11 @@
                                         </select>
                                     </div>
                                     <div class="single-shorter">
-                                        <label>Sort By :</label>
+                                        <label>Ordenar por:</label>
                                         <select>
-                                            <option selected="selected">Name</option>
-                                            <option>Price</option>
-                                            <option>Size</option>
+                                            <option selected="selected">Nombre</option>
+                                            <option>Precio</option>
+                                            <option>Tamaño</option>
                                         </select>
                                     </div>
                                 </div>
@@ -425,11 +415,11 @@
                     <div class="col-lg-8 offset-lg-2 col-12">
                         <!-- Start Newsletter Inner -->
                         <div class="inner">
-                            <h4>Newsletter</h4>
-                            <p> Subscribe to our newsletter and get <span>10%</span> off your first purchase</p>
+                            <h4>Noticias</h4>
+                            <p> Unete a nuestra familia y obten <span>10%</span> de descuento en compras</p>
                             <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-                                <input name="EMAIL" placeholder="Your email address" required="" type="email">
-                                <button class="btn">Subscribe</button>
+                                <input name="EMAIL" placeholder="Tu direccion de correo" required="" type="email">
+                                <button class="btn">Subscribete</button>
                             </form>
                         </div>
                         <!-- End Newsletter Inner -->
