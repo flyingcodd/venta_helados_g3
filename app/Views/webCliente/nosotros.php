@@ -66,8 +66,8 @@
                     <div class="info-head">
                         <!-- Info Box -->
                         <div class="info-box">
-                            <h4 class="name"><a href="#">Jaime Ivan </a></h4>
-                            <span class="designation">Senior Manager</span>
+                            <h4 class="name"><a href="#">Jaime Ivan Carrasco Taipe</a></h4>
+                            <span class="designation">Scrum Master</span>
                         </div>
                         <!-- End Info Box -->
                         <!-- Social -->
@@ -75,7 +75,6 @@
                             <ul class="social">
                                 <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
@@ -88,14 +87,14 @@
                 <div class="single-team">
                     <!-- Image -->
                     <div class="image">
-                        <img src="https://web.whatsapp.com/pp?e=https%3A%2F%2Fpps.whatsapp.net%2Fv%2Ft61.24694-24%2F216110520_125435379761225_2550705951617084616_n.jpg%3Fccb%3D11-4%26oh%3Db75ac55b6388e0b8ff060d4014e6f0c0%26oe%3D61595BEB&t=l&u=51942760398%40c.us&i=1626763636&n=DYf5q4TBPldUnDUFmn8X06bXio7KPw5DbHCILtkDdIE%3D" alt="#">
+                        <img src="" alt="#">
                     </div>
                     <!-- End Image -->
                     <div class="info-head">
                         <!-- Info Box -->
                         <div class="info-box">
-                            <h4 class="name"><a href="#">Alonzo Huamani</a></h4>
-                            <span class="designation">Dieseñador de Base de Datos</span>
+                            <h4 class="name"><a href="#">Cintia Pareja Arredondo</a></h4>
+                            <span class="designation">Analista de Sistemas</span>
                         </div>
                         <!-- End Info Box -->
                         <!-- Social -->
@@ -103,7 +102,60 @@
                             <ul class="social">
                                 <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- End Social -->
+                    </div>
+                </div>
+            </div>
+                        <!-- End Single Team -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                <div class="single-team">
+                    <!-- Image -->
+                    <div class="image">
+                        <img src="https://scontent.faqp2-2.fna.fbcdn.net/v/t1.6435-9/83816508_1264828517049458_3947932289215758336_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=174925&_nc_eui2=AeHYPcRDQnAlvu0yCbQERrK7pZP0L-RUq66lk_Qv5FSrrjSk2WkWLhni0HNWx4TLO6UBaiJ0ZEcuIOGaUMXGBE2N&_nc_ohc=Hzn9JMauSAoAX-XWMHW&_nc_ht=scontent.faqp2-2.fna&oh=247776adabc49079066226a60e2648bb&oe=6179F26E" alt="#">
+                    </div>
+                    <!-- End Image -->
+                    <div class="info-head">
+                        <!-- Info Box -->
+                        <div class="info-box">
+                            <h4 class="name"><a href="#">Alonzo Huamani Sanchez</a></h4>
+                            <span class="designation">Diseñador de Base de Datos</span>
+                        </div>
+                        <!-- End Info Box -->
+                        <!-- Social -->
+                        <div class="social-links">
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- End Social -->
+                    </div>
+                </div>
+            </div>
+                        <!-- End Single Team -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                <div class="single-team">
+                    <!-- Image -->
+                    <div class="image">
+                        <img src="C:/Users/Usuario/OneDrive/Imagenes/pp(1).jpg" alt="#">
+                    </div>
+                    <!-- End Image -->
+                    <div class="info-head">
+                        <!-- Info Box -->
+                        <div class="info-box">
+                            <h4 class="name"><a href="#">Jose Condori Condori</a></h4>
+                            <span class="designation">Desarrollador Frontend</span>
+                        </div>
+                        <!-- End Info Box -->
+                        <!-- Social -->
+                        <div class="social-links">
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
@@ -116,14 +168,14 @@
                 <div class="single-team">
                     <!-- Image -->
                     <div class="image">
-                        <img src="http://wpthemesgrid.com/themes/eshop/images/team/team3.jpg" alt="#">
+                        <img src="Equipo/4p.jpg" alt="#">
                     </div>
                     <!-- End Image -->
                     <div class="info-head">
                         <!-- Info Box -->
                         <div class="info-box">
-                            <h4 class="name"><a href="#">Zara tingo</a></h4>
-                            <span class="designation">Web Developer</span>
+                            <h4 class="name"><a href="#">Jhon Franklin Romero Ramos</a></h4>
+                            <span class="designation">Desarrollador Backend</span>
                         </div>
                         <!-- End Info Box -->
                         <!-- Social -->
@@ -131,7 +183,6 @@
                             <ul class="social">
                                 <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
@@ -144,14 +195,14 @@
                 <div class="single-team">
                     <!-- Image -->
                     <div class="image">
-                        <img src="http://wpthemesgrid.com/themes/eshop/images/team/team4.jpg" alt="#">
+                        <img src="https://scontent.faqp2-3.fna.fbcdn.net/v/t1.6435-9/118597789_2619222545009521_2414319061685057224_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHe4lyv_rMNF6VraSMFzkBNQkstapl7VvNCSy1qmXtW86QDydava80sNGBhEGdrF286s8kwt8WX2V3fKjilz-UP&_nc_ohc=DTiAQBnE5ogAX9sODOr&_nc_ht=scontent.faqp2-3.fna&oh=b1a2763d6d22f1c6a419bd96578d6c47&oe=6179C51F" alt="#">
                     </div>
                     <!-- End Image -->
                     <div class="info-head">
                         <!-- Info Box -->
                         <div class="info-box">
-                            <h4 class="name"><a href="#">David Zone</a></h4>
-                            <span class="designation">SEO Expert</span>
+                            <h4 class="name"><a href="#">Anderson Ramos Hurtado</a></h4>
+                            <span class="designation">SEO Expert y Tester</span>
                         </div>
                         <!-- End Info Box -->
                         <!-- Social -->
@@ -159,7 +210,6 @@
                             <ul class="social">
                                 <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
