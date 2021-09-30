@@ -7,8 +7,8 @@
                 <div class="col-12">
                     <div class="bread-inner">
                         <ul class="bread-list">
-                            <li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-                            <li class="active"><a href="blog-single.html">Shop Grid</a></li>
+                            <li><a href="index1.html">Inicio<i class="ti-arrow-right"></i></a></li>
+                            <li class="active"><a href="blog-single.html">Tienda Online</a></li>
                         </ul>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                             <div class="shop-top">
                                 <div class="shop-shorter">
                                     <div class="single-shorter">
-                                        <label>Show :</label>
+                                        <label>Mostrar:</label>
                                         <select>
                                             <option selected="selected">09</option>
                                             <option>15</option>
@@ -142,11 +142,11 @@
                                         </select>
                                     </div>
                                     <div class="single-shorter">
-                                        <label>Sort By :</label>
+                                        <label>Ordenar por:</label>
                                         <select>
-                                            <option selected="selected">Name</option>
-                                            <option>Price</option>
-                                            <option>Size</option>
+                                            <option selected="selected">Nombre</option>
+                                            <option>Precio</option>
+                                            <option>Tamaño</option>
                                         </select>
                                     </div>
                                 </div>
@@ -415,7 +415,7 @@
                     <div class="col-lg-8 offset-lg-2 col-12">
                         <!-- Start Newsletter Inner -->
                         <div class="inner">
-                            <h4>Siga viendo mi gente</h4>
+                            <h4>Noticias</h4>
                             <p> Unete a nuestra familia y obten <span>10%</span> de descuento en compras</p>
                             <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
                                 <input name="EMAIL" placeholder="Tu direccion de correo" required="" type="email">
