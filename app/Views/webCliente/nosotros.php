@@ -6,8 +6,8 @@
             <div class="col-12">
                 <div class="bread-inner">
                     <ul class="bread-list">
-                        <li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-                        <li class="active"><a href="blog-single.html">About Us</a></li>
+                        <li><a href="index1.html">Inicio<i class="ti-arrow-right"></i></a></li>
+                        <li class="active"><a href="blog-single.html">Sobre nosotros</a></li>
                     </ul>
                 </div>
             </div>
@@ -22,21 +22,19 @@
         <div class="row">
             <div class="col-lg-6 col-12">
                 <div class="about-content">
-                    <h3>Welcome To <span>Eshop</span></h3>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis unde sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis unde omnis iste natus error sit voluptatem Excepteu </p>
-                    <p>sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspi deserunt mollit anim id est laborum. sed ut perspi.</p>
+                    <h3>Bienvenidos a <span>IceCream Abancay</span></h3>
+                    <p>En IceCream buscamos acercarte más momentos felices con nuestras exquisitas cremas heladas, helados de fruta y mucho mas elaboradas con materia prima de la mejor calidad. </p>
+                    <p>Nuestra atencion y servicio son de la mas alta calidad y contamos con certificados otorgados por la NASA y ONU</p>
                     <div class="button">
-                        <a href="blog.html" class="btn">Our Blog</a>
-                        <a href="contact.html" class="btn primary">Contact Us</a>
+                        <a href="blog.html" class="btn">Nuestro Blog</a>
+                        <a href="contact.html" class="btn primary">Contactanos</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-12">
                 <div class="about-img overlay">
-                    <div class="button">
-                        <a href="https://www.youtube.com/watch?v=nh2aYrGMrIE" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
-                    </div>
-                    <img src="http://wpthemesgrid.com/themes/eshop/images/about.jpg" alt="#">
+                
+                    <img src="https://i.pinimg.com/originals/cb/79/5a/cb795a72975c668ce8ae81da79596c8f.jpg" alt="#">
                 </div>
             </div>
         </div>
@@ -51,8 +49,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h2>Our Expert Team</h2>
-                    <p>Business consulting excepteur sint occaecat cupidatat consulting non proident, sunt in culpa qui officia deserunt laborum market. </p>
+                    <h2>NUESTRO EQUIPO DE DESARROLLO</h2>
+                    <p>Conozca a nuestros expertos... </p>
                 </div>
             </div>
         </div>
@@ -62,13 +60,13 @@
                 <div class="single-team">
                     <!-- Image -->
                     <div class="image">
-                        <img src="http://wpthemesgrid.com/themes/eshop/images/team/team1.jpg" alt="#">
+                        <img src="https://i.kym-cdn.com/photos/images/facebook/000/121/516/tumblr_lhlmrdP5It1qdai2qo1_500.png" alt="#">
                     </div>
                     <!-- End Image -->
                     <div class="info-head">
                         <!-- Info Box -->
                         <div class="info-box">
-                            <h4 class="name"><a href="#">Dahlia Moore</a></h4>
+                            <h4 class="name"><a href="#">Jaime Ivan </a></h4>
                             <span class="designation">Senior Manager</span>
                         </div>
                         <!-- End Info Box -->
@@ -90,14 +88,14 @@
                 <div class="single-team">
                     <!-- Image -->
                     <div class="image">
-                        <img src="http://wpthemesgrid.com/themes/eshop/images/team/team2.jpg" alt="#">
+                        <img src="https://web.whatsapp.com/pp?e=https%3A%2F%2Fpps.whatsapp.net%2Fv%2Ft61.24694-24%2F216110520_125435379761225_2550705951617084616_n.jpg%3Fccb%3D11-4%26oh%3Db75ac55b6388e0b8ff060d4014e6f0c0%26oe%3D61595BEB&t=l&u=51942760398%40c.us&i=1626763636&n=DYf5q4TBPldUnDUFmn8X06bXio7KPw5DbHCILtkDdIE%3D" alt="#">
                     </div>
                     <!-- End Image -->
                     <div class="info-head">
                         <!-- Info Box -->
                         <div class="info-box">
-                            <h4 class="name"><a href="#">Jhone digo</a></h4>
-                            <span class="designation">Markeitng</span>
+                            <h4 class="name"><a href="#">Alonzo Huamani</a></h4>
+                            <span class="designation">Dieseñador de Base de Datos</span>
                         </div>
                         <!-- End Info Box -->
                         <!-- Social -->
