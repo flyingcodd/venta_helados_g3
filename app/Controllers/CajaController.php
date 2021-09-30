@@ -5,19 +5,16 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\Helado;
 
-class HeladoController extends BaseController
+class CajaController extends BaseController
 {
-    public function listar()
+    public function index()
     {
-        
         $helado = new Helado();
-
-        $datos['helados'] =$helado->OrderBy('id_helado', 'ASC')->findAll();
-        
+        $datos['helados'] = $helado->OrderBy('id_helado', 'ASC')->findAll();
         $datos['cabecera'] = view('template/webAdmin/cabecera');
         $datos['pie'] = view('template/webAdmin/piepagina');
         $datos['mensaje'] = session('mensaje');
-        return view('webAdmin/helado/listar', $datos);
+        return view('webAdmin/caja', $datos);
     }
 
     public function insertar() //yo
@@ -117,7 +114,7 @@ class HeladoController extends BaseController
 
                 $ruta1 = ('../public/imagenesHelado/' . $datosHelado['imagen1_helado']);
                 unlink($ruta1);
-
+                
 
                 $nuevoNombre1 = $imagen1->getRandomName();
                 $imagen1->move('../public/imagenesHelado/', $nuevoNombre1);
@@ -127,7 +124,7 @@ class HeladoController extends BaseController
                 ];
                 $helado->update($id, $dato);
             }
-            if (($imagen2 = $this->request->getFile('imagen2'))) {
+            if(($imagen2 = $this->request->getFile('imagen2'))){
                 $datosHelado = $helado->where('id_helado', $id)->first();
                 $ruta2 = ('../public/imagenesHelado/' . $datosHelado['imagen2_helado']);
                 unlink($ruta2);

@@ -56,7 +56,7 @@
                             <span class="text-uppercase small font-weight-bold">Paginas</span>
                         </li>
                         <li class=" sidebar-layout">
-                            <a href="#" class="svg-icon">
+                            <a href="<?php echo base_url("") ?>/admin/perfil" class="svg-icon">
                                 <i class="">
                                     <svg class="svg-icon" id="iq-user-1-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -86,7 +86,7 @@
                                     </a>
                                 </li>
                                 <li class=" sidebar-layout">
-                                    <a href="#" class="svg-icon">
+                                    <a href="<?php echo base_url("") ?>/admin/roles" class="svg-icon">
                                         <i class="">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -112,70 +112,20 @@
                                         </i><span class="">Ventas</span>
                                     </a>
                                 </li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-layout">
-                            <a href="#app6" class="collapsed svg-icon" data-toggle="collapse" aria-expanded="false">
-                                <i>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                                    </svg>
-                                </i>
-                                <span class="ml-2">Gestionar Tablas</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon iq-arrow-right arrow-active" width="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                            <ul id="app6" class="submenu collapse" data-parent="#iq-sidebar-toggle">
                                 <li class=" sidebar-layout">
-                                    <a href="../backend/pages-error.html" class="svg-icon">
-                                        <i class="">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            </svg>
-                                        </i>
-                                        <span class="ml-2">Usuarios</span>
-                                    </a>
-                                </li>
-                                <li class=" sidebar-layout">
-                                    <a href="../backend/pages-error-500.html" class="svg-icon">
-                                        <i class="">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                                            </svg>
-                                        </i>
-                                        <span class="ml-2">Roles</span>
-                                    </a>
-                                </li>
-                                <li class=" sidebar-layout">
-                                    <a href="../backend/pages-error-500.html" class="svg-icon">
-                                        <i class="">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
-                                            </svg>
-                                        </i>
-                                        <span class="ml-2">Helados</span>
-                                    </a>
-                                </li>
-                                <li class=" sidebar-layout">
-                                    <a href="../backend/pages-error-500.html" class="svg-icon">
-                                        <i class="">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            </svg>
-                                        </i>
-                                        <span class="ml-2">Ventas</span>
+                                    <a href="<?php echo base_url("") ?>/admin/categorias" class="svg-icon">
+                                    <i class="fa fa-list-ul"></i><span class="">Categorias de helados</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li class=" sidebar-layout">
-                            <a href="../backend/pages-maintenance.html" class="svg-icon">
+                            <a href="<?php echo base_url("") ?>/admin/caja" class="svg-icon">
                                 <i class="">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                                     </svg>
-                                </i><span class="ml-2">Inventario</span>
+                                </i><span class="ml-2">Caja</span>
                             </a>
                         </li>
                         <li class="px-3 pt-3 pb-2">

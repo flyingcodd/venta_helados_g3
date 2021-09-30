@@ -5,9 +5,9 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\Helado;
 
-class HeladoController extends BaseController
+class PerfilController extends BaseController
 {
-    public function listar()
+    public function index()
     {
         
         $helado = new Helado();
@@ -17,7 +17,7 @@ class HeladoController extends BaseController
         $datos['cabecera'] = view('template/webAdmin/cabecera');
         $datos['pie'] = view('template/webAdmin/piepagina');
         $datos['mensaje'] = session('mensaje');
-        return view('webAdmin/helado/listar', $datos);
+        return view('webAdmin/auth/perfil',$datos);
     }
 
     public function insertar() //yo
