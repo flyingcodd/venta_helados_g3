@@ -95,7 +95,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputText1">Categoria</label>
-                                            <input type="number" REQUIRED name="categoria" class="form-control" id="exampleInputText1" value="" placeholder="ingrese el stock del helado">
+                                            <input type="number" REQUIRED name="categoria" class="form-control" id="exampleInputText1" value="" placeholder="ingrese la categoria que pertenece el helado">
                                         </div>
                                         <button type="submit" value="agregar" class="btn btn-primary">Agregar</button>
                                         <a type="button" href="<?php echo base_url("admin/helados") ?>" value="cancelar" class="btn btn-danger">Cancelar</a>

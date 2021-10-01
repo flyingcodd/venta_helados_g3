@@ -160,7 +160,6 @@
                             <div class="single-product">
                                 <div class="product-img">
                                     <a href="<?php echo base_url('producto/' . $item['id_helado']) ?>">
-                                    sss
                                         <img class="default-img" src="<?php echo base_url('imagenesHelado/'.$item['imagen1_helado']) ?>" alt="#">
                                         <img class="hover-img" src="<?php echo base_url('imagenesHelado/'.$item['imagen2_helado']) ?>"  alt="#">
                                     </a>
