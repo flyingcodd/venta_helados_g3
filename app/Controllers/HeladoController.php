@@ -27,6 +27,7 @@ class HeladoController extends BaseController
         $precio = $this->request->getVar('precio');
         $stock = $this->request->getVar('stock');
         $descripcion = $this->request->getVar('descripcion');
+        $categoria = $this->request->getVar('categoria');
         if (($imagen1 = $this->request->getFile('imagen1')) && ($imagen2 = $this->request->getFile('imagen2'))) {
             $nuevoNombre1 = $imagen1->getRandomName();
             $imagen1->move('../public/imagenesHelado/', $nuevoNombre1);
@@ -40,7 +41,8 @@ class HeladoController extends BaseController
                 'imagen2_helado' => $nuevoNombre2,
                 'precio_helado' => $precio,
                 'stock_helado' => $stock,
-                'descripcion' => $descripcion
+                'descripcion' => $descripcion,
+                'id_categoria' => $categoria
             ];
             $respuesta = $helado->insert($dato);
         }
@@ -92,6 +94,7 @@ class HeladoController extends BaseController
             'nombre_helado' => $this->request->getVar('nombre'),
             'precio_helado' => $this->request->getVar('precio'),
             'stock_helado' => $this->request->getVar('stock'),
+            'id_categoria' => $this->request->getVar('categoria'),
             'descripcion' => $this->request->getVar('descripcion')
         ];
         $id = $this->request->getVar('id');

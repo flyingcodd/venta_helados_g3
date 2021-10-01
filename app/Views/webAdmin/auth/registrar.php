@@ -55,7 +55,7 @@
                             <div class="col-12">
                                 <div class="form-group login-btn">
                                     <button class="btn" type="submit">Register</button>
-                                    <a href="login.html" class="btn">Login</a>
+                                    <a href="<?php echo base_url('login')?>" class="btn">Login</a>
                                 </div>
                                 <div class="checkbox">
                                     <label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">Sign Up for Newsletter</label>

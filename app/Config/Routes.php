@@ -57,12 +57,16 @@ $routes->get('admin', 'AdminController::index');
 $routes->get('login', 'LoginController::login');
 $routes->get('registrar', 'LoginController::registro');
 
+$routes->get('admin/configuraciones', 'AdminController::configuraciones');
+$routes->post('admin/configuraciones/actualizar', 'AdminController::actualizar');
+
 //toda las rutas del helado-------------------------------------
 $routes->get('admin/helados', 'HeladoController::listar');
 $routes->post('admin/helados/insertar', 'HeladoController::insertar');
 $routes->get('admin/helados/borrar/(:num)', 'HeladoController::borrar/$1');
 $routes->get('admin/helados/editar/(:num)', 'HeladoController::editar/$1');
 $routes->post('admin/helados/actualizar', 'HeladoController::actualizar');
+
 
 
 $routes->get('admin/usuarios', 'UsuarioController::listar');
@@ -80,8 +84,9 @@ $routes->get('admin/caja', 'CajaController::index');
 $routes->get('contacto', 'Home::contacto');
 $routes->get('carrito', 'Home::carrito');
 $routes->get('perfil', 'Home::perfil');
-$routes->get('tienda', 'Home::tienda');
 $routes->get('nosotros', 'Home::nosotros');
 $routes->get('producto', 'Home::producto');
 
 
+$routes->get('tienda', 'Home::tienda');
+$routes->get('producto/(:num)', 'TiendaController::editar/$1');

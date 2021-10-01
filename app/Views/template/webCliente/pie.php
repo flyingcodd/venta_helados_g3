@@ -79,8 +79,8 @@
                         <div class="logo">
                             <a href="index.html"><img src="https://www.dafont.com/forum/attach/orig/8/7/879162.jpg" alt="#"></a>
                         </div>
-                        <p class="text">Somos una empresa con el compromiso de entregar helados de calidad a nuestra clientela</p>
-                        <p class="call">Tienes alguna pregunta? Te escuchamos <span><a href="tel:927613580">+51 927 613 580 </a></span></p>
+                        <p class="text"><?php echo $empresa['slogan_empresa']?></p>
+                        <p class="call">Tienes alguna pregunta? Te escuchamos <span><a href="tel:927613580"><?php echo $empresa['telefono1_empresa']?> </a></span></p>
                     </div>
                     <!-- End Single Widget -->
                 </div>
@@ -119,10 +119,10 @@
                         <!-- Single Widget -->
                         <div class="contact">
                             <ul>
-                                <li>NO. 512 - Av.Sinchi Roca.</li>
+                                <li><?php echo $empresa['ubicacion_empresa']?></li>
                                 <li>Abancay-Apurimac-Peru.</li>
-                                <li>heladeria_ice_cream@gmail.com</li>
-                                <li>+51 927 613 580</li>
+                                <li><?php echo $empresa['email1_empresa']?></li>
+                                <li><?php echo $empresa['telefono1_empresa']?></li>
                             </ul>
                         </div>
                         <!-- End Single Widget -->

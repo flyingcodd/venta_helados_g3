@@ -104,12 +104,15 @@
 <!--/ End Contact -->
 
 <!-- Map Section -->
-<div class="map-section">
-    <div id="myMap"></div>
-</div>
+
 <!--/ End Map Section -->
 
+<div class="row">
+    <div class="col-12" style="background-color: white;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21225.237238139875!2d-72.88520379993705!3d-13.634348280316516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2spe!4v1631292525330!5m2!1ses!2spe" title="YouTube video" height="500px" width="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
 
+    </div>
+</div>
 
 
 <!-- Jquery -->

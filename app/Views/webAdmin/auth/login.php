@@ -44,7 +44,7 @@
                             <div class="col-12">
                                 <div class="form-group login-btn">
                                     <button class="btn" type="submit">Login</button>
-                                    <a href="register.html" class="btn">Register</a>
+                                    <a href="<?php echo base_url('registrar')?>" class="btn">Registar</a>
                                 </div>
                                 <div class="checkbox">
                                     <label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">Remember me</label>

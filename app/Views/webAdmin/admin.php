@@ -36,7 +36,7 @@
                         <div class="">
                             <p class="mb-2 text-secondary">Ingreso total</p>
                             <div class="d-flex flex-wrap justify-content-start align-items-center">
-                               <h5 class="mb-0 font-weight-bold">$95,595</h5>
+                               <h5 class="mb-0 font-weight-bold">$<?php foreach($dash as $item): echo $item['sum(precio_total)']; endforeach;?></h5>
                                <p class="mb-0 ml-3 text-success font-weight-bold">+3.55%</p>
                             </div>                            
                         </div>

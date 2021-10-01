@@ -50,6 +50,10 @@
                                             <label for="exampleInputText1">Descripcion</label>
                                             <textarea class="form-control" name="descripcion" id="exampleFormControlTextarea1" rows="3" placeholder="ingrese la descripcion del helado"><?php echo $helado['descripcion'] ?></textarea>
                                         </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputText1">Categoria</label>
+                                            <input type="number" REQUIRED name="categoria" class="form-control" id="exampleInputText1" value="<?php echo $helado['id_categoria'] ?>" placeholder="ingrese el stock del helado">
+                                        </div>
                                         <button type="submit" value="agregar" class="btn btn-primary">Actualizar</button>
                                         <a type="button" href="<?php echo base_url("admin/helados") ?>" value="" class="btn btn-danger">Cancelar</a>
                                     </form>

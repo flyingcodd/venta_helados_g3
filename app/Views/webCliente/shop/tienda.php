@@ -27,13 +27,9 @@
                         <div class="single-widget category">
                             <h3 class="title">Categorias</h3>
                             <ul class="categor-list">
-                                <li><a href="#">Helado de Crema</a></li>
-                                <li><a href="#">Helado de Leche</a></li>
-                                <li><a href="#">Helado de Fruta</a></li>
-                                <li><a href="#">Raspadillas</a></li>
-                                <li><a href="#">Helados en Cono</a></li>
-                                <li><a href="#">Marcianos</a></li>
-                                <li><a href="#">Helado de Espuma</a></li>
+                            <?php foreach($categorias as $item): ?>
+                                <li><a href="#"><?php echo $item['nombre_categoria']; ?></a></li>
+                                <?php  endforeach;?>
                             </ul>
                         </div>
                         <!--/ End Single Widget -->
@@ -163,7 +159,8 @@
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a href="product-details.html">
+                                    <a href="<?php echo base_url('producto/' . $item['id_helado']) ?>">
+                                    sss
                                         <img class="default-img" src="<?php echo base_url('imagenesHelado/'.$item['imagen1_helado']) ?>" alt="#">
                                         <img class="hover-img" src="<?php echo base_url('imagenesHelado/'.$item['imagen2_helado']) ?>"  alt="#">
                                     </a>
@@ -174,12 +171,12 @@
                                             <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                         </div>
                                         <div class="product-action-2">
-                                            <a title="Add to cart" href="#">Add to cart</a>
+                                            <a title="Add to cart" href="<?php echo base_url('producto/' . $item['id_helado']) ?>">Add to cart</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="product-content">
-                                    <h3><a href="product-details.html"><?php echo $item['nombre_helado'] ?></a></h3>
+                                    <h3><a href="<?php echo base_url('producto/' . $item['id_helado']) ?>"><?php echo $item['nombre_helado'] ?></a></h3>
                                     <div class="product-price">
                                         <span>s/.<?php echo $item['precio_helado'] ?></span>
                                     </div>

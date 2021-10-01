@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Title Tag  -->
-    <title>Helados G3</title>
+    <title><?php echo $empresa['nombre_empresa']?></title>
     <!-- Favicon -->
     <link rel="icon" type="<?php echo base_url("") ?>/image/png" href="<?php echo base_url("") ?>/images/favicon.png">
     <!-- Web Font -->
@@ -22,13 +22,13 @@
     <!-- Magnific Popup -->
     <link rel="stylesheet" href="<?php echo base_url("") ?>/css/magnific-popup.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/font-awesome.css">
     <!-- Fancybox -->
     <link rel="stylesheet" href="<?php echo base_url("") ?>/css/jquery.fancybox.min.css">
     <!-- Themify Icons -->
-    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/themify-icons.css">
     <!--jquery-ui-->
-    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/jquery-ui.css">
     <!-- Nice Select CSS -->
     <link rel="stylesheet" href="<?php echo base_url("") ?>/css/niceselect.css">
     <!-- Animate CSS -->
@@ -91,8 +91,8 @@
                         <!-- Top Left -->
                         <div class="top-left">
                             <ul class="list-main">
-                                <li><i class="ti-headphone-alt"></i> +51 927 613 580</li>
-                                <li><i class="ti-email"></i> heladeria_ice_cream@gmail.com </li>
+                                <li><i class="ti-headphone-alt"></i><?php echo $empresa['telefono1_empresa']?></li>
+                                <li><i class="ti-email"></i><?php echo $empresa['email1_empresa']?> </li>
                             </ul>
                         </div>
                         <!--/ End Top Left -->
@@ -101,10 +101,10 @@
                         <!-- Top Right -->
                         <div class="right-content">
                             <ul class="list-main">
-                                <li><i class="ti-location-pin"></i> Ubicacion </li>
+                                <li><i class="ti-location-pin"></i> <?php echo $empresa['ubicacion_empresa']?> </li>
                                 <li><i class="ti-alarm-clock"></i> <a href="#"> Horario </a></li>
                                 <li><i class="ti-user"></i> <a href="#">Mi cuenta </a></li>
-                                <li><i class="ti-power-off"></i><a href="login.html#"> Registrarse </a></li>
+                                <li><i class="ti-power-off"></i><a href="<?php echo base_url("login") ?>"> Login </a></li>
                             </ul>
                         </div>
                         <!-- End Top Right -->

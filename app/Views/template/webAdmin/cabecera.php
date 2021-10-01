@@ -129,16 +129,16 @@
                             </a>
                         </li>
                         <li class="px-3 pt-3 pb-2">
-                            <span class="text-uppercase small font-weight-bold">Reportes</span>
+                            <span class="text-uppercase small font-weight-bold">Configuraciones de empresa</span>
                         </li>
                         <li class=" sidebar-layout">
-                            <a href="../backend/chart-apex.html" class="svg-icon">
+                            <a href="<?php  echo base_url("") ?>/admin/configuraciones?>" class="svg-icon">
                                 <i class="">
                                     <svg class="svg-icon" id="iq-chart-1" width="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                                     </svg>
                                 </i>
-                                <span class="ml-2">Helados</span>
+                                <span class="ml-2">Configuraciones generales</span>
                             </a>
                         </li>
                         <li class=" sidebar-layout">
@@ -148,7 +148,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                                     </svg>
                                 </i>
-                                <span class="ml-2">Ventas</span>
+                                <span class="ml-2">Extra</span>
                             </a>
                         </li>
 

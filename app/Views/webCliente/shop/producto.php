@@ -1,4 +1,4 @@
-<?php echo $cabecera ?>
+<?php echo $cabecera; foreach($inner as $helado):?>
 
 <!-- Breadcrumbs -->
 <div class="breadcrumbs">
@@ -7,8 +7,9 @@
             <div class="col-12">
                 <div class="bread-inner">
                     <ul class="bread-list">
-                        <li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-                        <li class="active"><a href="blog-single.html">Shop Details</a></li>
+                        <li><a href="<?php echo base_url("/")?>">Inicio<i class="ti-arrow-right"></i></a></li>
+                        <li><a href="<?php echo base_url("tienda")?>">Tienda<i class="ti-arrow-right"></i></a></li>
+                        <li class="active"><a href="#">detalle del helado</a></li>
                     </ul>
                 </div>
             </div>
@@ -32,17 +33,11 @@
 
                                 <div class="flex-viewport">
                                     <ul class="slides">
-                                        <li data-thumb="http://wpthemesgrid.com/themes/eshop/images/bx-slider1.jpg" rel="adjustX:10, adjustY:" class="clone">
-                                            <img src="http://wpthemesgrid.com/themes/eshop/images/bx-slider1.jpg" alt="#">
+                                        <li data-thumb="<?php echo base_url('imagenesHelado').'/'.$helado['imagen1_helado'] ?>" rel="adjustX:10, adjustY:" class="clone">
+                                            <img src="<?php echo base_url('imagenesHelado').'/'.$helado['imagen1_helado'] ?>" alt="#">
                                         </li>
-                                        <li data-thumb="http://wpthemesgrid.com/themes/eshop/images/bx-slider4.jpg" class="clone">
-                                            <img src="http://wpthemesgrid.com/themes/eshop/images/bx-slider4.jpg" alt="#">
-                                        </li>
-                                        <li data-thumb="http://wpthemesgrid.com/themes/eshop/images/bx-slider1.jpg" rel="adjustX:10, adjustY:">
-                                            <img src="http://wpthemesgrid.com/themes/eshop/images/bx-slider1.jpg" alt="#">
-                                        </li>
-                                        <li data-thumb="http://wpthemesgrid.com/themes/eshop/images/bx-slider2.jpg" class="">
-                                            <img src="http://wpthemesgrid.com/themes/eshop/images/bx-slider2.jpg" alt="#">
+                                        <li data-thumb="<?php echo base_url('imagenesHelado').'/'.$helado['imagen2_helado'] ?>" class="clone">
+                                            <img src="<?php echo base_url('imagenesHelado').'/'.$helado['imagen2_helado'] ?>" alt="#">
                                         </li>
                                     </ul>
                                 </div>
@@ -55,7 +50,7 @@
                         <div class="product-des">
                             <!-- Description -->
                             <div class="short">
-                                <h4>Nonstick Dishwasher PFOA</h4>
+                                <h4><?php echo $helado['nombre_helado'] ?></h4>
                                 <div class="rating-main">
                                     <ul class="rating">
                                         <li><i class="fa fa-star"></i></li>
@@ -67,12 +62,12 @@
                                     <a href="#" class="total-review">(102) Review</a>
                                 </div>
                                 <p class="price"><span class="discount">$70.00</span><s>$80.00</s> </p>
-                                <p class="description">eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, in</p>
+                                <p class="description"><?php echo $helado['descripcion'] ?></p>
                             </div>
                             <!--/ End Description -->
                             <!-- Color -->
                             <div class="color">
-                                <h4>Available Options <span>Color</span></h4>
+                                <h4>Opciones <span>Sabores</span></h4>
                                 <ul>
                                     <li><a href="#" class="one"><i class="ti-check"></i></a></li>
                                     <li><a href="#" class="two"><i class="ti-check"></i></a></li>
@@ -85,18 +80,18 @@
                             <div class="size">
                                 <h4>Size</h4>
                                 <ul>
-                                    <li><a href="#" class="one">S</a></li>
-                                    <li><a href="#" class="two">M</a></li>
-                                    <li><a href="#" class="three">L</a></li>
-                                    <li><a href="#" class="four">XL</a></li>
-                                    <li><a href="#" class="four">XXL</a></li>
+                                    <li><a href="#" class="one">1L</a></li>
+                                    <li><a href="#" class="two">2L</a></li>
+                                    <li><a href="#" class="three">3L</a></li>
+                                    <li><a href="#" class="four">4L</a></li>
+                                    <li><a href="#" class="four">5L</a></li>
                                 </ul>
                             </div>
                             <!--/ End Size -->
                             <!-- Product Buy -->
                             <div class="product-buy">
                                 <div class="quantity">
-                                    <h6>Quantity :</h6>
+                                    <h6>Cantidad :</h6>
                                     <!-- Input Order -->
                                     <div class="input-group">
                                         <div class="button minus">
@@ -113,13 +108,14 @@
                                     </div>
                                     <!--/ End Input Order -->
                                 </div>
+                                <br><br><br>
                                 <div class="add-to-cart">
-                                    <a href="#" class="btn">Add to cart</a>
+                                    <a href="#" class="btn">Agregar a carrito</a>
                                     <a href="#" class="btn min"><i class="ti-heart"></i></a>
                                     <a href="#" class="btn min"><i class="fa fa-compress"></i></a>
                                 </div>
-                                <p class="cat">Category :<a href="#">Clothing</a></p>
-                                <p class="availability">Availability : 180 Products In Stock</p>
+                                <p class="cat">Categoria :<a href="#"><?php echo $helado['nombre_categoria'] ?></a></p>
+                                <p class="availability">Stock : <?php echo $helado['stock_helado'] ?> Productos de <?php echo $helado['nombre_helado'] ?> en Stock</p>
                             </div>
                             <!--/ End Product Buy -->
                         </div>
@@ -143,10 +139,10 @@
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="single-des">
-                                                    <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with deskto</p>
+                                                    <p><?php echo $helado['descripcion'] ?></p>
                                                 </div>
                                                 <div class="single-des">
-                                                    <p>Suspendisse consequatur voluptates lorem nobis accumsan natus mattis. Optio pede, optio qui metus, delectus! Ultricies impedit, minus tempor fuga, quasi, pede felis commodo bibendum voluptas nisi? Voluptatem risus tempore tempora. Quaerat aspernatur? Error praesent laoreet, cras in fames hac ea, massa montes diamlorem nec quaerat, quos occaecati leo nam aliquet corporis, ab recusandae parturient, etiam fermentum, a quasi possimus commodi, mollis voluptate mauris mollis, quisque donec</p>
+                                                    <p><?php echo $helado['descripcion_categoria'] ?></p>
                                                 </div>
                                                 <div class="single-des">
                                                     <h4>Product Features:</h4>
@@ -282,7 +278,7 @@
 
 
 <!-- Start Most Popular --AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA PONER IMAGENES --->
-<div class="product-area most-popular related-product section">
+<<div class="product-area most-popular related-product section">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -587,7 +583,7 @@
     </div>
 </div>
 <!-- Modal end -->
-
+<?php endforeach;?>
 
 <!-- Jquery -->
 <script src="<?php echo base_url() ?>/js/jquery.min.js"></script>
