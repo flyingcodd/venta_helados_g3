@@ -27,29 +27,21 @@
                             <tr>
                                 <th scope="col">Codigo</th>
                                 <th scope="col">Nombre</th>
-                                <th scope="col">Precio</th>
-                                <th scope="col">Stock</th>
-                                <th scope="col">Img 1</th>
-                                <th scope="col">Img 2</th>
                                 <th scope="col">Descripcion</th>
                                 <th scope="col">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($helados as $helado) : ?>
+                            <?php foreach ($categoria as $item) : ?>
                                 <tr>
-                                    <td><?php echo $helado['id_helado'] ?></td>
-                                    <td><?php echo $helado['nombre_helado'] ?></td>
-                                    <td><?php echo $helado['precio_helado'] ?></td>
-                                    <td><?php echo $helado['stock_helado'] ?></td>
-                                    <td><img height="50px" src="<?php echo '../imagenesHelado/' . $helado['imagen1_helado'] ?>" /></td>
-                                    <td><img height="50px" src="<?php echo base_url('imagenesHelado') . '/' . $helado['imagen2_helado'] ?>" /></td>
-                                    <td><?php echo $helado['descripcion'] ?></td>
+                                    <td><?php echo $item['id_categoria'] ?></td>
+                                    <td><?php echo $item['nombre_categoria'] ?></td>
+                                    <td><?php echo $item['descripcion_categoria'] ?></td>
 
                                     <td class=" ">
-                                        <a href="<?php echo base_url('admin/helados/editar/' . $helado['id_helado']) ?>" class="btn btn-outline-success mt-2"><i class="fa fa-edit"></i> Editar</a>
+                                        <a href="<?php echo base_url('admin/categorias/editar/' . $item['id_categoria']) ?>" class="btn btn-outline-success mt-2"><i class="fa fa-edit"></i> Editar</a>
 
-                                        <a href="<?php echo base_url('admin/helados/borrar/' . $helado['id_helado']) ?>" class="btn btn-outline-danger mt-2"><i class="fa fa-trash"></i> Eliminar</a>
+                                        <a href="<?php echo base_url('admin/categorias/borrar/' . $item['id_categoria']) ?>" class="btn btn-outline-danger mt-2"><i class="fa fa-trash"></i> Eliminar</a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
@@ -67,33 +59,17 @@
 
                                 <div class="card-body">
                                     <h4 class="card-title text-center">Agregar nueva categoria</h4>
-                                    <form action="<?php echo base_url("admin/helados/insertar") ?>" method="POST" enctype="multipart/form-data">
+                                    <form action="<?php echo base_url("admin/categorias/insertar") ?>" method="POST" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label for="exampleInputText1">Nombre</label>
-                                            <input type="text" REQUIRED name="nombre" class="form-control" id="exampleInputText1" value="" placeholder="Ingrese el nombre del helado">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputText1">Precio S/.</label>
-                                            <input type="text" REQUIRED name="precio" class="form-control" id="exampleInputText1" value="" placeholder="ingrese el precio ejm 4.50">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputText1">Stock</label>
-                                            <input type="number" REQUIRED name="stock" class="form-control" id="exampleInputText1" value="" placeholder="ingrese el stock del helado">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputText1">Imagen 1</label> <br>
-                                            <input type="file" REQUIRED id="myFile" name="imagen1" accept="image/png, .jpeg, .jpg, image/gif">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputText1">Imagen 2</label> <br>
-                                            <input type="file" id="myFile" name="imagen2" accept="image/png, .jpeg, .jpg, image/gif">
+                                            <input type="text" REQUIRED name="nombre" class="form-control" id="exampleInputText1" value="" placeholder="Ingrese el nombre de la categoria">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputText1">Descripcion</label>
-                                            <textarea class="form-control" name="descripcion" id="exampleFormControlTextarea1" rows="3" placeholder="ingrese la descripcion del helado"></textarea>
+                                            <textarea class="form-control" name="descripcion" id="exampleFormControlTextarea1" rows="3" placeholder="ingrese la descripcion de la categoria"></textarea>
                                         </div>
                                         <button type="submit" value="agregar" class="btn btn-primary">Agregar</button>
-                                        <a type="button" href="<?php echo base_url("admin/helados") ?>" value="cancelar" class="btn btn-danger">Cancelar</a>
+                                        <a type="button" href="<?php echo base_url("admin/categorias") ?>" value="cancelar" class="btn btn-danger">Cancelar</a>
                                     </form>
                                 </div>
                             </div>

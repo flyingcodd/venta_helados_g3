@@ -61,7 +61,7 @@
                                     </ul>
                                     <a href="#" class="total-review">(102) Review</a>
                                 </div>
-                                <p class="price"><span class="discount">$70.00</span><s>$80.00</s> </p>
+                                <p class="price"><span class="discount">$<?php echo $helado['precio_helado'] ?></span><s>$80.00</s> </p>
                                 <p class="description"><?php echo $helado['descripcion'] ?></p>
                             </div>
                             <!--/ End Description -->

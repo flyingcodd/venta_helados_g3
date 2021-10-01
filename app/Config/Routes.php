@@ -67,12 +67,17 @@ $routes->get('admin/helados/borrar/(:num)', 'HeladoController::borrar/$1');
 $routes->get('admin/helados/editar/(:num)', 'HeladoController::editar/$1');
 $routes->post('admin/helados/actualizar', 'HeladoController::actualizar');
 
-
+//toda las rutas del categoria-------------------------------------
+$routes->get('admin/categorias', 'CategoriaController::listar');
+$routes->post('admin/categorias/insertar', 'CategoriaController::insertar');
+$routes->get('admin/categorias/borrar/(:num)', 'CategoriaController::borrar/$1');
+$routes->get('admin/categorias/editar/(:num)', 'CategoriaController::editar/$1');
+$routes->post('admin/categorias/actualizar', 'CategoriaController::actualizar');
 
 $routes->get('admin/usuarios', 'UsuarioController::listar');
 $routes->get('admin/ventas', 'VentaController::listar');
 $routes->get('admin/roles', 'RolController::listar');
-$routes->get('admin/categorias', 'CategoriaController::listar');
+
 
 $routes->get('admin/perfil', 'PerfilController::index');
 $routes->get('admin/caja', 'CajaController::index');
