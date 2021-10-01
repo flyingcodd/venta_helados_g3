@@ -57,7 +57,7 @@ class CategoriaController extends BaseController
         $categoria = new Categoria();
         $dato = [
             'nombre_categoria' => $this->request->getVar('nombre'),
-            'descripcion_categoria' => $this->request->getVar('categoria')
+            'descripcion_categoria' => $this->request->getVar('descripcion')
         ];
         $id = $this->request->getVar('id');
 

@@ -74,9 +74,17 @@ $routes->get('admin/categorias/borrar/(:num)', 'CategoriaController::borrar/$1')
 $routes->get('admin/categorias/editar/(:num)', 'CategoriaController::editar/$1');
 $routes->post('admin/categorias/actualizar', 'CategoriaController::actualizar');
 
+//toda las rutas del categoria-------------------------------------
+$routes->get('admin/roles', 'RolController::listar');
+$routes->post('admin/roles/insertar', 'RolController::insertar');
+$routes->get('admin/roles/borrar/(:num)', 'RolController::borrar/$1');
+$routes->get('admin/roles/editar/(:num)', 'RolController::editar/$1');
+$routes->post('admin/roles/actualizar', 'RolController::actualizar');
+
+
 $routes->get('admin/usuarios', 'UsuarioController::listar');
 $routes->get('admin/ventas', 'VentaController::listar');
-$routes->get('admin/roles', 'RolController::listar');
+
 
 
 $routes->get('admin/perfil', 'PerfilController::index');

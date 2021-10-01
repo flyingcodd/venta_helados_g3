@@ -3,7 +3,7 @@ use VENTA_HELADO_G1;
 
 create table Rol_Usuario(
 id_rol int auto_increment primary key not null,
-nombre_rol varchar(10) not null
+nombre_rol varchar(50) not null
 );
 insert into Rol_Usuario(nombre_rol) value("admi");
 insert into Rol_Usuario(nombre_rol) value("vendedor");

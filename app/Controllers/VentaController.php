@@ -2,9 +2,6 @@
 
 namespace App\Controllers;
 use CodeIgniter\Controller;
-use App\Models\Ventas;
-use App\Models\Usuario;
-use App\Models\Helado;
 class VentaController extends BaseController
 {
     public function listar()

@@ -31,13 +31,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($helados as $helado) : ?>
+                            <?php foreach ($rol as $item) : ?>
                                 <tr>
-                                    <td><?php echo $helado['id_rol'] ?></td>
-                                    <td><?php echo $helado['nombre_rol'] ?></td>
+                                    <td><?php echo $item['id_rol'] ?></td>
+                                    <td><?php echo $item['nombre_rol'] ?></td>
                                     <td>
-                                        <a href="<?php echo base_url('admin/helados/editar/' . $helado['id_rol']) ?>" class="btn btn-outline-success mt-2"><i class="fa fa-edit"></i> Editar</a>
-                                        <a href="<?php echo base_url('admin/helados/borrar/' . $helado['id_rol']) ?>" class="btn btn-outline-danger mt-2"><i class="fa fa-trash"></i> Eliminar</a>
+                                        <a href="<?php echo base_url('admin/roles/editar/' . $item['id_rol']) ?>" class="btn btn-outline-success mt-2"><i class="fa fa-edit"></i> Editar</a>
+                                        <a href="<?php echo base_url('admin/roles/borrar/' . $item['id_rol']) ?>" class="btn btn-outline-danger mt-2"><i class="fa fa-trash"></i> Eliminar</a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
@@ -54,34 +54,14 @@
                             <div class="card" style="border: solid 1px #8f9fbc;">
 
                                 <div class="card-body">
-                                    <h4 class="card-title text-center">Agregar nuevo Helado</h4>
-                                    <form action="<?php echo base_url("admin/helados/insertar") ?>" method="POST" enctype="multipart/form-data">
+                                    <h4 class="card-title text-center">Agregar nuevo Rol</h4>
+                                    <form action="<?php echo base_url("admin/roles/insertar") ?>" method="POST" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label for="exampleInputText1">Nombre</label>
-                                            <input type="text" REQUIRED name="nombre" class="form-control" id="exampleInputText1" value="" placeholder="Ingrese el nombre del helado">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputText1">Precio S/.</label>
-                                            <input type="text" REQUIRED name="precio" class="form-control" id="exampleInputText1" value="" placeholder="ingrese el precio ejm 4.50">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputText1">Stock</label>
-                                            <input type="number" REQUIRED name="stock" class="form-control" id="exampleInputText1" value="" placeholder="ingrese el stock del helado">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputText1">Imagen 1</label> <br>
-                                            <input type="file" REQUIRED id="myFile" name="imagen1" accept="image/png, .jpeg, .jpg, image/gif">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputText1">Imagen 2</label> <br>
-                                            <input type="file" id="myFile" name="imagen2" accept="image/png, .jpeg, .jpg, image/gif">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputText1">Descripcion</label>
-                                            <textarea class="form-control" name="descripcion" id="exampleFormControlTextarea1" rows="3" placeholder="ingrese la descripcion del helado"></textarea>
+                                            <input type="text" REQUIRED name="nombre" class="form-control" id="exampleInputText1" value="" placeholder="Ingrese el nombre de la rol">
                                         </div>
                                         <button type="submit" value="agregar" class="btn btn-primary">Agregar</button>
-                                        <a type="button" href="<?php echo base_url("admin/helados") ?>" value="cancelar" class="btn btn-danger">Cancelar</a>
+                                        <a type="button" href="<?php echo base_url("admin/roles") ?>" value="cancelar" class="btn btn-danger">Cancelar</a>
                                     </form>
                                 </div>
                             </div>
@@ -119,8 +99,7 @@
             'Your file has been deleted.',
             'success'
         )
-    }
-    else if (mensaje == 'actualizado') {
+    } else if (mensaje == 'actualizado') {
         Swal.fire({
             icon: 'success',
             title: 'Good job!',
