@@ -45,7 +45,7 @@ class AdminController extends BaseController
             'telefono2_empresa' => $this->request->getVar('telefono2'),
             'email1_empresa' => $this->request->getVar('email1'),
             'email2_empresa' => $this->request->getVar('email2'),
-            'ubicaion_empresa' => $this->request->getVar('ubicacion'),
+            'ubicacion_empresa' => $this->request->getVar('ubicacion'),
             'mapa_empresa' => $this->request->getVar('mapa')
         ];
         
