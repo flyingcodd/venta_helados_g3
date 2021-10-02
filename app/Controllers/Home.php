@@ -3,6 +3,8 @@
 namespace App\Controllers;
 use App\Models\Helado;
 use App\Models\Categoria;
+use App\Models\Empresa;
+
 class Home extends BaseController
 {
     public function index()
@@ -17,6 +19,8 @@ class Home extends BaseController
         $p=new PlantillaController();
         $datos['cabecera']= $p->cabeceraCliente();
         $datos['pie']= $p->pieCliente();
+        $empresa=new Empresa();
+        $datos['item']= $empresa->OrderBy('id_empresa', 'ASC')->first();
         return view('webCliente/contacto',$datos);
     }
     public function carrito()

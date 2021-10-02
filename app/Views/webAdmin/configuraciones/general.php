@@ -45,12 +45,12 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputText1">Icono de la empresa</label> <br>
-                                        <img height="90px" src="" /><br>
+                                        <img height="90px" src="<?php echo base_url('images') . '/' . $empresa['icono_empresa'] ?>" /><br>
                                         <input type="file" id="myFile" name="icono" accept="image/png, .jpeg, .jpg, image/gif">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputText1">Logo de la empresa</label> <br>
-                                        <img height="90px" src="" /><br>
+                                        <img height="90px" src="<?php echo base_url('images') . '/' . $empresa['logo_empresa'] ?>" /><br>
                                         <input type="file" id="myFile" name="logo" accept="image/png, .jpeg, .jpg, image/gif">
                                     </div>
                                     <div class="form-group">

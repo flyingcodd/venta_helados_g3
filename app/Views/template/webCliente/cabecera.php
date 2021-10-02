@@ -11,7 +11,7 @@
     <!-- Title Tag  -->
     <title><?php echo $empresa['nombre_empresa']?></title>
     <!-- Favicon -->
-    <link rel="icon" type="<?php echo base_url("") ?>/image/png" href="<?php echo base_url("") ?>/images/favicon.png">
+    <link rel="icon" type="<?php echo base_url("") ?>/image/png" href="<?php echo base_url("") ?>/images/<?php echo $empresa['icono_empresa']?>">
     <!-- Web Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
@@ -22,13 +22,13 @@
     <!-- Magnific Popup -->
     <link rel="stylesheet" href="<?php echo base_url("") ?>/css/magnific-popup.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/font-awesome.css">
+    <link rel="stylesheet" href="<?php echo base_url('')?>/css/font-awesome.css">
     <!-- Fancybox -->
     <link rel="stylesheet" href="<?php echo base_url("") ?>/css/jquery.fancybox.min.css">
     <!-- Themify Icons -->
-    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/themify-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url("")?>/css/themify-icons.css">
     <!--jquery-ui-->
-    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/jquery-ui.css">
+    <link rel="stylesheet" href="<?php echo base_url('')?>/css/jquery-ui.css">
     <!-- Nice Select CSS -->
     <link rel="stylesheet" href="<?php echo base_url("") ?>/css/niceselect.css">
     <!-- Animate CSS -->

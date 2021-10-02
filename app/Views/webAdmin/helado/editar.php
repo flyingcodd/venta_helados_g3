@@ -43,7 +43,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputText1">Imagen 2</label> <br>
-                                            <img height="90px" src="<?php echo base_url('imagenesHelado') . '/' . $helado['imagen2_helado'] ?>?>" /><br>
+                                            <img height="90px" src="<?php echo base_url('imagenesHelado') . '/' . $helado['imagen2_helado'] ?>" /><br>
                                             <input type="file" id="myFile" name="imagen2" accept="image/png, .jpeg, .jpg, image/gif">
                                         </div>
                                         <div class="form-group">

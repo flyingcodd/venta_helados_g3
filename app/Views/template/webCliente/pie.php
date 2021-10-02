@@ -1,4 +1,3 @@
-
 <!-- Start Shop Services Area -->
 <section class="shop-services section home">
     <div class="container">
@@ -79,8 +78,8 @@
                         <div class="logo">
                             <a href="index.html"><img src="https://www.dafont.com/forum/attach/orig/8/7/879162.jpg" alt="#"></a>
                         </div>
-                        <p class="text"><?php echo $empresa['slogan_empresa']?></p>
-                        <p class="call">Tienes alguna pregunta? Te escuchamos <span><a href="tel:927613580"><?php echo $empresa['telefono1_empresa']?> </a></span></p>
+                        <p class="text"><?php echo $empresa['slogan_empresa'] ?></p>
+                        <p class="call">Tienes alguna pregunta? Te escuchamos <span><a href="tel:927613580"><?php echo $empresa['telefono1_empresa'] ?> </a></span></p>
                     </div>
                     <!-- End Single Widget -->
                 </div>
@@ -119,10 +118,10 @@
                         <!-- Single Widget -->
                         <div class="contact">
                             <ul>
-                                <li><?php echo $empresa['ubicacion_empresa']?></li>
+                                <li><?php echo $empresa['ubicacion_empresa'] ?></li>
                                 <li>Abancay-Apurimac-Peru.</li>
-                                <li><?php echo $empresa['email1_empresa']?></li>
-                                <li><?php echo $empresa['telefono1_empresa']?></li>
+                                <li><?php echo $empresa['email1_empresa'] ?></li>
+                                <li><?php echo $empresa['telefono1_empresa'] ?></li>
                             </ul>
                         </div>
                         <!-- End Single Widget -->
@@ -148,7 +147,7 @@
                     </div>
                     <div class="col-lg-6 col-12">
                         <div class="right">
-                            <img src="images/payments.png" alt="#">
+                            <img src="<?php echo base_url() ?>/images/payments.png" alt="#">
                         </div>
                     </div>
                 </div>
@@ -158,6 +157,52 @@
 </footer>
 <!-- /End Footer Area -->
 
+
+<!-- Jquery OFICIAL-->
+<script src="<?php echo base_url() ?>/js/jquery.min.js"></script>
+<script src="<?php echo base_url() ?>/js/jquery-migrate-3.0.0.js"></script>
+<script src="<?php echo base_url() ?>/js/jquery-ui.min.js"></script>
+<!-- Popper JS -->
+<script src="<?php echo base_url() ?>/js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="<?php echo base_url() ?>/js/bootstrap.min.js"></script>
+<!-- Color JS -->
+<script src="<?php echo base_url() ?>/js/colors.js"></script>
+<!-- Slicknav JS -->
+<script src="<?php echo base_url() ?>/js/slicknav.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="<?php echo base_url() ?>/js/owl-carousel.js"></script>
+<!-- Magnific Popup JS -->
+<script src="<?php echo base_url() ?>/js/magnific-popup.js"></script>
+<!-- Fancybox JS -->
+<script src="<?php echo base_url() ?>/js/facnybox.min.js"></script>
+<!-- Waypoints JS -->
+<script src="<?php echo base_url() ?>/js/waypoints.min.js"></script>
+<!-- Countdown JS -->
+<script src="<?php echo base_url() ?>/js/finalcountdown.min.js"></script>
+<!-- Nice Select JS -->
+<script src="<?php echo base_url() ?>/js/nicesellect.js"></script>
+<!-- Ytplayer JS -->
+<script src="<?php echo base_url() ?>/js/ytplayer.min.js"></script>
+<!-- Flex Slider JS -->
+<script src="<?php echo base_url() ?>/js/flex-slider.js"></script>
+<!-- ScrollUp JS -->
+<script src="<?php echo base_url() ?>/js/scrollup.js"></script>
+<!-- Onepage Nav JS -->
+<script src="<?php echo base_url() ?>/js/onepage-nav.min.js"></script>
+<!-- Easing JS -->
+<script src="<?php echo base_url() ?>/js/easing.js"></script>
+<!-- Active JS -->
+<script src="<?php echo base_url() ?>/js/active.js"></script>
+
+
+
+<!-- Flex Slider JS -->
+<script src="<?php echo base_url() ?>/js/flex-slider.js"></script>
+<!-- Google Map JS -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnhgNBg6jrSuqhTeKKEFDWI0_5fZLx0vM"></script>
+<script src="<?php echo base_url() ?>/js/gmap.min.js"></script>
+<script src="<?php echo base_url() ?>/js/map-script.js"></script>
 </body>
 
 </html>
