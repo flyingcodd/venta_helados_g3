@@ -22,7 +22,7 @@
             <div class="tab-content" id="pills-tabContent-2">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <!---->
-                    <table class="table table-hover">
+                    <table id="datatableACTIVAR" class="table table-hover data-table"> 
                         <thead>
                             <tr>
                                 <th scope="col">Codigo</th>

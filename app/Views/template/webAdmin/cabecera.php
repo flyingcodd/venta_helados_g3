@@ -8,7 +8,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo base_url("") ?>/assets/images/favicon.ico" />
-    
+
     <link rel="stylesheet" href="<?php echo base_url("") ?>/assets/css/backend-plugin.min.css">
     <link rel="stylesheet" href="<?php echo base_url("") ?>/assets/css/backend.css?v=1.0.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -114,7 +114,7 @@
                                 </li>
                                 <li class=" sidebar-layout">
                                     <a href="<?php echo base_url("") ?>/admin/categorias" class="svg-icon">
-                                    <i class="fa fa-list-ul"></i><span class="">Categorias de helados</span>
+                                        <i class="fa fa-list-ul"></i><span class="">Categorias de helados</span>
                                     </a>
                                 </li>
                             </ul>
@@ -132,7 +132,7 @@
                             <span class="text-uppercase small font-weight-bold">Configuraciones de empresa</span>
                         </li>
                         <li class=" sidebar-layout">
-                            <a href="<?php  echo base_url("") ?>/admin/configuraciones?>" class="svg-icon">
+                            <a href="<?php echo base_url("") ?>/admin/configuraciones?>" class="svg-icon">
                                 <i class="">
                                     <svg class="svg-icon" id="iq-chart-1" width="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -215,6 +215,28 @@
                         </svg>
                     </div>
                     <div class="d-flex align-items-center">
+
+                        <div class="change-mode">
+                            <div class="custom-control custom-switch custom-switch-icon custom-control-inline">
+                                <div class="custom-switch-inner">
+                                    <p class="mb-0"> </p>
+                                    <input type="checkbox" class="custom-control-input" id="dark-mode" data-active="true">
+                                    <label class="custom-control-label" for="dark-mode" data-mode="toggle">
+                                        <span class="switch-icon-right">
+                                            <svg xmlns="http://www.w3.org/2000/svg" id="h-moon" height="20" width="20" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="switch-icon-left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" id="h-sun" height="20" width="20" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                                            </svg>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                             <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
