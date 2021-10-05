@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="es">
 
 <head>
     <!-- Meta Tag -->
@@ -9,44 +9,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Title Tag  -->
-    <title><?php echo $empresa['nombre_empresa']?></title>
+    <title><?php echo $empresa['nombre_empresa'] ?></title>
     <!-- Favicon -->
-    <link rel="icon" type="<?php echo base_url("") ?>/image/png" href="<?php echo base_url("") ?>/images/<?php echo $empresa['icono_empresa']?>">
+    <link rel="icon" type="<?php echo base_url('') ?>/image/png" href="<?php echo base_url("") ?>/images/<?php echo $empresa['icono_empresa'] ?>">
     <!-- Web Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
     <!-- StyleSheet -->
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/bootstrap.css">
     <!-- Magnific Popup -->
-    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/magnific-popup.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="<?php echo base_url('')?>/css/font-awesome.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/font-awesome.css">
     <!-- Fancybox -->
-    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/jquery.fancybox.min.css">
     <!-- Themify Icons -->
-    <link rel="stylesheet" href="<?php echo base_url("")?>/css/themify-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/themify-icons.css">
     <!--jquery-ui-->
-    <link rel="stylesheet" href="<?php echo base_url('')?>/css/jquery-ui.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/jquery-ui.css">
     <!-- Nice Select CSS -->
-    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/niceselect.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/niceselect.css">
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/animate.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/animate.css">
     <!-- Flex Slider CSS -->
-    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/flex-slider.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/flex-slider.min.css">
     <!-- Owl Carousel -->
-    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/owl-carousel.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/owl-carousel.css">
     <!-- Slicknav -->
-    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/slicknav.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/slicknav.min.css">
 
     <!-- Eshop StyleSheet -->
-    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/reset.css">
-    <link rel="stylesheet" href="<?php echo base_url("") ?>/style.css">
-    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/responsive.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/reset.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/style.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/responsive.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
     <!--COLOR CSS--->
-    <link rel="stylesheet" href="<?php echo base_url("") ?>/css/color/color3.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/color/color3.css">
     <link rel="stylesheet" href="#" id="colors">
 </head>
 
@@ -64,22 +65,22 @@
     <!-- End Preloader -->
 
     <div class="color-plate">
-		<a class="color-plate-icon"><i class="ti-paint-bucket"></i></a>
-		<h4>Eshop Colors</h4>
-		<p>Here is some awesome color's available on Eshop Template.</p>
-		<span class="color1"></span>
-		<span class="color2"></span>
-		<span class="color3"></span>
-		<span class="color4"></span>
-		<span class="color5"></span>
-		<span class="color6"></span>
-		<span class="color7"></span>
-		<span class="color8"></span>
-		<span class="color9"></span>
-		<span class="color10"></span>
-		<span class="color11"></span>
-		<span class="color12"></span>
-	</div>
+        <a class="color-plate-icon"><i class="ti-paint-bucket"></i></a>
+        <h4>Eshop Colors</h4>
+        <p>Here is some awesome color's available on Eshop Template.</p>
+        <span class="color1"></span>
+        <span class="color2"></span>
+        <span class="color3"></span>
+        <span class="color4"></span>
+        <span class="color5"></span>
+        <span class="color6"></span>
+        <span class="color7"></span>
+        <span class="color8"></span>
+        <span class="color9"></span>
+        <span class="color10"></span>
+        <span class="color11"></span>
+        <span class="color12"></span>
+    </div>
 
     <!-- Header -->
     <header class="header shop">
@@ -91,8 +92,8 @@
                         <!-- Top Left -->
                         <div class="top-left">
                             <ul class="list-main">
-                                <li><i class="ti-headphone-alt"></i><?php echo $empresa['telefono1_empresa']?></li>
-                                <li><i class="ti-email"></i><?php echo $empresa['email1_empresa']?> </li>
+                                <li><i class="ti-headphone-alt"></i><?php echo $empresa['telefono1_empresa'] ?></li>
+                                <li><i class="ti-email"></i><?php echo $empresa['email1_empresa'] ?> </li>
                             </ul>
                         </div>
                         <!--/ End Top Left -->
@@ -101,7 +102,7 @@
                         <!-- Top Right -->
                         <div class="right-content">
                             <ul class="list-main">
-                                <li><i class="ti-location-pin"></i> <?php echo $empresa['ubicacion_empresa']?> </li>
+                                <li><i class="ti-location-pin"></i> <?php echo $empresa['ubicacion_empresa'] ?> </li>
                                 <li><i class="ti-alarm-clock"></i> <a href="#"> Horario </a></li>
                                 <li><i class="ti-user"></i> <a href="#">Mi cuenta </a></li>
                                 <li><i class="ti-power-off"></i><a href="<?php echo base_url("login") ?>"> Login </a></li>
@@ -119,7 +120,7 @@
                     <div class="col-lg-2 col-md-2 col-12">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="https://www.dafont.com/forum/attach/orig/8/7/879162.jpg" alt="logo"></a>
+                            <a href="<?php echo base_url("/") ?>"><img src="https://www.dafont.com/forum/attach/orig/8/7/879162.jpg" alt="logo"></a>
                         </div>
                         <!--/ End Logo -->
                         <!-- Search Form -->
@@ -163,35 +164,44 @@
                                 <a href="#" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                             </div>
                             <div class="sinlge-bar shopping">
-                                <a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
+                                <a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count"><?php echo $contador ?></span></a>
                                 <!-- Shopping Item -->
+
                                 <div class="shopping-item">
+
+
                                     <div class="dropdown-cart-header">
-                                        <span>2 Objetos</span>
-                                        <a href="#">View Cart</a>
+                                        <span><?php ?> Objetos</span>
+                                        <a href="<?php echo base_url('') ?>/carrito">Ver Carrito</a>
                                     </div>
                                     <ul class="shopping-list">
+                                    <?php foreach($carritos as $carrito): ?>
+                                        
                                         <li>
-                                            <a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-                                            <a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-                                            <h4><a href="#">Woman Ring</a></h4>
-                                            <p class="quantity">1x - <span class="amount">$99.00</span></p>
+                                        <?php foreach($helados as $helado): ?>
+                                        <?php if($carrito['id_helado']==$helado['id_helado']):?>
+                                            <a href="<?php echo base_url('carrito/borrar/' . $carrito['id_carrito']) ?>" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
+                                            <a class="cart-img" href="#"><img src="<?php echo base_url('imagenesHelado')."/".$helado['imagen1_helado'] ?>" alt="#"></a>
+                                            <h4><a href="#"><?php echo $helado['nombre_helado'] ?></a></h4>
+                                            <p class="quantity"><?php  echo $carrito['cantidad_carrito']; ?>x - <span class="amount"><?php  echo ($helado['precio_helado']) ?></span></p>
+                                            <?php endif;?>
+                                            <?php endforeach; ?>
                                         </li>
-                                        <li>
-                                            <a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-                                            <a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-                                            <h4><a href="#">Woman Necklace</a></h4>
-                                            <p class="quantity">1x - <span class="amount">$35.00</span></p>
-                                        </li>
+                                        <?php endforeach; ?> 
                                     </ul>
                                     <div class="bottom">
                                         <div class="total">
                                             <span>Total</span>
-                                            <span class="total-amount">$134.00</span>
+                                            
+                                            <span class="total-amount">$<?php echo $precio_total ?></span>
+                                            
                                         </div>
-                                        <a href="checkout.html" class="btn animate">Checkout</a>
+                                        <a  href="<?php echo base_url("carrito/vender") ?>" class="btn animate">Pagar</a>
                                     </div>
+
+
                                 </div>
+
                                 <!--/ End Shopping Item -->
                             </div>
                         </div>
@@ -211,19 +221,17 @@
                                     <div class="navbar-collapse">
                                         <div class="nav-inner">
                                             <ul class="nav main-menu menu navbar-nav">
-                                                <li class="active"><a href="<?php echo base_url("/")?>">Inicio</a></li>
-                                                <li><a href="<?php echo base_url("/tienda")?>">Producto</a></li>
-                                                <li><a href="#">Servicio</a></li>
+                                                <li class="active"><a href="<?php echo base_url("/") ?>">Inicio</a></li>
+                                                <li><a href="<?php echo base_url("/tienda") ?>">Productos</a></li>
                                                 <li><a href="#">Tienda<i class="ti-angle-down"></i><span class="new">Nuevos</span></a>
                                                     <ul class="dropdown">
-                                                        <li><a href="<?php echo base_url("/tienda")?>">Tienda online</a></li>
-                                                        <li><a href="<?php echo base_url("/ofertas")?>">ofertas</a></li>
+                                                        <li><a href="<?php echo base_url("/tienda") ?>">Tienda online</a></li>
+                                                        <li><a href="<?php echo base_url("/ofertas") ?>">ofertas</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="#">Paginas</a></li>
-                                             
-                                                <li><a href="<?php echo base_url("/nosotros")?>">Sobre nosotros</a></li>
-                                                <li><a href="<?php echo base_url("/contacto")?>">Contactanos</a></li>
+
+                                                <li><a href="<?php echo base_url("/nosotros") ?>">Sobre nosotros</a></li>
+                                                <li><a href="<?php echo base_url("/contacto") ?>">Contactanos</a></li>
                                             </ul>
                                         </div>
                                     </div>

@@ -9,9 +9,9 @@
         <!---->
 
         <div class="card-body">
-            
+
             <div class="tab-content" id="pills-tabContent-2">
-                
+
                 <!--fin de listar-->
                 <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <br>
@@ -52,7 +52,15 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputText1">Categoria</label>
-                                            <input type="number" REQUIRED name="categoria" class="form-control" id="exampleInputText1" value="<?php echo $helado['id_categoria'] ?>" placeholder="ingrese el stock del helado">
+                                            <select id="" class="form-control mb-3" name="categoria" required>
+
+                                                <?php foreach ($categorias as $categoria) :
+                                                    if ($helado['id_categoria'] == $categoria['id_categoria']){ ?>
+                                                        <option selected="" value="<?php echo $categoria['id_categoria'] ?>"><?php echo $categoria['nombre_categoria'] ?></option>
+                                                    <?php }else{ ?>
+                                                    <option value="<?php echo $categoria['id_categoria'] ?>"><?php echo $categoria['nombre_categoria'] ?></option>
+                                                <?php } endforeach; ?>
+                                            </select>
                                         </div>
                                         <button type="submit" value="agregar" class="btn btn-primary">Actualizar</button>
                                         <a type="button" href="<?php echo base_url("admin/helados") ?>" value="" class="btn btn-danger">Cancelar</a>

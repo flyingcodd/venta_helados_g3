@@ -10,7 +10,7 @@
                 <div class="bread-inner">
                     <ul class="bread-list">
                         <li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-                        <li class="active"><a href="blog-single.html">Cart</a></li>
+                        <li class="active"><a href="blog-single.html">Carrito</a></li>
                     </ul>
                 </div>
             </div>
@@ -28,22 +28,26 @@
                 <table class="table shopping-summery">
                     <thead>
                         <tr class="main-hading">
-                            <th>PRODUCT</th>
-                            <th>NAME</th>
-                            <th class="text-center">UNIT PRICE</th>
-                            <th class="text-center">QUANTITY</th>
+                            <th>HELADOS</th>
+                            <th>NOMBRE</th>
+                            <th class="text-center">PRECIO UNITARIO</th>
+                            <th class="text-center">CANTIDAD</th>
                             <th class="text-center">TOTAL</th>
                             <th class="text-center"><i class="ti-trash remove-icon"></i></th>
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach($carritos as $carrito): ?>
                         <tr>
-                            <td class="image" data-title="No"><img src="https://via.placeholder.com/100x100" alt="#"></td>
+                            <?php foreach($helados as $helado): 
+                                if($helado['id_helado']==$carrito['id_helado']):?>
+                            <td class="image" data-title="No"><img src="<?php echo base_url('imagenesHelado')."/".$helado['imagen1_helado'] ?>" alt="#"></td>
                             <td class="product-des" data-title="Description">
-                                <p class="product-name"><a href="#">Women Dress</a></p>
-                                <p class="product-des">Maboriosam in a tonto nesciung eget distingy magndapibus.</p>
+                                <p class="product-name"><a href="#"><?php echo $helado['nombre_helado'] ?></a></p>
+                                <p class="product-des"><?php echo $helado['descripcion'] ?></p>
                             </td>
-                            <td class="price" data-title="Price"><span>$110.00 </span></td>
+                            <td class="price" data-title="Price"><span>$<?php echo $helado['precio_helado'] ?></span></td>
+                            
                             <td class="qty" data-title="Qty">
                                 <!-- Input Order -->
                                 <div class="input-group">
@@ -52,7 +56,7 @@
                                             <i class="ti-minus"></i>
                                         </button>
                                     </div>
-                                    <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="100" value="1">
+                                    <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="100" value="<?php echo $carrito['cantidad_carrito']?>">
                                     <div class="button plus">
                                         <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
                                             <i class="ti-plus"></i>
@@ -61,63 +65,10 @@
                                 </div>
                                 <!--/ End Input Order -->
                             </td>
-                            <td class="total-amount" data-title="Total"><span>$220.88</span></td>
-                            <td class="action" data-title="Remove"><a href="#"><i class="ti-trash remove-icon"></i></a></td>
-                        </tr>
-                        <tr>
-                            <td class="image" data-title="No"><img src="https://via.placeholder.com/100x100" alt="#"></td>
-                            <td class="product-des" data-title="Description">
-                                <p class="product-name"><a href="#">Women Dress</a></p>
-                                <p class="product-des">Maboriosam in a tonto nesciung eget distingy magndapibus.</p>
-                            </td>
-                            <td class="price" data-title="Price"><span>$110.00 </span></td>
-                            <td class="qty" data-title="Qty">
-                                <!-- Input Order -->
-                                <div class="input-group">
-                                    <div class="button minus">
-                                        <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[2]">
-                                            <i class="ti-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text" name="quant[2]" class="input-number" data-min="1" data-max="100" value="2">
-                                    <div class="button plus">
-                                        <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[2]">
-                                            <i class="ti-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <!--/ End Input Order -->
-                            </td>
-                            <td class="total-amount" data-title="Total"><span>$220.88</span></td>
-                            <td class="action" data-title="Remove"><a href="#"><i class="ti-trash remove-icon"></i></a></td>
-                        </tr>
-                        <tr>
-                            <td class="image" data-title="No"><img src="https://via.placeholder.com/100x100" alt="#"></td>
-                            <td class="product-des" data-title="Description">
-                                <p class="product-name"><a href="#">Women Dress</a></p>
-                                <p class="product-des">Maboriosam in a tonto nesciung eget distingy magndapibus.</p>
-                            </td>
-                            <td class="price" data-title="Price"><span>$110.00 </span></td>
-                            <td class="qty" data-title="Qty">
-                                <!-- Input Order -->
-                                <div class="input-group">
-                                    <div class="button minus">
-                                        <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[3]">
-                                            <i class="ti-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="text" name="quant[3]" class="input-number" data-min="1" data-max="100" value="3">
-                                    <div class="button plus">
-                                        <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[3]">
-                                            <i class="ti-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <!--/ End Input Order -->
-                            </td>
-                            <td class="total-amount" data-title="Total"><span>$220.88</span></td>
-                            <td class="action" data-title="Remove"><a href="#"><i class="ti-trash remove-icon"></i></a></td>
-                        </tr>
+                            <td class="total-amount" data-title="Total"><span>$<?php echo ($carrito['cantidad_carrito'])*($helado['precio_helado'])?></span></td>
+                            <td class="action" data-title="Remove"><a href="<?php echo base_url('carrito/borrar/' . $carrito['id_carrito']) ?>"><i class="ti-trash remove-icon"></i></a></td>
+                        </tr><?php endif; endforeach; ?>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
                 <!--/ End Shopping Summery -->
@@ -132,26 +83,26 @@
                             <div class="left">
                                 <div class="coupon">
                                     <form action="#" target="_blank">
-                                        <input name="Coupon" placeholder="Enter Your Coupon">
-                                        <button class="btn">Apply</button>
+                                        <input name="Coupon" placeholder="Ingrese su cupon">
+                                        <button class="btn">Aplicar</button>
                                     </form>
                                 </div>
                                 <div class="checkbox">
-                                    <label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox"> Shipping (+10$)</label>
+                                    <label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox"> Envio (+10$)</label>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-7 col-12">
                             <div class="right">
                                 <ul>
-                                    <li>Cart Subtotal<span>$330.00</span></li>
-                                    <li>Shipping<span>Free</span></li>
-                                    <li>You Save<span>$20.00</span></li>
-                                    <li class="last">You Pay<span>$310.00</span></li>
+                                    <li>Carito Subtotal<span>$<?php echo $precio_total?></span></li>
+                                    <li>Envio<span>Free</span></li>
+                                    <li>Ahorras<span>$00.00</span></li>
+                                    <li class="last">Su Pago<span>$<?php echo $precio_total?></span></li>
                                 </ul>
                                 <div class="button5">
-                                    <a href="#" class="btn">Checkout</a>
-                                    <a href="#" class="btn">Continue shopping</a>
+                                <a type="button" href="<?php echo base_url("carrito/vender") ?>" value="vender" class="btn">Pagar</a>
+                                    <a href="<?php echo base_url('tienda')?>" class="btn">Continuar Comprando</a>
                                 </div>
                             </div>
                         </div>

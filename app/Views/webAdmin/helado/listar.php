@@ -22,7 +22,7 @@
             <div class="tab-content" id="pills-tabContent-2">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <!---->
-                    <table class="table table-hover"> 
+                    <table class="table table-hover">
                         <thead>
                             <tr>
                                 <th scope="col">Codigo</th>
@@ -46,7 +46,12 @@
                                     <td><img height="50px" src="<?php echo '../imagenesHelado/' . $helado['imagen1_helado'] ?>" /></td>
                                     <td><img height="50px" src="<?php echo base_url('imagenesHelado') . '/' . $helado['imagen2_helado'] ?>" /></td>
                                     <td><?php echo $helado['descripcion'] ?></td>
-                                    <td><?php echo $helado['id_categoria'] ?></td>
+                                    <?php foreach ($categorias as $categoria) : ?>
+                                        <?php if ($helado['id_categoria'] == $categoria['id_categoria']) : ?>
+                                            <td><?php echo $categoria['nombre_categoria'] ?></td>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
+
                                     <td class=" ">
                                         <a href="<?php echo base_url('admin/helados/editar/' . $helado['id_helado']) ?>" class="btn btn-outline-success mt-2"><i class="fa fa-edit"></i> Editar</a>
 
@@ -95,7 +100,12 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputText1">Categoria</label>
-                                            <input type="number" REQUIRED name="categoria" class="form-control" id="exampleInputText1" value="" placeholder="ingrese la categoria que pertenece el helado">
+                                            <select id="" class="form-control mb-3" name="categoria" required>
+                                                <option selected="" disabled>Seleccionar</option>
+                                                <?php foreach ($categorias as $categoria) : ?>
+                                                    <option value="<?php echo $categoria['id_categoria'] ?>"><?php echo $categoria['nombre_categoria'] ?></option>
+                                                <?php endforeach; ?>
+                                            </select>
                                         </div>
                                         <button type="submit" value="agregar" class="btn btn-primary">Agregar</button>
                                         <a type="button" href="<?php echo base_url("admin/helados") ?>" value="cancelar" class="btn btn-danger">Cancelar</a>
@@ -136,8 +146,7 @@
             'Your file has been deleted.',
             'success'
         )
-    }
-    else if (mensaje == 'actualizado') {
+    } else if (mensaje == 'actualizado') {
         Swal.fire({
             icon: 'success',
             title: 'Good job!',

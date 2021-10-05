@@ -27,7 +27,7 @@
                     <h2>Login</h2>
                     <p>Please register in order to checkout more quickly</p>
                     <!-- Form -->
-                    <form class="form" method="post" action="#">
+                    <form class="form" method="post" action="<?php echo base_url("login/validar") ?>">
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
@@ -44,7 +44,7 @@
                             <div class="col-12">
                                 <div class="form-group login-btn">
                                     <button class="btn" type="submit">Login</button>
-                                    <a href="<?php echo base_url('registrar')?>" class="btn">Registar</a>
+                                    <a href="<?php echo base_url('registrar') ?>" class="btn">Registar</a>
                                 </div>
                                 <div class="checkbox">
                                     <label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">Recordar me</label>
@@ -61,6 +61,25 @@
 </section>
 <!--/ End Login -->
 
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+<script type="text/javascript">
+    let mensaje = '<?php echo $mensaje; ?>'
 
-<?php echo $pie ?>
+    if (mensaje == '1') {
+        Swal.fire(
+            'Buen Trabajo!',
+            'registrado con exito! puede inisiar session',
+            'success'
+        )
+    }
+    if (mensaje == 'nologin') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Contraseña o email incorrectos!'
+        })
+    }
+</script>
+
+<?php echo $pie; ?>

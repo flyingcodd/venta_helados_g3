@@ -1,5 +1,5 @@
-<?php echo $cabecera; foreach($inner as $helado):?>
 
+<?php echo $cabecera?>
 <!-- Breadcrumbs -->
 <div class="breadcrumbs">
     <div class="container">
@@ -89,19 +89,19 @@
                             </div>
                             <!--/ End Size -->
                             <!-- Product Buy -->
-                            <div class="product-buy">
+                            <div class="product-buy"><form action="<?php echo base_url("carrito/insertar") ?>" method="POST">
                                 <div class="quantity">
                                     <h6>Cantidad :</h6>
                                     <!-- Input Order -->
                                     <div class="input-group">
                                         <div class="button minus">
-                                            <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                            <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="cantidad">
                                                 <i class="ti-minus"></i>
                                             </button>
                                         </div>
-                                        <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
+                                        <input type="text" name="cantidad" class="input-number" data-min="1" data-max="1000" value="1">
                                         <div class="button plus">
-                                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="cantidad">
                                                 <i class="ti-plus"></i>
                                             </button>
                                         </div>
@@ -110,11 +110,13 @@
                                 </div>
                                 <br><br><br>
                                 <div class="add-to-cart">
-                                    <a href="#" class="btn">Agregar a carrito</a>
+                                    <input type="hidden" name="helado" value="<?php echo $helado['id_helado'] ?>">
+                                    <input type="hidden" name="cliente" value="<?php echo 2 ?>">
+                                    <button type="submit" class="btn">Agregar a carrito</button>
                                     <a href="#" class="btn min"><i class="ti-heart"></i></a>
                                     <a href="#" class="btn min"><i class="fa fa-compress"></i></a>
-                                </div>
-                                <p class="cat">Categoria :<a href="#"><?php echo $helado['nombre_categoria'] ?></a></p>
+                                </div></form>
+                                <p class="cat">Categoria :<a href="#"><?php echo $categoria['nombre_categoria'] ?></a></p>
                                 <p class="availability">Stock : <?php echo $helado['stock_helado'] ?> Productos de <?php echo $helado['nombre_helado'] ?> en Stock</p>
                             </div>
                             <!--/ End Product Buy -->
@@ -142,7 +144,7 @@
                                                     <p><?php echo $helado['descripcion'] ?></p>
                                                 </div>
                                                 <div class="single-des">
-                                                    <p><?php echo $helado['descripcion_categoria'] ?></p>
+                                                    <p><?php echo $categoria['descripcion_categoria'] ?></p>
                                                 </div>
                                                 <div class="single-des">
                                                     <h4>Product Features:</h4>
@@ -408,7 +410,7 @@
 
 
 
-<?php endforeach;?>
+
 
 
 <?php echo $pie ?>

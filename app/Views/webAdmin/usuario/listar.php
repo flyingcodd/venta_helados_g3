@@ -27,7 +27,7 @@
                                 <th scope="col">Codigo</th>
                                 <th scope="col">Rol</th>
                                 <th scope="col">Correo</th>
-                                <th scope="col">Contrasenia</th>
+                                <th scope="col">Contraseña</th>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Apellido</th>
                                 <th scope="col">Direccion</th>
@@ -35,22 +35,28 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($usuarios as $usuario) : ?>
+                            <?php foreach ($usuarios as $usuario) { ?>
+
                                 <tr>
                                     <td><?php echo $usuario['id_usuario'] ?></td>
-                                    <td><?php echo $usuario['id_rol']?></td>
+                                    <?php foreach ($roles as $rol) : ?>
+                                        <?php if ($usuario['id_rol'] == $rol['id_rol']) : ?>
+                                            <td><?php echo $rol['nombre_rol'] ?></td>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
                                     <td><?php echo $usuario['correo_usuario'] ?></td>
-                                    <td><?php echo $usuario['password_usuario'] ?></td>
+                                    <td>*******</td>
                                     <td><?php echo $usuario['nombre_usuario'] ?></td>
                                     <td><?php echo $usuario['apellido_usuario'] ?></td>
                                     <td><?php echo $usuario['direccion_usuario'] ?></td>
                                     <td class=" ">
-                                        <a href="<?php echo base_url('admin/usuario/editar/' . $usuario['id_usuario']) ?>" class="btn btn-outline-success mt-2"><i class="fa fa-edit"></i> Editar</a>
-
-                                        <a href="<?php echo base_url('admin/usuario/borrar/' . $usuario['id_usuario']) ?>" class="btn btn-outline-danger mt-2"><i class="fa fa-trash"></i> Eliminar</a>
+                                        <a href="<?php echo base_url('admin/usuarios/editar/' . $usuario['id_usuario']) ?>" class="btn btn-outline-success mt-2"><i class="fa fa-edit"></i> Editar</a>
+                                        <?php if ($usuario['id_rol'] != 1 || $usuario['id_usuario'] != 1) : ?>
+                                            <a href="<?php echo base_url('admin/usuarios/borrar/' . $usuario['id_usuario']) ?>" class="btn btn-outline-danger mt-2"><i class="fa fa-trash"></i> Eliminar</a>
+                                        <?php endif; ?>
                                     </td>
                                 </tr>
-                            <?php endforeach; ?>
+                            <?php }; ?>
                         </tbody>
                     </table>
                 </div>
@@ -64,35 +70,43 @@
 
                                 <div class="card-body">
                                     <h4 class="card-title text-center">Agregar nuevo Usuario</h4>
-                                    <form action="" method="">
+                                    <form action="<?php echo base_url("admin/usuarios/insertar") ?>" method="POST">
                                         <div class="form-group">
-                                            <label>Codigo Rol</label> <span id="ver_id_rol" style="display: none"></span>
-                                            <select id="id_rol" class="form-control mb-3" name="rol_id">
-                                                <option selected="">Seleccionar</option>
-                                                <?php foreach ($roles as $rol) : ?>
-                                                    <option value="<?php echo $rol['id_rol'] ?>"><?php echo $rol['nombre_rol'] ?></option>
-                                                <?php endforeach; ?>
+                                            <label>Nombre de Rol</label> <span id="ver_id_rol" style="display: none"></span>
+                                            <select id="id_rol" class="form-control mb-3" name="rol">
+                                                
+                                                    
+                                                        <option selected="" disabled>Seleccionar</option>
+                                                        <?php foreach ($roles as $rol) : ?>
+                                                            <option value="<?php echo $rol['id_rol'] ?>"><?php echo $rol['nombre_rol'] ?></option>
+                                                        <?php endforeach;
+                                                    
+                                                 ?>
                                             </select>
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputdatetime">Correo</label>
-                                            <input class="form-control" type="email" name="usuario_correo" placeholder="example@example.com">
+                                            <input class="form-control" type="email" name="email" placeholder="ejemplo@ejemplo.com">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputdatetime">Contraseña</label>
-                                            <input class="form-control" type="password" name="usuario_pass" placeholder="Enter Password">
+                                            <input class="form-control" type="password" name="password1" placeholder="Ingrese su Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputdatetime">Repita la Contraseña</label>
+                                            <input class="form-control" type="password" name="password2" placeholder="Repita su Password">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputText1">Nombre</label>
-                                            <input type="text" name="usuario_nombre" class="form-control" id="exampleInputText1" value="" placeholder="Enter Name">
+                                            <input type="text" name="nombre" class="form-control" id="exampleInputText1" value="" placeholder="Ingrese su nombre">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputText1">Apellidos</label>
-                                            <input type="text" name="usuario_apellido" class="form-control" id="exampleInputText1" value="" placeholder="Enter Name">
+                                            <input type="text" name="apellido" class="form-control" id="exampleInputText1" value="" placeholder="Ingrese su apellido">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputText1">Direccion</label>
-                                            <input type="text" name="usuario_direccion" class="form-control" id="exampleInputText1" value="" placeholder="Enter Name">
+                                            <input type="text" name="direccion" class="form-control" id="exampleInputText1" value="" placeholder="Ingrese su direccion">
                                         </div>
                                         <button type="submit" value="agregar" class="btn btn-primary">Agregar</button>
                                         <button type="submit" value="cancelar" class="btn bg-danger">Cancelar</button>
@@ -103,7 +117,7 @@
                     </div>
                 </div>
                 <!--fin de nuevo-->
-                
+
                 <!--fin de actualizar-->
             </div>
         </div>
@@ -111,13 +125,42 @@
 </div>
 
 <!--jquery-->
-<script>
-    $('#id_rol').on('change', function() {
-        var id = this.value;
-        var texto = $(this).find('option:selected').text();
-        alert(id);
-        $('#ver_id_rol').text(id);
-    });
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script type="text/javascript">
+    let mensaje = '<?php echo $mensaje ?>'
+
+    if (mensaje == 'insertado') {
+        Swal.fire(
+            'Good job!',
+            'agregado con exito!',
+            'success'
+        )
+    } else if (mensaje == 'noinsertado') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Registro no ingresado!'
+        })
+    } else if (mensaje == 'eliminado') {
+        Swal.fire(
+            'Deleted!',
+            'Se ha eliminado el registro.',
+            'success'
+        )
+    } else if (mensaje == 'actualizado') {
+        Swal.fire({
+            icon: 'success',
+            title: 'Good job!',
+            text: 'Actualizado con exito!!'
+        })
+    } else if (mensaje == 'noactualizado') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Registro no actualizado!'
+        })
+    }
 </script>
 <!--jquery-->
 <?php echo $pie ?>

@@ -21,7 +21,7 @@
                         <thead>
                             <tr>
                                 <th scope="col">Codigo</th>
-                                <th scope="col">Usuario</th>
+                                <th scope="col">Cliente</th>
                                 <th scope="col">Helado</th>
                                 <th scope="col">Fecha</th>
                                 <th scope="col">Cantidad</th>
@@ -29,14 +29,22 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($inner as $ventas) : ?>
+                            <?php foreach ($ventas as $venta) : ?>
                                 <tr>
-                                    <td><?php echo $ventas['id_venta'] ?></td>
-                                    <td><?php echo $ventas['nombre_usuario'] ?></td>
-                                    <td><?php echo $ventas['nombre_helado'] ?></td>
-                                    <td><?php echo $ventas['fecha'] ?></td>
-                                    <td><?php echo $ventas['cantidad'] ?></td>
-                                    <td><?php echo $ventas['precio_total'] ?></td>
+                                    <td><?php echo $venta['id_venta'] ?></td>
+                                    <?php foreach ($usuarios as $usuario) : ?>
+                                        <?php if ($usuario['id_usuario'] == $venta['id_usuario']) : ?>
+                                            <td><?php echo $usuario['nombre_usuario'] ?></td>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
+                                    <?php foreach ($helados as $helado) : ?>
+                                        <?php if ($helado['id_helado'] == $venta['id_helado']) : ?>
+                                            <td><?php echo $helado['nombre_helado'] ?></td>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
+                                    <td><?php echo $venta['fecha'] ?></td>
+                                    <td><?php echo $venta['cantidad'] ?></td>
+                                    <td><?php echo $venta['precio_total'] ?></td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>

@@ -55,7 +55,10 @@ $routes->get('admin', 'AdminController::index');
 
 //login
 $routes->get('login', 'LoginController::login');
+$routes->post('login/validar', 'LoginController::validar');
+$routes->post('login/salir', 'LoginController::salir');
 $routes->get('registrar', 'LoginController::registro');
+$routes->post('registrar/nuevo', 'LoginController::nuevo');
 
 $routes->get('admin/configuraciones', 'AdminController::configuraciones');
 $routes->post('admin/configuraciones/actualizar', 'AdminController::actualizar');
@@ -74,28 +77,48 @@ $routes->get('admin/categorias/borrar/(:num)', 'CategoriaController::borrar/$1')
 $routes->get('admin/categorias/editar/(:num)', 'CategoriaController::editar/$1');
 $routes->post('admin/categorias/actualizar', 'CategoriaController::actualizar');
 
-//toda las rutas del categoria-------------------------------------
+//toda las rutas del roles-------------------------------------
 $routes->get('admin/roles', 'RolController::listar');
 $routes->post('admin/roles/insertar', 'RolController::insertar');
 $routes->get('admin/roles/borrar/(:num)', 'RolController::borrar/$1');
 $routes->get('admin/roles/editar/(:num)', 'RolController::editar/$1');
 $routes->post('admin/roles/actualizar', 'RolController::actualizar');
 
-
+//toda las rutas del usuarios-------------------------------------
 $routes->get('admin/usuarios', 'UsuarioController::listar');
+$routes->post('admin/usuarios/insertar', 'UsuarioController::insertar');
+$routes->get('admin/usuarios/borrar/(:num)', 'UsuarioController::borrar/$1');
+$routes->get('admin/usuarios/editar/(:num)', 'UsuarioController::editar/$1');
+$routes->post('admin/usuarios/actualizar', 'UsuarioController::actualizar');
+
+
+
 $routes->get('admin/ventas', 'VentaController::listar');
 
 
 
 $routes->get('admin/perfil', 'PerfilController::index');
+
+//toda las rutas del carrito/caja-------------------------------------
 $routes->get('admin/caja', 'CajaController::index');
+$routes->post('admin/caja/insertar', 'CajaController::insertar');
+$routes->get('admin/caja/borrar/(:num)', 'CajaController::borrar/$1');
+$routes->get('admin/caja/editar/(:num)', 'CajaController::editar/$1');
+$routes->post('admin/caja/actualizar', 'CajaController::actualizar');
+$routes->get('admin/caja/vaciar', 'CajaController::vaciar');
+$routes->get('admin/caja/vender', 'CajaController::vender');
 
 
+$routes->get('carrito', 'TiendaController::carrito');
+$routes->post('carrito/insertar', 'TiendaController::insertar');
+$routes->get('carrito', 'Home::carrito');
+$routes->get('carrito/borrar/(:num)', 'TiendaController::borrar/$1');
+$routes->get('carrito/vender', 'TiendaController::vender');
 
 
 //cliente
 $routes->get('contacto', 'Home::contacto');
-$routes->get('carrito', 'Home::carrito');
+
 $routes->get('perfil', 'Home::perfil');
 $routes->get('nosotros', 'Home::nosotros');
 $routes->get('producto', 'Home::producto');

@@ -1,19 +1,26 @@
 <?php
 
 namespace App\Controllers;
+
+use App\Models\Helado;
+use App\Models\Usuario;
+use App\Models\Ventas;
 use CodeIgniter\Controller;
 class VentaController extends BaseController
 {
     public function listar()
     {
-        $db = \Config\Database::connect();
-        $query   = $db->query('SELECT id_venta,nombre_usuario,nombre_helado,fecha,cantidad,precio_total FROM ventas inner join usuario inner join helado
-        where ventas.id_usuario=usuario.id_usuario & ventas.id_helado=helado.id_helado;');
-        $datos['inner'] = $query->getResultArray();
         
+        $ventas=new Ventas();
+        $datos['ventas']=$ventas->OrderBy('id_venta', 'ASC')->findAll();
+        $usuarios=new Usuario();
+        $datos['usuarios']=$usuarios->OrderBy('id_usuario', 'ASC')->findAll();
+        $helados=new Helado();
+        $datos['helados']=$helados->OrderBy('id_helado', 'ASC')->findAll();
         
-        $datos['cabecera']= view('template/webAdmin/cabecera');
-        $datos['pie']= view('template/webAdmin/piepagina');
+        $p=new PlantillaController();
+        $datos['cabecera']= $p->cabeceraAdmin();
+        $datos['pie']= $p->pieAdmin();
 
         return view('webAdmin/venta/listar',$datos);
     }

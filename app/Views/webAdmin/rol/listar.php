@@ -36,8 +36,10 @@
                                     <td><?php echo $item['id_rol'] ?></td>
                                     <td><?php echo $item['nombre_rol'] ?></td>
                                     <td>
-                                        <a href="<?php echo base_url('admin/roles/editar/' . $item['id_rol']) ?>" class="btn btn-outline-success mt-2"><i class="fa fa-edit"></i> Editar</a>
-                                        <a href="<?php echo base_url('admin/roles/borrar/' . $item['id_rol']) ?>" class="btn btn-outline-danger mt-2"><i class="fa fa-trash"></i> Eliminar</a>
+                                        <?php if ($item['id_rol'] != 1) : ?>
+                                            <a href="<?php echo base_url('admin/roles/editar/' . $item['id_rol']) ?>" class="btn btn-outline-success mt-2"><i class="fa fa-edit"></i> Editar</a>
+                                            <a href="<?php echo base_url('admin/roles/borrar/' . $item['id_rol']) ?>" class="btn btn-outline-danger mt-2"><i class="fa fa-trash"></i> Eliminar</a>
+                                        <?php endif; ?>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

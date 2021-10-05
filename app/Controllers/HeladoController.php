@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\Categoria;
 use CodeIgniter\Controller;
 use App\Models\Helado;
 
@@ -11,11 +12,13 @@ class HeladoController extends BaseController
     {
         
         $helado = new Helado();
-
         $datos['helados'] =$helado->OrderBy('id_helado', 'ASC')->findAll();
-        
-        $datos['cabecera'] = view('template/webAdmin/cabecera');
-        $datos['pie'] = view('template/webAdmin/piepagina');
+        $categorias = new Categoria();
+        $datos['categorias'] =$categorias->OrderBy('id_categoria', 'ASC')->findAll();
+
+        $p=new PlantillaController();
+        $datos['cabecera']= $p->cabeceraAdmin();
+        $datos['pie']= $p->pieAdmin();
         $datos['mensaje'] = session('mensaje');
         return view('webAdmin/helado/listar', $datos);
     }
@@ -82,9 +85,12 @@ class HeladoController extends BaseController
     {
         $helado = new Helado();
         $datos['helado'] = $helado->where('id_helado', $id)->first();
-
-        $datos['cabecera'] = view('template/webAdmin/cabecera');
-        $datos['pie'] = view('template/webAdmin/piepagina');
+        $categorias = new Categoria();
+        $datos['categorias'] =$categorias->OrderBy('id_categoria', 'ASC')->findAll();
+        
+        $p=new PlantillaController();
+        $datos['cabecera']= $p->cabeceraAdmin();
+        $datos['pie']= $p->pieAdmin();
         return view('webAdmin/helado/editar', $datos);
     }
     public function actualizar()

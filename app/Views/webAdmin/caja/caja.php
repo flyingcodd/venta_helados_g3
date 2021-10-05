@@ -22,40 +22,62 @@
             <div class="tab-content" id="pills-tabContent-2">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <!---->
+                    <br>
                     <table class="table table-hover">
                         <thead>
                             <tr>
                                 <th scope="col">Codigo</th>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Precio</th>
-                                <th scope="col">Stock</th>
-                                <th scope="col">Img 1</th>
-                                <th scope="col">Img 2</th>
-                                <th scope="col">Descripcion</th>
+                                <th scope="col">Nombre del helado</th>
+                                <th scope="col">Nombre del cliente</th>
+                                <th scope="col">cantidad</th>
+                                <th scope="col">Precio unitario</th>
+                                <th scope="col">Precio total</th>
+                                <th scope="col">Descripcion del helado</th>
                                 <th scope="col">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($helados as $helado) : ?>
+                            <?php foreach ($carritos as $carrito) : ?>
                                 <tr>
-                                    <td><?php echo $helado['id_helado'] ?></td>
-                                    <td><?php echo $helado['nombre_helado'] ?></td>
-                                    <td><?php echo $helado['precio_helado'] ?></td>
-                                    <td><?php echo $helado['stock_helado'] ?></td>
-                                    <td><img height="50px" src="<?php echo '../imagenesHelado/' . $helado['imagen1_helado'] ?>" /></td>
-                                    <td><img height="50px" src="<?php echo base_url('imagenesHelado') . '/' . $helado['imagen2_helado'] ?>" /></td>
-                                    <td><?php echo $helado['descripcion'] ?></td>
+                                    <td ><?php echo $carrito['id_carrito'] ?></td>
+                                    <?php foreach ($helados as $helado) : ?>
+                                        <?php if ($helado['id_helado'] == $carrito['id_helado']) : ?>
+                                            <td><?php echo $helado['nombre_helado'] ?></td>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
+                                    <?php foreach ($usuarios as $usuario) : ?>
+                                        <?php if ($usuario['id_usuario'] == $carrito['id_usuario']) : ?>
+                                            <td><?php echo $usuario['nombre_usuario'] ?></td>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
+                                    <td><?php echo $carrito['cantidad_carrito'] ?></td>
+                                    
+                                    <?php foreach ($helados as $helado) : ?>
+                                        <?php if ($helado['id_helado'] == $carrito['id_helado']):
+                                            $ptotal=$helado['precio_helado'] *$carrito['cantidad_carrito']?>
+                                            <td><?php echo $helado['precio_helado'] ?> Soles</td>
+                                            <td><?php echo $ptotal; ?> Soles</td>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
+                                    <?php foreach ($helados as $helado) : ?>
+                                        <?php if ($helado['id_helado'] == $carrito['id_helado']) : ?>
+                                            <td><?php echo $helado['descripcion'] ?></td>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
 
                                     <td class=" ">
-                                        <a href="<?php echo base_url('admin/helados/editar/' . $helado['id_helado']) ?>" class="btn btn-outline-success mt-2"><i class="fa fa-edit"></i> Editar</a>
+                                        <a href="<?php echo base_url('admin/caja/editar/' . $carrito['id_carrito']) ?>" class="btn btn-outline-success mt-2"><i class="fa fa-edit"></i> Editar</a>
 
-                                        <a href="<?php echo base_url('admin/helados/borrar/' . $helado['id_helado']) ?>" class="btn btn-outline-danger mt-2"><i class="fa fa-trash"></i> Eliminar</a>
+                                        <a href="<?php echo base_url('admin/caja/borrar/' . $carrito['id_carrito']) ?>" class="btn btn-outline-danger mt-2"><i class="fa fa-trash"></i> Eliminar</a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
                     </table>
                     <!---->
+                    <br><br>   
+                    <a type="button" href="<?php echo base_url("admin/caja/vender") ?>" value="vender" class="btn btn-success mt-2">Vender</a>
+                    <a type="button" href="<?php echo base_url("admin/caja/vaciar") ?>" value="cancelar" class="btn btn-danger mt-2">Cancelar</a>
                 </div>
                 <!--fin de listar-->
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
@@ -66,20 +88,30 @@
                             <div class="card" style="border: solid 1px #8f9fbc;">
 
                                 <div class="card-body">
-                                    <h4 class="card-title text-center">Agregar nuevo Helado</h4>
-                                    <form action="<?php echo base_url("admin/helados/insertar") ?>" method="POST" enctype="multipart/form-data">
+                                    <h4 class="card-title text-center">Agregar nuevo Helado a carrito</h4>
+                                    <form action="<?php echo base_url("admin/caja/insertar") ?>" method="POST" enctype="multipart/form-data">
+                                        
                                         <div class="form-group">
-                                            
-                                            <select class="form-control" id="sel1" name="sellist1">
-                                                <option>ron</option>
-                                                <option>aceite</option>
-                                                <option>hola</option>
-                                                <option></option>
+                                            <label for="exampleInputText1">Selecione un helado</label>
+                                            <select id="" class="form-control mb-3" name="helado" required>
+                                                <option selected="" disabled>Seleccionar</option>
+                                                <?php foreach ($helados as $helado): ?>
+                                                    <option value="<?php echo $helado['id_helado'] ?>"><?php echo $helado['nombre_helado'] ?></option>
+                                                <?php endforeach; ?>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputText1">Selecione el cliente</label>
+                                            <select id="" class="form-control mb-3" name="cliente" required>
+                                                <option selected="" disabled>Seleccionar</option>
+                                                <?php foreach ($usuarios as $usuario) : ?>
+                                                    <option value="<?php echo $usuario['id_usuario'] ?>"><?php echo $usuario['nombre_usuario'] ?></option>
+                                                <?php endforeach; ?>
                                             </select>
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputText1">Cantidad</label>
-                                            <input type="number" REQUIRED name="cantidad" class="form-control" id="exampleInputDisabled5" value="1" >
+                                            <input type="number" REQUIRED name="cantidad" class="form-control" id="exampleInputDisabled5" value="" >
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputText1">Precio S/.</label>
@@ -102,7 +134,7 @@
                                             <textarea class="form-control" name="descripcion" id="exampleFormControlTextarea1" rows="3" readonly="">hola</textarea>
                                         </div>
                                         <button type="submit" value="agregar" class="btn btn-primary">Agregar a carrito</button>
-                                        <a type="button" href="<?php echo base_url("admin/helados") ?>" value="cancelar" class="btn btn-danger">Cancelar</a>
+                                        <a type="button" href="<?php echo base_url("admin/caja") ?>" value="cancelar" class="btn btn-danger">Cancelar</a>
                                     </form>
                                 </div>
                             </div>

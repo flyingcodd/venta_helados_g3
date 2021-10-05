@@ -141,32 +141,12 @@
                                 <span class="ml-2">Configuraciones generales</span>
                             </a>
                         </li>
-                        <li class=" sidebar-layout">
-                            <a href="../backend/chart-apex.html" class="svg-icon">
-                                <i class="">
-                                    <svg class="svg-icon" id="iq-chart-1" width="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                    </svg>
-                                </i>
-                                <span class="ml-2">Extra</span>
-                            </a>
-                        </li>
 
                         <li class="px-3 pt-3 pb-2">
-                            <span class="text-uppercase small font-weight-bold">Graficos</span>
+                            <span class="text-uppercase small font-weight-bold">Informacion</span>
                         </li>
                         <!---->
-                        <li class=" sidebar-layout">
-                            <a href="../backend/chart-apex.html" class="svg-icon">
-                                <i class="">
-                                    <svg class="svg-icon" id="iq-chart-1" width="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
-                                    </svg>
-                                </i>
-                                <span class="ml-2">Estadistcias Generales</span>
-                            </a>
-                        </li>
+                        
                         <li class=" sidebar-layout">
                             <a href="../backend/icon-heroicon.html" class="svg-icon">
                                 <i class="">
@@ -446,7 +426,7 @@
                                 <li class="nav-item nav-icon dropdown">
                                     <a href="#" class="nav-item nav-icon dropdown-toggle pr-0 search-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <img src="<?php echo base_url("") ?>/assets/images/user/1.jpg" class="img-fluid avatar-rounded" alt="user">
-                                        <span class="mb-0 ml-2 user-name">John Doe</span>
+                                        <span class="mb-0 ml-2 user-name"><?php echo $usuario['nombre_usuario'] ?></span>
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                         <li class="dropdown-item d-flex svg-icon">
@@ -478,7 +458,10 @@
                                             <svg class="svg-icon mr-0 text-secondary" id="h-05-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                                             </svg>
-                                            <a href="../backend/auth-sign-in.html">Logout</a>
+                                            <form class="form" method="post" action="<?php echo base_url("login/salir") ?>">
+                                                <input type="hidden" name="id" value="<?php echo $usuario['id_usuario'] ?>">
+                                                <button type="submit" class="btn btn-outline-link mt-0"><a>Salir</a></button>
+                                            </form>
                                         </li>
                                     </ul>
                                 </li>

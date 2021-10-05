@@ -14,8 +14,9 @@ class PerfilController extends BaseController
 
         $datos['helados'] =$helado->OrderBy('id_helado', 'ASC')->findAll();
         
-        $datos['cabecera'] = view('template/webAdmin/cabecera');
-        $datos['pie'] = view('template/webAdmin/piepagina');
+        $p=new PlantillaController();
+        $datos['cabecera']= $p->cabeceraAdmin();
+        $datos['pie']= $p->pieAdmin();
         $datos['mensaje'] = session('mensaje');
         return view('webAdmin/auth/perfil',$datos);
     }
@@ -81,8 +82,9 @@ class PerfilController extends BaseController
         $helado = new Helado();
         $datos['helado'] = $helado->where('id_helado', $id)->first();
 
-        $datos['cabecera'] = view('template/webAdmin/cabecera');
-        $datos['pie'] = view('template/webAdmin/piepagina');
+        $p=new PlantillaController();
+        $datos['cabecera']= $p->cabeceraAdmin();
+        $datos['pie']= $p->pieAdmin();
         return view('webAdmin/helado/editar', $datos);
     }
     public function actualizar()

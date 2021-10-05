@@ -13,8 +13,9 @@ class RolController extends BaseController
 
         $datos['rol'] =$rol->OrderBy('id_rol', 'ASC')->findAll();
         
-        $datos['cabecera'] = view('template/webAdmin/cabecera');
-        $datos['pie'] = view('template/webAdmin/piepagina');
+        $p=new PlantillaController();
+        $datos['cabecera']= $p->cabeceraAdmin();
+        $datos['pie']= $p->pieAdmin();
         $datos['mensaje'] = session('mensaje');
         return view('webAdmin/rol/listar', $datos);
     }
@@ -48,8 +49,9 @@ class RolController extends BaseController
         $rol = new Rol_Usuario();
         $datos['rol'] = $rol->where('id_rol', $id)->first();
 
-        $datos['cabecera'] = view('template/webAdmin/cabecera');
-        $datos['pie'] = view('template/webAdmin/piepagina');
+        $p=new PlantillaController();
+        $datos['cabecera']= $p->cabeceraAdmin();
+        $datos['pie']= $p->pieAdmin();
         return view('webAdmin/rol/editar', $datos);
     }
     public function actualizar()

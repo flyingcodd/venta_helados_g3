@@ -13,8 +13,9 @@ class CategoriaController extends BaseController
 
         $datos['categoria'] =$categoria->OrderBy('id_categoria', 'ASC')->findAll();
         
-        $datos['cabecera'] = view('template/webAdmin/cabecera');
-        $datos['pie'] = view('template/webAdmin/piepagina');
+        $p=new PlantillaController();
+        $datos['cabecera']= $p->cabeceraAdmin();
+        $datos['pie']= $p->pieAdmin();
         $datos['mensaje'] = session('mensaje');
         return view('webAdmin/categoria/listar', $datos);
     }
@@ -48,8 +49,9 @@ class CategoriaController extends BaseController
         $categoria = new Categoria();
         $datos['categoria'] = $categoria->where('id_categoria', $id)->first();
 
-        $datos['cabecera'] = view('template/webAdmin/cabecera');
-        $datos['pie'] = view('template/webAdmin/piepagina');
+        $p=new PlantillaController();
+        $datos['cabecera']= $p->cabeceraAdmin();
+        $datos['pie']= $p->pieAdmin();
         return view('webAdmin/categoria/editar', $datos);
     }
     public function actualizar()
