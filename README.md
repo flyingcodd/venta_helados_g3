@@ -1,5 +1,5 @@
 # CodeIgniter 4 Framework
-G3 sistema de control y venta de helados
+G3 sistema de control y venta de  helados NO TERMINADO
 
 ## What is CodeIgniter?
 
