@@ -88,7 +88,7 @@
                     <div class="single-footer links">
                         <h4>Informacion</h4>
                         <ul>
-                            <li><a href="#"><?php echo base_url('nosotros')?></a></li>
+                            <li><a href="<?php echo base_url('nosotros')?>">Nosotros</a></li>
                             <li><a href="#">Preguntas frecuentes</a></li>
                             <li><a href="#">Terminos y condiciones</a></li>
                             <li><a href="<?php echo base_url('contacto')?>">Contactanos</a></li>

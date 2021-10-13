@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\Usuario;
+use CodeIgniter\Session\Session;
 
 class LoginController extends BaseController
 {
@@ -24,25 +25,25 @@ class LoginController extends BaseController
     }
     public function validar()
     {
-        $email = $this->request->getVar('email');
-        $password = $this->request->getVar('password');
+        $email = $this->request->getPost('email');
+        $password = $this->request->getPost('password');
         $usuarios = new Usuario();
         $item = $usuarios->where('correo_usuario', $email)->first();
 
 
         if (($item['correo_usuario'] == $email) && ($item['password_usuario'] == $password)) {
-
+            
             $data = [
-                'estado_usuario' => 1,
+                'nombre_usuario' => $item['nombre_usuario'],
             ];
-            $usuarios->update($item['id_usuario'], $data);
+
+            $session= session();
+            $session->set($data);
 
             if ($item['id_rol'] == 1) {
-                $c = new PlantillaController();
-                $c->cabeceraAdmin($item['id_usuario']);
                 return redirect()->to(base_url() . '/admin');
             } elseif ($item['id_rol'] == 2) {
-                return redirect()->to(base_url() . '/admin/helados');
+                return redirect()->to(base_url() . '/admin');
             } elseif ($item['id_rol'] == 3) {
                 return redirect()->to(base_url() . '/');
             }
@@ -53,12 +54,10 @@ class LoginController extends BaseController
     }
     public function salir()
     {
-        $usuario = new Usuario();
-        $dato = [
-            'estado_usuario' => 0,
-        ];
-        $id = $this->request->getVar('id');
-        $usuario->update($id, $dato);
+        $session=session();
+        $session->destroy();
+
+        
         return redirect()->to(base_url() . '/');
     }
     public function nuevo()

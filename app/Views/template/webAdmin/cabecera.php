@@ -146,7 +146,7 @@
                             <span class="text-uppercase small font-weight-bold">Informacion</span>
                         </li>
                         <!---->
-                        
+
                         <li class=" sidebar-layout">
                             <a href="../backend/icon-heroicon.html" class="svg-icon">
                                 <i class="">
@@ -426,7 +426,7 @@
                                 <li class="nav-item nav-icon dropdown">
                                     <a href="#" class="nav-item nav-icon dropdown-toggle pr-0 search-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <img src="<?php echo base_url("") ?>/assets/images/user/1.jpg" class="img-fluid avatar-rounded" alt="user">
-                                        <span class="mb-0 ml-2 user-name"><?php echo $usuario['nombre_usuario'] ?></span>
+                                        <span class="mb-0 ml-2 user-name"><?php echo session('nombre_usuario') ?></span>
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                         <li class="dropdown-item d-flex svg-icon">
@@ -458,10 +458,7 @@
                                             <svg class="svg-icon mr-0 text-secondary" id="h-05-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                                             </svg>
-                                            <form class="form" method="post" action="<?php echo base_url("login/salir") ?>">
-                                                <input type="hidden" name="id" value="<?php echo $usuario['id_usuario'] ?>">
-                                                <button type="submit" class="btn btn-outline-link mt-0"><a>Salir</a></button>
-                                            </form>
+                                            <a href="<?php echo base_url("login/salir") ?>">Salir</a>
                                         </li>
                                     </ul>
                                 </li>

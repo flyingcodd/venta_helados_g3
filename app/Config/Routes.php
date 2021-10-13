@@ -56,7 +56,7 @@ $routes->get('admin', 'AdminController::index');
 //login
 $routes->get('login', 'LoginController::login');
 $routes->post('login/validar', 'LoginController::validar');
-$routes->post('login/salir', 'LoginController::salir');
+$routes->get('login/salir', 'LoginController::salir');
 $routes->get('registrar', 'LoginController::registro');
 $routes->post('registrar/nuevo', 'LoginController::nuevo');
 

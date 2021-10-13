@@ -83,5 +83,4 @@ mapa_empresa varchar(250)
 );
  insert into Empresa values('1','icecream','Somos una empresa con el compromiso de entregar helados de calidad a nuestra clientela','+51 927613580','+51 983659999','icecream@gmail.com','jaimecarrascotaipe@gmail.com','icono.png','logo.png','Av. Garcilazo con Huancavelica N.123','https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21225.237238139875!2d-72.88520379993705!3d-13.634348280316516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2spe!4v1631292525330!5m2!1ses!2spe' );
  
-select nombre_helado,imagen1_helado,sum(precio_total) from ventas inner join helado where ventas.id_helado=helado.id_helado group by ventas.id_helado order by precio_total desc
  

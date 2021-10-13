@@ -104,9 +104,27 @@
                             <ul class="list-main">
                                 <li><i class="ti-location-pin"></i> <?php echo $empresa['ubicacion_empresa'] ?> </li>
                                 <li><i class="ti-alarm-clock"></i> <a href="#"> Horario </a></li>
-                                <li><i class="ti-user"></i> <a href="#">Mi cuenta </a></li>
-                                <li><i class="ti-power-off"></i><a href="<?php echo base_url("login") ?>"> Login </a></li>
+                                <?php if (session('nombre_usuario') != null) { ?>
+                                    <li><i class="ti-user"></i> <a href="#"><?php echo session('nombre_usuario') ?> </a></li>
+                                    <li>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Perfil
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Ver mi perfil</a></li>
+                                                <li><a class="dropdown-item" href="#">Editar mi perfil</a></li>
+                                                <li><a class="dropdown-item" href="<?php echo base_url('login/salir') ?>">Salir</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                <?php } else {  ?>
+                                    <li><i class="ti-power-off"></i><a href="<?php echo base_url("/login") ?>"> Login </a></li>
+                                <?php } ?>
+                                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
                             </ul>
+
                         </div>
                         <!-- End Top Right -->
                     </div>
@@ -175,28 +193,28 @@
                                         <a href="<?php echo base_url('') ?>/carrito">Ver Carrito</a>
                                     </div>
                                     <ul class="shopping-list">
-                                    <?php foreach($carritos as $carrito): ?>
-                                        
-                                        <li>
-                                        <?php foreach($helados as $helado): ?>
-                                        <?php if($carrito['id_helado']==$helado['id_helado']):?>
-                                            <a href="<?php echo base_url('carrito/borrar/' . $carrito['id_carrito']) ?>" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-                                            <a class="cart-img" href="#"><img src="<?php echo base_url('imagenesHelado')."/".$helado['imagen1_helado'] ?>" alt="#"></a>
-                                            <h4><a href="#"><?php echo $helado['nombre_helado'] ?></a></h4>
-                                            <p class="quantity"><?php  echo $carrito['cantidad_carrito']; ?>x - <span class="amount"><?php  echo ($helado['precio_helado']) ?></span></p>
-                                            <?php endif;?>
-                                            <?php endforeach; ?>
-                                        </li>
-                                        <?php endforeach; ?> 
+                                        <?php foreach ($carritos as $carrito) : ?>
+
+                                            <li>
+                                                <?php foreach ($helados as $helado) : ?>
+                                                    <?php if ($carrito['id_helado'] == $helado['id_helado']) : ?>
+                                                        <a href="<?php echo base_url('carrito/borrar/' . $carrito['id_carrito']) ?>" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
+                                                        <a class="cart-img" href="#"><img src="<?php echo base_url('imagenesHelado') . "/" . $helado['imagen1_helado'] ?>" alt="#"></a>
+                                                        <h4><a href="#"><?php echo $helado['nombre_helado'] ?></a></h4>
+                                                        <p class="quantity"><?php echo $carrito['cantidad_carrito']; ?>x - <span class="amount"><?php echo ($helado['precio_helado']) ?></span></p>
+                                                    <?php endif; ?>
+                                                <?php endforeach; ?>
+                                            </li>
+                                        <?php endforeach; ?>
                                     </ul>
                                     <div class="bottom">
                                         <div class="total">
                                             <span>Total</span>
-                                            
+
                                             <span class="total-amount">$<?php echo $precio_total ?></span>
-                                            
+
                                         </div>
-                                        <a  href="<?php echo base_url("carrito/vender") ?>" class="btn animate">Pagar</a>
+                                        <a href="<?php echo base_url("carrito/vender") ?>" class="btn animate">Pagar</a>
                                     </div>
 
 
