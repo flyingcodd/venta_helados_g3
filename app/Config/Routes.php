@@ -126,3 +126,5 @@ $routes->get('producto', 'Home::producto');
 
 $routes->get('tienda', 'Home::tienda');
 $routes->get('producto/(:num)', 'TiendaController::editar/$1');
+
+

@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Models\Usuario;
-use CodeIgniter\Session\Session;
 
 class LoginController extends BaseController
 {
@@ -34,7 +33,9 @@ class LoginController extends BaseController
         if (($item['correo_usuario'] == $email) && ($item['password_usuario'] == $password)) {
             
             $data = [
+                'id_usuario'=>$item['id_usuario'],
                 'nombre_usuario' => $item['nombre_usuario'],
+                'id_rol' => $item['id_rol'],
             ];
 
             $session= session();

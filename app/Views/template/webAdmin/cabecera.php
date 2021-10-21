@@ -292,91 +292,7 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li class="dropdown-item-1 float-none p-3">
-                                                        <div class="list-item d-flex justify-content-start align-items-start">
-                                                            <div class="avatar">
-                                                                <div class="avatar-img avatar-warning avatar-20">
-                                                                    <span>
-                                                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="30" stroke="white" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                                                            <g>
-                                                                                <g>
-                                                                                    <path d="M386.689,304.403c-35.587,0-64.538,28.951-64.538,64.538s28.951,64.538,64.538,64.538    c35.593,0,64.538-28.951,64.538-64.538S422.276,304.403,386.689,304.403z M386.689,401.21c-17.796,0-32.269-14.473-32.269-32.269    c0-17.796,14.473-32.269,32.269-32.269c17.796,0,32.269,14.473,32.269,32.269C418.958,386.738,404.485,401.21,386.689,401.21z" />
-                                                                                </g>
-                                                                            </g>
-                                                                            <g>
-                                                                                <g>
-                                                                                    <path d="M166.185,304.403c-35.587,0-64.538,28.951-64.538,64.538s28.951,64.538,64.538,64.538s64.538-28.951,64.538-64.538    S201.772,304.403,166.185,304.403z M166.185,401.21c-17.796,0-32.269-14.473-32.269-32.269c0-17.796,14.473-32.269,32.269-32.269    c17.791,0,32.269,14.473,32.269,32.269C198.454,386.738,183.981,401.21,166.185,401.21z" />
-                                                                                </g>
-                                                                            </g>
-                                                                            <g>
-                                                                                <g>
-                                                                                    <path d="M430.15,119.675c-2.743-5.448-8.32-8.885-14.419-8.885h-84.975v32.269h75.025l43.934,87.384l28.838-14.5L430.15,119.675z" />
-                                                                                </g>
-                                                                            </g>
-                                                                            <g>
-                                                                                <g>
-                                                                                    <rect x="216.202" y="353.345" width="122.084" height="32.269" />
-                                                                                </g>
-                                                                            </g>
-                                                                            <g>
-                                                                                <g>
-                                                                                    <path d="M117.781,353.345H61.849c-8.912,0-16.134,7.223-16.134,16.134c0,8.912,7.223,16.134,16.134,16.134h55.933    c8.912,0,16.134-7.223,16.134-16.134C133.916,360.567,126.693,353.345,117.781,353.345z" />
-                                                                                </g>
-                                                                            </g>
-                                                                            <g>
-                                                                                <g>
-                                                                                    <path d="M508.612,254.709l-31.736-40.874c-3.049-3.937-7.755-6.239-12.741-6.239H346.891V94.655    c0-8.912-7.223-16.134-16.134-16.134H61.849c-8.912,0-16.134,7.223-16.134,16.134s7.223,16.134,16.134,16.134h252.773v112.941    c0,8.912,7.223,16.134,16.134,16.134h125.478l23.497,30.268v83.211h-44.639c-8.912,0-16.134,7.223-16.134,16.134    c0,8.912,7.223,16.134,16.134,16.134h60.773c8.912,0,16.134-7.223,16.135-16.134V264.605    C512,261.023,510.806,257.538,508.612,254.709z" />
-                                                                                </g>
-                                                                            </g>
-                                                                            <g>
-                                                                                <g>
-                                                                                    <path d="M116.706,271.597H42.487c-8.912,0-16.134,7.223-16.134,16.134c0,8.912,7.223,16.134,16.134,16.134h74.218    c8.912,0,16.134-7.223,16.134-16.134C132.84,278.82,125.617,271.597,116.706,271.597z" />
-                                                                                </g>
-                                                                            </g>
-                                                                            <g>
-                                                                                <g>
-                                                                                    <path d="M153.815,208.134H16.134C7.223,208.134,0,215.357,0,224.269s7.223,16.134,16.134,16.134h137.681    c8.912,0,16.134-7.223,16.134-16.134S162.727,208.134,153.815,208.134z" />
-                                                                                </g>
-                                                                            </g>
-                                                                            <g>
-                                                                                <g>
-                                                                                    <path d="M180.168,144.672H42.487c-8.912,0-16.134,7.223-16.134,16.134c0,8.912,7.223,16.134,16.134,16.134h137.681    c8.912,0,16.134-7.223,16.134-16.134C196.303,151.895,189.08,144.672,180.168,144.672z" />
-                                                                                </g>
-                                                                            </g>
-                                                                            <g></g>
-                                                                            <g></g>
-                                                                            <g></g>
-                                                                            <g></g>
-                                                                            <g></g>
-                                                                            <g></g>
-                                                                            <g></g>
-                                                                            <g></g>
-                                                                            <g></g>
-                                                                            <g></g>
-                                                                            <g></g>
-                                                                            <g></g>
-                                                                            <g></g>
-                                                                            <g></g>
-                                                                            <g></g>
-                                                                        </svg>
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-style-detail ml-2 mr-2">
-                                                                <h6 class="font-weight-bold">Tu articulo se envia</h6>
-                                                                <p class="m-0">
-                                                                    <small class="text-secondary">You got new order of goods</small>
-                                                                </p>
-                                                                <p class="m-0">
-                                                                    <small class="text-secondary">
-                                                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary mr-1" width="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                                        </svg>
-                                                                        5 hours ago</small>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+                                                    
                                                 </ul>
                                             </div>
                                             <div class="card-footer text-muted p-3">
@@ -387,18 +303,18 @@
                                 </li>
                                 <li class="nav-item nav-icon dropdown">
                                     <a href="#" class="search-toggle dropdown-toggle" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <img src="<?php echo base_url("") ?>/assets/images/Flag/flag001.png" class="img-fluid rounded-circle" alt="user" style="height: 30px; min-width: 30px; width: 30px;">
+                                        <img src="<?php echo base_url("") ?>/assets/images/Flag/flag-03.png" class="img-fluid rounded-circle" alt="user" style="height: 30px; min-width: 30px; width: 30px;">
                                         <span class="bg-primary"></span>
                                     </a>
                                     <div class="iq-sub-dropdown dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                         <div class="card shadow-none m-0 border-0">
                                             <div class=" p-0 ">
                                                 <ul class="dropdown-menu-1 list-group list-group-flush">
-                                                    <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="<?php echo base_url("") ?>/assets/images/Flag/flag-03.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;" />Spanish</a></li>
-                                                    <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="<?php echo base_url("") ?>/assets/images/Flag/flag-04.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;" />Italian</a></li>
-                                                    <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="<?php echo base_url("") ?>/assets/images/Flag/flag-02.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;" />French</a></li>
-                                                    <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="<?php echo base_url("") ?>/assets/images/Flag/flag-05.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;" />German</a></li>
-                                                    <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="<?php echo base_url("") ?>/assets/images/Flag/flag-06.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;" />Japanese</a></li>
+                                                    <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="<?php echo base_url("") ?>/assets/images/Flag/flag001.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;" />Ingles</a></li>
+                                                    <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="<?php echo base_url("") ?>/assets/images/Flag/flag-04.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;" />Italiano</a></li>
+                                                    <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="<?php echo base_url("") ?>/assets/images/Flag/flag-02.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;" />Frances</a></li>
+                                                    <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="<?php echo base_url("") ?>/assets/images/Flag/flag-05.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;" />Aleman</a></li>
+                                                    <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="<?php echo base_url("") ?>/assets/images/Flag/flag-06.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;" />Japones</a></li>
                                                 </ul>
                                             </div>
                                         </div>

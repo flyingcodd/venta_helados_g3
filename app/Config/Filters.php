@@ -19,6 +19,7 @@ class Filters extends BaseConfig
         'csrf'     => CSRF::class,
         'toolbar'  => DebugToolbar::class,
         'honeypot' => Honeypot::class,
+        'SesionAdmin' => \App\Filters\SesionAdmin::class
     ];
 
     /**
@@ -58,5 +59,32 @@ class Filters extends BaseConfig
      *
      * @var array
      */
-    public $filters = [];
+    public $filters = [
+        "SesionAdmin"=>[
+            "before"=>[
+                "/admin",
+                "/admin/configuraciones",
+                "/admin/helados",
+                "/admin/helados/insertar",
+                "/admin/categorias",
+                "/admin/categorias/insertar",
+                "/admin/categorias/actualizar",
+                "/admin/roles",
+                "/admin/roles/insertar",
+                "/admin/roles/actualizar",
+                "/admin/usuarios'",
+                "/admin/usuarios/insertar",
+                "/admin/usuarios/actualizar",
+                "/admin/ventas",
+                "/admin/perfil",
+                "/admin/caja",
+                "/admin/caja/insertar",
+                "/admin/caja/actualizar",
+                "/admin/caja/vaciar",
+                "/admin/caja/vender",
+                "/admin",
+                "/admin",
+            ]
+        ]
+    ];
 }

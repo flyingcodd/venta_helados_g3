@@ -95,7 +95,7 @@ class TiendaController extends BaseController
             $fecha = date('Y-m-d h:i:s', time());
 
             $dato = [
-                'id_usuario' => $item['id_usuario'],
+                'id_usuario' => session('id_usuario'),
                 'id_helado' => $item['id_helado'],
                 'fecha' => $fecha,
                 'cantidad' => $item['cantidad_carrito'],
