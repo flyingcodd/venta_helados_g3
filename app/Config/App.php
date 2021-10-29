@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost/venta_helados_g3/public/';
+    public $baseURL = 'https://heladito.herokuapp.com/';
 
     /**
      * --------------------------------------------------------------------------
