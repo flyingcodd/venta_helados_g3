@@ -36,7 +36,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $indexPage = 'webCliente/index.php';
+    public $indexPage = 'index.php';
 
     /**
      * --------------------------------------------------------------------------
