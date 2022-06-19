@@ -41,7 +41,7 @@
             <div class="data-scrollbar" data-scroll="1">
                 <nav class="iq-sidebar-menu">
                     <ul id="iq-sidebar-toggle" class="side-menu">
-                        <li class="sidebar-layout">
+                        <li class="sidebar-layout <?= ('admin'==uri_string()?'active':'')?>">
                             <a href="<?php echo base_url("") ?>/admin" class="svg-icon">
                                 <i class="">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -55,7 +55,7 @@
                         <li class="px-3 pt-3 pb-2">
                             <span class="text-uppercase small font-weight-bold">Paginas</span>
                         </li>
-                        <li class=" sidebar-layout">
+                        <li class="sidebar-layout <?= ('admin/perfil'==uri_string()?'active':'')?>">
                             <a href="<?php echo base_url("") ?>/admin/perfil" class="svg-icon">
                                 <i class="">
                                     <svg class="svg-icon" id="iq-user-1-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -77,7 +77,7 @@
                                 </svg>
                             </a>
                             <ul id="app1" class="submenu collapse" data-parent="#iq-sidebar-toggle">
-                                <li class=" sidebar-layout">
+                                <li class="sidebar-layout <?= ('admin/usuarios'==uri_string()?'active':'')?>">
                                     <a href="<?php echo base_url("") ?>/admin/usuarios" class="svg-icon">
                                         <i class=""><svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -85,7 +85,7 @@
                                         </i><span class="">Usuarios</span>
                                     </a>
                                 </li>
-                                <li class=" sidebar-layout">
+                                <li class="sidebar-layout <?= ('admin/roles'==uri_string()?'active':'')?>">
                                     <a href="<?php echo base_url("") ?>/admin/roles" class="svg-icon">
                                         <i class="">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -94,7 +94,7 @@
                                         </i><span class="">Roles</span>
                                     </a>
                                 </li>
-                                <li class=" sidebar-layout">
+                                <li class="sidebar-layout <?= ('admin/helados'==uri_string()?'active':'')?>">
                                     <a href="<?php echo base_url("") ?>/admin/helados" class="svg-icon">
                                         <i class="">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -103,7 +103,7 @@
                                         </i><span class="">Helados</span>
                                     </a>
                                 </li>
-                                <li class=" sidebar-layout">
+                                <li class="sidebar-layout <?= ('admin/ventas'==uri_string()?'active':'')?>">
                                     <a href="<?php echo base_url("") ?>/admin/ventas" class="svg-icon">
                                         <i class="">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -112,14 +112,14 @@
                                         </i><span class="">Ventas</span>
                                     </a>
                                 </li>
-                                <li class=" sidebar-layout">
+                                <li class="sidebar-layout <?= ('admin/categorias'==uri_string()?'active':'')?>">
                                     <a href="<?php echo base_url("") ?>/admin/categorias" class="svg-icon">
                                         <i class="fa fa-list-ul"></i><span class="">Categorias de helados</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class=" sidebar-layout">
+                        <li class="sidebar-layout <?= ('admin/caja'==uri_string()?'active':'')?>">
                             <a href="<?php echo base_url("") ?>/admin/caja" class="svg-icon">
                                 <i class="">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -131,7 +131,7 @@
                         <li class="px-3 pt-3 pb-2">
                             <span class="text-uppercase small font-weight-bold">Configuraciones de empresa</span>
                         </li>
-                        <li class=" sidebar-layout">
+                        <li class="sidebar-layout <?= ('admin/configuraciones'==uri_string()?'active':'')?>">
                             <a href="<?php echo base_url("") ?>/admin/configuraciones?>" class="svg-icon">
                                 <i class="">
                                     <svg class="svg-icon" id="iq-chart-1" width="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -147,7 +147,7 @@
                         </li>
                         <!---->
 
-                        <li class=" sidebar-layout">
+                        <li class="sidebar-layout <?= ('admin/info'==uri_string()?'active':'')?>">
                             <a href="../backend/icon-heroicon.html" class="svg-icon">
                                 <i class="">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -170,7 +170,7 @@
                                 <span class="ml-2">Ver Tienda</span>
                             </a>
                         </li>
-                        <li class=" sidebar-layout">
+                        <li class="sidebar-layout <?= ('admin/ayuda'==uri_string()?'active':'')?>">
                             <a href="<?php echo base_url("") ?>/producto" class="svg-icon" target="_blank">
                                 <i class="">
                                     <svg class="svg-icon" id="iq-chart-1" width="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

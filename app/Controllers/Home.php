@@ -47,6 +47,7 @@ class Home extends BaseController
 
         $categoria=new Categoria();
         $datos['categorias'] = $categoria->OrderBy('id_categoria', 'ASC')->findAll();
+
         return view('webCliente/shop/tienda',$datos);
     }
     public function producto()

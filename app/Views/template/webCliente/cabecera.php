@@ -1,3 +1,6 @@
+<?php
+$uri = new \CodeIgniter\HTTP\URI();
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,43 +14,43 @@
     <!-- Title Tag  -->
     <title><?php echo $empresa['nombre_empresa'] ?></title>
     <!-- Favicon -->
-    <link rel="icon" type="<?php echo base_url('') ?>/image/png" href="<?php echo base_url("") ?>/images/<?php echo $empresa['icono_empresa'] ?>">
+    <link rel="icon" type="<?php echo base_url('') ?>/assetsClient/image/png" href="<?php echo base_url("") ?>/images/<?php echo $empresa['icono_empresa'] ?>">
     <!-- Web Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
     <!-- StyleSheet -->
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/css/bootstrap.css">
     <!-- Magnific Popup -->
-    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/css/magnific-popup.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/font-awesome.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/css/font-awesome.css">
     <!-- Fancybox -->
-    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/css/jquery.fancybox.min.css">
     <!-- Themify Icons -->
-    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/themify-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/css/themify-icons.css">
     <!--jquery-ui-->
-    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/jquery-ui.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/css/jquery-ui.css">
     <!-- Nice Select CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/niceselect.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/css/niceselect.css">
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/animate.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/css/animate.css">
     <!-- Flex Slider CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/flex-slider.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/css/flex-slider.min.css">
     <!-- Owl Carousel -->
-    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/owl-carousel.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/css/owl-carousel.css">
     <!-- Slicknav -->
-    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/slicknav.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/css/slicknav.min.css">
 
     <!-- Eshop StyleSheet -->
-    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/reset.css">
-    <link rel="stylesheet" href="<?php echo base_url('') ?>/style.css">
-    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/responsive.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/css/reset.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/style.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/css/responsive.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
     <!--COLOR CSS--->
-    <link rel="stylesheet" href="<?php echo base_url('') ?>/css/color/color3.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/css/color/color3.css">
     <link rel="stylesheet" href="#" id="colors">
 </head>
 
@@ -138,7 +141,7 @@
                     <div class="col-lg-2 col-md-2 col-12">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="<?php echo base_url("/") ?>"><img src="https://www.dafont.com/forum/attach/orig/8/7/879162.jpg" alt="logo"></a>
+                            <a href="<?php echo base_url("/") ?>"><img src="<?php echo base_url("") ?>/images/<?php echo $empresa['logo_empresa'] ?>" alt="logo"></a>
                         </div>
                         <!--/ End Logo -->
                         <!-- Search Form -->
@@ -239,7 +242,7 @@
                                     <div class="navbar-collapse">
                                         <div class="nav-inner">
                                             <ul class="nav main-menu menu navbar-nav">
-                                                <li class="active"><a href="<?php echo base_url("/") ?>">Inicio</a></li>
+                                                <li class="active"><a href="<?php echo base_url('/') ?>">Inicio</a></li>
                                                 <li><a href="<?php echo base_url("/tienda") ?>">Productos</a></li>
                                                 <li><a href="#">Tienda<i class="ti-angle-down"></i><span class="new">Nuevos</span></a>
                                                     <ul class="dropdown">

@@ -68,7 +68,7 @@ class AdminController extends BaseController
             'mapa_empresa' => $this->request->getVar('mapa')
         ];
         $respuesta = $empresa->update($id, $dato);
-        $validacion = $this->validate([
+       /* $validacion = $this->validate([
             'imagen' => [
                 'uploaded[imagen]',
                 'mime_in[imagen,image/jpg,image/png,image/jpeg]',
@@ -84,8 +84,55 @@ class AdminController extends BaseController
                 'logo_empresa' => $nuevoNombre
             ];
             $empresa->update($id, $dato);
+        }*/
+
+
+        $validacion1 = $this->validate([
+            'logo' => [
+                'uploaded[logo]',
+                'mime_in[logo,image/jpg,image/png,image/jpeg]',
+                'max_size[logo,1024]',
+            ]
+        ]);
+        $validacion2 = $this->validate([
+            'icono' => [
+                'uploaded[icono]',
+                'mime_in[icono,image/jpg,image/png,image/jpeg]',
+                'max_size[icono,1024]',
+            ]
+        ]);
+        if ($validacion1 && $validacion2) {
+            if (($logo = $this->request->getFile('logo'))) {
+                
+                $datosHelado = $empresa->where('id_empresa', $id)->first();
+
+                $ruta1 = ('../public/images/' . $datosHelado['logo_empresa']);
+                unlink($ruta1);
+
+
+                $nuevoNombre1 = $logo->getRandomName();
+                $logo->move('../public/images/', $nuevoNombre1);
+
+                $dato = [
+                    'logo_empresa' => $nuevoNombre1
+                ];
+                $empresa->update($id, $dato);
+            }
+            if (($icono = $this->request->getFile('icono'))) {
+                $datosHelado = $empresa->where('id_empresa', $id)->first();
+                $ruta2 = ('../public/images/' . $datosHelado['icono_empresa']);
+                unlink($ruta2);
+
+                $nuevoNombre2 = "icono_empresa";
+                $icono->move('../public/images/', $nuevoNombre2);
+                $dato = [
+                    'icono_empresa' => $nuevoNombre2
+                ];
+                $empresa->update($id, $dato);
+            }
         }
 
+        $respuesta = $empresa->update($id, $dato);
         if ($respuesta > 0) {
             return redirect()->to(base_url() . '/admin/configuraciones')->with('mensaje', 'actualizado');
         } else {

@@ -76,7 +76,7 @@
                     <!-- Single Widget -->
                     <div class="single-footer about">
                         <div class="logo">
-                            <a href="index.html"><img src="https://www.dafont.com/forum/attach/orig/8/7/879162.jpg" alt="#"></a>
+                            <a href="<?php echo base_url("/") ?>"><img src="<?php echo base_url("") ?>/images/<?php echo $empresa['logo_empresa'] ?>" alt="logo" alt="#"></a>
                         </div>
                         <p class="text"><?php echo $empresa['slogan_empresa'] ?></p>
                         <p class="call">Tienes alguna pregunta? Te escuchamos <span><a href="tel:927613580"><?php echo $empresa['telefono1_empresa'] ?> </a></span></p>
@@ -147,7 +147,7 @@
                     </div>
                     <div class="col-lg-6 col-12">
                         <div class="right">
-                            <img src="<?php echo base_url() ?>/images/payments.png" alt="#">
+                            <img src="<?php echo base_url() ?>/assetsClient/images/payments.png" alt="#">
                         </div>
                     </div>
                 </div>
@@ -159,50 +159,50 @@
 
 
 <!-- Jquery OFICIAL-->
-<script src="<?php echo base_url() ?>/js/jquery.min.js"></script>
-<script src="<?php echo base_url() ?>/js/jquery-migrate-3.0.0.js"></script>
-<script src="<?php echo base_url() ?>/js/jquery-ui.min.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/jquery.min.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/jquery-migrate-3.0.0.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/jquery-ui.min.js"></script>
 <!-- Popper JS -->
-<script src="<?php echo base_url() ?>/js/popper.min.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/popper.min.js"></script>
 <!-- Bootstrap JS -->
-<script src="<?php echo base_url() ?>/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/bootstrap.min.js"></script>
 <!-- Color JS -->
-<script src="<?php echo base_url() ?>/js/colors.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/colors.js"></script>
 <!-- Slicknav JS -->
-<script src="<?php echo base_url() ?>/js/slicknav.min.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/slicknav.min.js"></script>
 <!-- Owl Carousel JS -->
-<script src="<?php echo base_url() ?>/js/owl-carousel.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/owl-carousel.js"></script>
 <!-- Magnific Popup JS -->
-<script src="<?php echo base_url() ?>/js/magnific-popup.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/magnific-popup.js"></script>
 <!-- Fancybox JS -->
-<script src="<?php echo base_url() ?>/js/facnybox.min.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/facnybox.min.js"></script>
 <!-- Waypoints JS -->
-<script src="<?php echo base_url() ?>/js/waypoints.min.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/waypoints.min.js"></script>
 <!-- Countdown JS -->
-<script src="<?php echo base_url() ?>/js/finalcountdown.min.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/finalcountdown.min.js"></script>
 <!-- Nice Select JS -->
-<script src="<?php echo base_url() ?>/js/nicesellect.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/nicesellect.js"></script>
 <!-- Ytplayer JS -->
-<script src="<?php echo base_url() ?>/js/ytplayer.min.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/ytplayer.min.js"></script>
 <!-- Flex Slider JS -->
-<script src="<?php echo base_url() ?>/js/flex-slider.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/flex-slider.js"></script>
 <!-- ScrollUp JS -->
-<script src="<?php echo base_url() ?>/js/scrollup.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/scrollup.js"></script>
 <!-- Onepage Nav JS -->
-<script src="<?php echo base_url() ?>/js/onepage-nav.min.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/onepage-nav.min.js"></script>
 <!-- Easing JS -->
-<script src="<?php echo base_url() ?>/js/easing.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/easing.js"></script>
 <!-- Active JS -->
-<script src="<?php echo base_url() ?>/js/active.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/active.js"></script>
 
 
 
 <!-- Flex Slider JS -->
-<script src="<?php echo base_url() ?>/js/flex-slider.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/flex-slider.js"></script>
 <!-- Google Map JS -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnhgNBg6jrSuqhTeKKEFDWI0_5fZLx0vM"></script>
-<script src="<?php echo base_url() ?>/js/gmap.min.js"></script>
-<script src="<?php echo base_url() ?>/js/map-script.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/gmap.min.js"></script>
+<script src="<?php echo base_url() ?>/assetsClient/js/map-script.js"></script>
 </body>
 
 </html>

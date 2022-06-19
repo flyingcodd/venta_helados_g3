@@ -29,7 +29,9 @@ class PlantillaController extends BaseController
         }
         $BD['precio_total'] = $sum;
         $BD['contador'] = $contador;
+        $BD['uri'] = new \CodeIgniter\HTTP\URI();
         return view('template/webCliente/cabecera', $BD);
+
     }
     public function pieCliente()
     {
