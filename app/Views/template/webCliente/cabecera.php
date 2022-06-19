@@ -48,7 +48,7 @@ $uri = new \CodeIgniter\HTTP\URI();
     <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/style.css">
     <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/css/responsive.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.17/dist/sweetalert2.css">
     <!--COLOR CSS--->
     <link rel="stylesheet" href="<?php echo base_url('') ?>/assetsClient/css/color/color3.css">
     <link rel="stylesheet" href="#" id="colors">

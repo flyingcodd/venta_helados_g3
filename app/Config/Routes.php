@@ -114,6 +114,8 @@ $routes->post('carrito/insertar', 'TiendaController::insertar');
 $routes->get('carrito', 'Home::carrito');
 $routes->get('carrito/borrar/(:num)', 'TiendaController::borrar/$1');
 $routes->get('carrito/vender', 'TiendaController::vender');
+$routes->post('carrito/actualizar', 'TiendaController::actualizarCarrito');
+
 
 
 //cliente

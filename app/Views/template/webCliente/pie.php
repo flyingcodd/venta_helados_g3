@@ -203,6 +203,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnhgNBg6jrSuqhTeKKEFDWI0_5fZLx0vM"></script>
 <script src="<?php echo base_url() ?>/assetsClient/js/gmap.min.js"></script>
 <script src="<?php echo base_url() ?>/assetsClient/js/map-script.js"></script>
+
 </body>
 
 </html>

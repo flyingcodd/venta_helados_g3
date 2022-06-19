@@ -62,7 +62,6 @@ class TiendaController extends BaseController
         return redirect()->to(base_url() . '/carrito')->with('mensaje', 'eliminado');
     }
     
-    
     public function insertar() //yo
     {
         $carrito = new Carrito();
@@ -111,5 +110,30 @@ class TiendaController extends BaseController
         endforeach;
 
         return redirect()->to(base_url() . '/carrito')->with('mensaje', 'vendido');
+    }
+
+    public function actualizarCarrito(){
+        $respuesta=0;
+        $carrito = new Carrito();
+        $id = $carrito->findAll();
+        $cantidad = $this->request->getVar('quant[]');
+        
+        foreach($id as $ids){
+            foreach(array_keys($cantidad) as $item){
+                if($ids['id_carrito']==$item){
+                    echo $cantidad[$item];
+                    $dato = [
+                        'cantidad_carrito' => $cantidad[$item],
+                    ];
+                    $respuesta = $carrito->update($ids['id_carrito'], $dato);
+            }}
+        }
+        
+
+        if ($respuesta > 0) {
+            return redirect()->to(base_url() . '/carrito')->with('mensaje', 'actualizado');
+        } else {
+            return redirect()->to(base_url() . '/carrito')->with('mensaje', 'noactualizado');
+        }
     }
 }
