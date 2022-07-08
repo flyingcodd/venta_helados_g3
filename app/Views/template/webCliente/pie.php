@@ -143,7 +143,9 @@
             <div class="inner">
                 <div class="row">
                     <div class="col-lg-6 col-12">
-
+                        <div class="left">
+							<p>Copyright © 2022 <a href="https://www.facebook.com/profile.php?id=100010201231781" target="_blank">Grupo 3</a>  -  All Rights Reserved.</p>
+						</div>
                     </div>
                     <div class="col-lg-6 col-12">
                         <div class="right">

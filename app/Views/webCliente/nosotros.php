@@ -50,8 +50,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h2>NUESTRO EQUIPO DE DESARROLLO</h2>
-                    <p>Conozca a nuestros expertos... </p>
+                    <h2>NUESTRO EQUIPO</h2>
+                    <p>Conozca a nuestros expertos en brindarle la mejor experiencia</p>
                 </div>
             </div>
         </div>
@@ -61,14 +61,14 @@
                 <div class="single-team">
                     <!-- Image -->
                     <div class="image">
-                        <img src="https://scontent.faqp2-1.fna.fbcdn.net/v/t1.6435-9/82678739_1062661990750499_1452095736601640960_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFtsAQ8RDq-mYxCreIH3Iv_qA6EEJSKVrSoDoQQlIpWtMXjYNPn1PlKmMBnD6ksVPC-qyH2IbRZjsVI10yHvogW&_nc_ohc=r_4bXJ_SKqwAX8AtYWO&_nc_ht=scontent.faqp2-1.fna&oh=4f45e15884865f39cccadc11e1f9704a&oe=617BE47D" alt="#">
+                        <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="#">
                     </div>
                     <!-- End Image -->
                     <div class="info-head">
                         <!-- Info Box -->
                         <div class="info-box">
                             <h4 class="name"><a href="#">Jaime Ivan Carrasco Taipe</a></h4>
-                            <span class="designation">Scrum Master</span>
+                            <span class="designation">Gerente General</span>
                         </div>
                         <!-- End Info Box -->
                         <!-- Social -->
@@ -88,14 +88,14 @@
                 <div class="single-team">
                     <!-- Image -->
                     <div class="image">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSepkFwiiIMXrDBdySyWcz2L3-n1lzCuqbgsw&usqp=CAU" alt="#">
+                        <img src="https://www.fasdapsicanalise.com.br/content/uploads/2020/08/A-CI%C3%8ANCIA-REVELA-O-QUE-A-FOTO-DO-SEU-PERFIL-DIZ-SOBRE-A-SUA-PERSONALIDADE.jpg" alt="#">
                     </div>
                     <!-- End Image -->
                     <div class="info-head">
                         <!-- Info Box -->
                         <div class="info-box">
                             <h4 class="name"><a href="#">Cintia Pareja Arredondo</a></h4>
-                            <span class="designation">Analista de Sistemas</span>
+                            <span class="designation">Jefa de Ventas</span>
                         </div>
                         <!-- End Info Box -->
                         <!-- Social -->
@@ -115,14 +115,14 @@
                 <div class="single-team">
                     <!-- Image -->
                     <div class="image">
-                        <img src="https://scontent.faqp2-2.fna.fbcdn.net/v/t1.6435-9/83816508_1264828517049458_3947932289215758336_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=174925&_nc_eui2=AeHYPcRDQnAlvu0yCbQERrK7pZP0L-RUq66lk_Qv5FSrrjSk2WkWLhni0HNWx4TLO6UBaiJ0ZEcuIOGaUMXGBE2N&_nc_ohc=Hzn9JMauSAoAX-XWMHW&_nc_ht=scontent.faqp2-2.fna&oh=247776adabc49079066226a60e2648bb&oe=6179F26E" alt="#">
+                        <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="#">
                     </div>
                     <!-- End Image -->
                     <div class="info-head">
                         <!-- Info Box -->
                         <div class="info-box">
                             <h4 class="name"><a href="#">Alonzo Huamani Sanchez</a></h4>
-                            <span class="designation">Diseñador de Base de Datos</span>
+                            <span class="designation">Cajero</span>
                         </div>
                         <!-- End Info Box -->
                         <!-- Social -->
@@ -142,14 +142,14 @@
                 <div class="single-team">
                     <!-- Image -->
                     <div class="image">
-                        <img src="https://wallpaperaccess.com/full/2529556.jpg" alt="#">
+                        <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="#">
                     </div>
                     <!-- End Image -->
                     <div class="info-head">
                         <!-- Info Box -->
                         <div class="info-box">
                             <h4 class="name"><a href="#">Jose Condori Condori</a></h4>
-                            <span class="designation">Desarrollador Frontend</span>
+                            <span class="designation">Vendedor</span>
                         </div>
                         <!-- End Info Box -->
                         <!-- Social -->
@@ -169,14 +169,14 @@
                 <div class="single-team">
                     <!-- Image -->
                     <div class="image">
-                        <img src="https://vistapointe.net/images/hackers-8.jpg" alt="#">
+                        <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="#">
                     </div>
                     <!-- End Image -->
                     <div class="info-head">
                         <!-- Info Box -->
                         <div class="info-box">
                             <h4 class="name"><a href="#">Jhon Franklin Romero Ramos</a></h4>
-                            <span class="designation">Desarrollador Backend</span>
+                            <span class="designation">Vendedor</span>
                         </div>
                         <!-- End Info Box -->
                         <!-- Social -->
@@ -196,14 +196,14 @@
                 <div class="single-team">
                     <!-- Image -->
                     <div class="image">
-                        <img src="https://scontent.faqp2-3.fna.fbcdn.net/v/t1.6435-9/118597789_2619222545009521_2414319061685057224_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHe4lyv_rMNF6VraSMFzkBNQkstapl7VvNCSy1qmXtW86QDydava80sNGBhEGdrF286s8kwt8WX2V3fKjilz-UP&_nc_ohc=DTiAQBnE5ogAX9sODOr&_nc_ht=scontent.faqp2-3.fna&oh=b1a2763d6d22f1c6a419bd96578d6c47&oe=6179C51F" alt="#">
+                        <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="#">
                     </div>
                     <!-- End Image -->
                     <div class="info-head">
                         <!-- Info Box -->
                         <div class="info-box">
                             <h4 class="name"><a href="#">Anderson Ramos Hurtado</a></h4>
-                            <span class="designation">SEO Expert y Tester</span>
+                            <span class="designation">Seguridad</span>
                         </div>
                         <!-- End Info Box -->
                         <!-- Social -->

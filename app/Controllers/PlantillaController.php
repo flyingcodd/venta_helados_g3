@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\Carrito;
+use App\Models\Categoria;
 use App\Models\Empresa;
 use App\Models\Usuario;
 use App\Models\Helado;
@@ -20,6 +21,8 @@ class PlantillaController extends BaseController
         $BD['helados'] = $helado->OrderBy('id_helado', 'ASC')->findAll();
         $usuario = new Usuario();
         $BD['usuarios'] = $usuario->OrderBy('id_usuario', 'ASC')->findAll();
+        $categoria = new Categoria();
+        $BD['categoria'] = $categoria->OrderBy('id_categoria', 'ASC')->findAll();
         $sum = 0;
         $contador=0;
         foreach ($BD['carritos'] as $item) {

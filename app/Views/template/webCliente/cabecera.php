@@ -164,9 +164,9 @@ $uri = new \CodeIgniter\HTTP\URI();
                             <div class="search-bar">
                                 <select>
                                     <option selected="selected">Todas</option>
-                                    <option>Niños</option>
-                                    <option>Familiares</option>
-                                    <option>Personales</option>
+                                    <?php foreach($categoria as $item):?>
+                                    <option><?php echo $item['nombre_categoria'] ?></option>
+                                    <?php endforeach;?>
                                 </select>
                                 <form>
                                     <input name="search" placeholder="Buscar productos aqui..." type="search">
